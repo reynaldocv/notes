@@ -2,7 +2,7 @@
 layout:     poema
 title:      "Cartas IV"
 date:       2021-02-24 16:59:43 +0000
-category:   Cartas-2021
+category:   Cryptography
 ---
     Su vida era un lienzo blanco sin pintar,
     uno que nunca quiso colorear, 

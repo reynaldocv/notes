@@ -2,7 +2,7 @@
 layout: poema
 title:  "Eclipse XXIV"
 date:   2017-07-08 16:59:43 +0000
-category: Eclipses-2017
+category: Blockchain
 ---
     No te quiero tocar porque lo que toco;
     siempre, de mí se aleja...

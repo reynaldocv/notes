@@ -2,7 +2,7 @@
 layout: poema
 title:  "Melancolía VIII"
 date:   2016-02-01 16:59:43 +0000
-category: Melancolías-2016
+category: Cybersecurity
 ---
     A veces el decir adiós
     es la única manera de tener algo mejor.
