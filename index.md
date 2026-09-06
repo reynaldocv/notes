@@ -34,7 +34,7 @@ layout: home
   <ul>
     {% assign count = 0 %}
     {% for post in site.posts %}
-      {% if post.path contains folder and count < 3 %}
+      {% if post.path contains folder and count < 100 %}
         <li>  <a href="{{site.baseurl}}{{post.url}}"> {{ post.title }}</a></li>
         {% assign count = count | plus: 1 %}
       {% endif %}
