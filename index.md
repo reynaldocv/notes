@@ -27,7 +27,7 @@ layout: home
         <div class="w3-container w3-whitesmoke">
         <a href="{{ site.baseurl }}/category/{{folder | slugify}}">
           <div class="contenedor-imagen">
-            <img src="{{site.baseurl}}/assets/images/{{folder}}.png">
+            <img src="{{site.baseurl}}/assets/images/Hacking.png">
             <div class="texto-centrado">{{ folder }}</div>
           </div>
         </a>        
