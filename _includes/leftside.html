@@ -41,11 +41,14 @@
     {% comment %} Group all documents in the chapters collection by their parent subfolder {% endcomment %}
     {% assign grouped_chapters = site.chapters | group_by_exp: "item", "item.path | split: '/' | slice: 1" %}
 
-    <ul>
+    
       {% for group in grouped_chapters %}
+      <a onclick="myAccFunc('{{forloop.index}}')" href="javascript:void(0)" class="w3-button w3-block w3-left-align" id="myBtn">
+        {{ group.name }} <i class="fa fa-caret-down"></i>
+      </a>
         <li>
           <!-- This outputs the Subfolder Name -->
-          <strong> {{ group.name }}</strong>
+          <strong> </strong>
           
           <!-- This lists the items inside this specific subfolder -->
           <ul>
@@ -57,8 +60,7 @@
           </ul>
         </li>
       {% endfor %}
-    </ul>
-
+    
 
   </div>
   <!--<a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a>-->
