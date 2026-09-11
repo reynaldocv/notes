@@ -10,9 +10,6 @@
   </div>
   <div class="w3-padding-64 w3-medium w3-text-grey" style="font-weight:bold">
     
-
-
-
     {% comment %} Group all documents in the chapters collection by their parent subfolder {% endcomment %}
     {% assign grouped_chapters = site.chapters | group_by_exp: "item", "item.path | split: '/' | slice: 1" %}
 
@@ -23,7 +20,7 @@
       </a>
       <div id="demoAcc-{{ forloop.index }}" class="w3-bar-block w3-hide w3-padding-large w3-small">        
         {% for item in group.items %}
-            <a href="{{ item.url | relative_url }}">{{ item.chapter | default: item.name }}</a>
+            <a href="{{ item.url | relative_url }}" class="w3-bar-item w3-button w3-light-grey">{{ item.chapter | default: item.name }}</a>
         {% endfor %}
         </div>
       {% endfor %}
