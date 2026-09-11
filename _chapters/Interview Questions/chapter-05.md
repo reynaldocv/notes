@@ -7,7 +7,7 @@ permalink: "interview-01/"
 
 ## Question 01
 
-**Question**: "Tell me about a time you made an ordering mistake or faced a major inventory glitch.
+### "Tell me about a time you made an ordering mistake or faced a major inventory glitch.
 
 - **Situation**: At my previous retail job, I accidentally ordered double the seasonal stock for a high-demand item and fell short on another key product. 
 
