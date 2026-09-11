@@ -1,0 +1,45 @@
+---
+layout: poema
+title:  "Some Concepts"
+date:   2018-08-06 16:59:43 +0000
+category: System Design
+---
+
+System Design can feel overwhelming especially when you're just starting out and don’t know where to begin.
+
+But once you understand the core concepts and building blocks, it becomes much less intimidating—whether you're preparing for interviews or designing scalable systems at work.
+
+In this article, I’ll walk you through the 30 most important System Design concepts every developer should know.
+
+- [CLient-Server Architecture](#1-client-server-architecture)
+- [Ip Address]
+- []
+- []
+- []
+- []
+- []
+- []
+- []
+- []
+- []
+- []
+- []
+- []
+- []
+- []
+- []
+# 1. Client-Server Architecture
+
+Almost every web application that you use is built on this simple yet powerful concept called client-server architecture.
+
+On one side, you have a client—this could be a web browser, a mobile app, or any other frontend application.
+
+And on the other side, you have a server—a machine that runs continuously, waiting to handle incoming requests.
+
+The client sends a request to store, retrieve, or modify data.
+
+The server receives the request, processes it, performs the necessary operations, and sends back a response.
+
+This sounds simple, but there’s a big question: How does the client even know where to find the server?
+
+
