@@ -11,39 +11,14 @@
   <div class="w3-padding-64 w3-medium w3-text-grey" style="font-weight:bold">
     
 
-    {% assign stack = '' | split: ',' %}
-    
-    {% for chapter in site.chapters %}
-      {% for tag in chapter.chapter %}
-        {% assign stack = stack | push: tag %}
-      {% endfor %}
-    {% endfor %}
 
-    {% assign uniqueChapters = stack | uniq %}
-
-    {% for chapter in uniqueChapters %}
-      <a onclick="myAccFunc('{{forloop.index}}')" href="javascript:void(0)" class="w3-button w3-block w3-left-align" id="myBtn">
-        {{ chapter }} <i class="fa fa-caret-down"></i>
-      </a>
-        <div id="demoAcc-{{ forloop.index }}" class="w3-bar-block w3-hide w3-padding-large w3-small">
-          {% for item in site.chapters %}
-            {% for tag in item.chapter %}
-              {% if tag == chapter %}
-                <a href="{{ site.baseurl }}/{{item.permalink}}" class="w3-bar-item w3-button w3-light-grey">
-                  <i class="fa fa-caret-right w3-margin-right"></i>{{ item.section }}
-                </a>
-              {% endif %}
-            {% endfor %}
-          {% endfor %}
-      </div>
-    {% endfor %}
 
     {% comment %} Group all documents in the chapters collection by their parent subfolder {% endcomment %}
     {% assign grouped_chapters = site.chapters | group_by_exp: "item", "item.path | split: '/' | slice: 1" %}
 
     
       {% for group in grouped_chapters %}
-      <a onclick="myAccFunc('{{forloop.index}}')" href="javascript:void(0)" class="w3-button w3-block w3-left-align" id="myBtn">
+      <a onclick="myAccFunc('{{ forloop.index }}')" href="javascript:void(0)" class="w3-button w3-block w3-left-align" id="myBtn">
         {{ group.name }} <i class="fa fa-caret-down"></i>
       </a>
       <div id="demoAcc-{{ forloop.index }}" class="w3-bar-block w3-hide w3-padding-large w3-small">        
