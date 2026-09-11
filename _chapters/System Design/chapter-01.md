@@ -2,7 +2,7 @@
 layout: home
 chapter: "Scaling"
 course: "System Design"
-permalink: "chapter-03/"
+permalink: "chapter-01/"
 ---
 
 # Chapter 1: Scale from Zero to Millions of Users
