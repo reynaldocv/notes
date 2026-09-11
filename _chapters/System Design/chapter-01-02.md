@@ -1,7 +1,7 @@
 ---
 layout: home
 chapter: "SD 01 02"
-section: "System Design"
+course: "System Design"
 permalink: "chapter-01-02/"
 
 ---

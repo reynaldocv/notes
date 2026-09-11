@@ -1,7 +1,7 @@
 ---
 layout: home
 chapter: "Crypto-02"
-section: "Cibersecurity"
+course: "Cibersecurity"
 permalink: "chapter-02-03/"
 sort_by_number: 1 
 ---

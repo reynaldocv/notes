@@ -1,7 +1,7 @@
 ---
 layout: home
 chapter: "SD 01 01"
-section: "System Design"
+course: "System Design"
 permalink: "chapter-01-01/"
 ---
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:svg="http://www.w3.org/2000/svg" xml:lang="en">
