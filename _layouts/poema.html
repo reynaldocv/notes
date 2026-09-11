@@ -15,7 +15,7 @@
   <div class="w3-container w3-padding-32">
   {% include header.html %}
   
-{% assign items = site.posts | sort: 'date' | reverse %}
+{% assign items = site.posts | sort: 'date' %}
 
   {% for item in items %}
     {% if item.path == page.path %}
