@@ -15,10 +15,7 @@ Scaling a system to support millions of users is a complex, iterative journey re
 ## Section 1: Single Server Setup
 Initially, all components (web app, database, cache) run on a single server. 
 
-<div style="margin-left:3rem">
-   <img src="{{site.url}}/assets/images/System%20Design/01.%20Scaling/images/single-server.png" width="400" />
-</div>
-![hola]({{site.baseurl}}/assets/images/System%20Design/01.%20Scaling/images/single-server.png)
+![image]({{site.baseurl}}/assets/images/System%20Design/01.%20Scaling/images/single-server.png)
 
 ### Request Flow
 1. Users access the application via domain names (e.g., `api.mysite.com`), resolved to IP addresses using DNS.
@@ -34,9 +31,7 @@ Initially, all components (web app, database, cache) run on a single server.
 ## Section 2: Database Separation
 As the user base grows, the database is moved to a dedicated server to allow independent scaling of web and database tiers.
 
-<div style="margin-left:3rem">
-   <img src="./images/database.png" width="400" />
-</div>
+![image]({{site.baseurl}}/assets/images/System%20Design/01.%20Scaling/images/database.png")
 
 ### Database Choices
 
@@ -67,9 +62,8 @@ As the user base grows, the database is moved to a dedicated server to allow ind
 
 ## Section 4: Load Balancer
 
-<div style="margin-left:3rem">
-   <img src="./images/load-balancer.png" width="400" />
-</div>
+![image]({{site.baseurl}}/assets/images/System%20Design/01.%20Scaling/images/load-balancer.png")
+
 
 A **load balancer** distributes traffic among multiple servers. Benefits include:
 1. Redundancy: If a server goes offline, traffic is rerouted.
@@ -84,6 +78,9 @@ A **load balancer** distributes traffic among multiple servers. Benefits include
 <div style="margin-left:3rem">
    <img src="./images/database-replication.png" width="400" />
 </div>
+
+![image]({{site.baseurl}}/assets/images/System%20Design/01.%20Scaling/images/database-replication.png")
+
 
 ### Master-Slave Model
 - **Master Database:** Handles write operations.
