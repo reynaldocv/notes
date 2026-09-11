@@ -16,9 +16,9 @@ Scaling a system to support millions of users is a complex, iterative journey re
 Initially, all components (web app, database, cache) run on a single server. 
 
 <div style="margin-left:3rem">
-   <img src="./assets/images/System%20Design/01.%20Scaling/images/single-server.png" width="400" />
+   <img src="{{site.baseurl}}/assets/images/System%20Design/01.%20Scaling/images/single-server.png" width="400" />
 </div>
-![hola]({{/assets/images/System%20Design/01.%20Scaling/images/single-server.png}})
+![hola]({{site.baseurl}}/assets/images/System%20Design/01.%20Scaling/images/single-server.png)
 
 ### Request Flow
 1. Users access the application via domain names (e.g., `api.mysite.com`), resolved to IP addresses using DNS.
