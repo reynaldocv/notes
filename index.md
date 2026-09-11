@@ -4,7 +4,7 @@
 
 layout: home
 ---
-This is the index.md
+THis repository contains notes about some courses and learnings. 
 
 <ul>
   {% for p in site.pages %}
