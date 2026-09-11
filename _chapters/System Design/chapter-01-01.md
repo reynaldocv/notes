@@ -1,6 +1,6 @@
 ---
 layout: home
-chapter: "Cybersecurity Basics"
+chapter: "SD 01 01"
 section: "System Design"
 permalink: "chapter-01-01/"
 ---
