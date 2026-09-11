@@ -41,40 +41,18 @@ S.T.A.R. is a useful acronym and an effective formula for structuring your behav
 The percentages listed in the graphic above represent the time to dedicate to each section of your story. These numbers are meant to guide you, but don’t worry about getting it exactly right! The most important thing to keep in mind is that most of your response should focus on your Actions.
 
 ## Sample response
-Here is an example STAR-formatted response for the prompt, “tell me about a time when you demonstrated leadership.” Instead of responding simply with “I tutored kids in math,” provide context for your interviewer and demonstrate your skills through an engaging example.
+Here is an example STAR-formatted response for the prompt, 
 
-Situation: When I was a junior in high school, there were several students in my math class who were struggling with some of the more difficult concepts.
-Task: With an upcoming national exam, I was asked by my math teacher to start an after school session to assist the other students.
-Action: I stayed after school twice a week to review class materials and homework. I created a comprehensive study guide. I demonstrated the best methods for solving difficult problems, explained strategies that worked for me, and developed new problems to help them practice.
-Result: Our class average for the national exam was the highest it had been in over ten years, and overall the students I helped were able to develop a better understanding and appreciation for math.
+### tell me about a time when you demonstrated leadership. 
+
+Instead of responding simply with “I tutored kids in math,” provide context for your interviewer and demonstrate your skills through an engaging example.
+
+- **Situation**: When I was a junior in high school, there were several students in my math class who were struggling with some of the more difficult concepts.
+- **Task**: With an upcoming national exam, I was asked by my math teacher to start an after school session to assist the other students.
+- **Action**: I stayed after school twice a week to review class materials and homework. I created a comprehensive study guide. I demonstrated the best methods for solving difficult problems, explained strategies that worked for me, and developed new problems to help them practice.
+- **Result**: Our class average for the national exam was the highest it had been in over ten years, and overall the students I helped were able to develop a better understanding and appreciation for math.
 
 ![image]({{site.baseurl}}/assets/images/Interview/star-method-02.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Some Questions
 
 ### Tell me about a time you made an ordering mistake or faced a major inventory glitch.
 
