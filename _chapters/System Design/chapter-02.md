@@ -2,7 +2,7 @@
 layout: home
 chapter: "Back-of-the-Envelope Estimation"
 course: "System Design"
-permalink: "chapter-02/"
+permalink: "sysDes-02/"
 ---
 
 # Chapter 2: Back-of-the-Envelope Estimation

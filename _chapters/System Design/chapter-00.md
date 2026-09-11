@@ -2,7 +2,7 @@
 layout: home
 chapter: "Pre-concepts"
 course: "System Design"
-permalink: "chapter-00/"
+permalink: "sysDes-00/"
 ---
 
 System Design can feel overwhelming especially when you're just starting out and don’t know where to begin.

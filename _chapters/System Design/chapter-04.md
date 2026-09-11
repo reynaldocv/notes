@@ -2,7 +2,7 @@
 layout: home
 chapter: "Design a Rate Limiter"
 course: "System Design"
-permalink: "chapter-04/"
+permalink: "sysDes-04/"
 ---
 
 # Chapter 4: Design a Rate Limiter

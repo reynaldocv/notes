@@ -1,7 +1,7 @@
 ---
 layout: home
-chapter: "Public Key Cryptography"
+chapter: "CKKS"
 course: "Cryptogrphy"
-permalink: "crypto-003/"
+permalink: "crypto-ckks/"
 ---
 this is capitulo 03 01 

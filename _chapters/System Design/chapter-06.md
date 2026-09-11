@@ -2,7 +2,7 @@
 layout: home
 chapter: "Design a Key-Value Store"
 course: "System Design"
-permalink: "chapter-06/"
+permalink: "sysDes-06/"
 ---
 
 # Chapter 6: Design a Key-Value Store

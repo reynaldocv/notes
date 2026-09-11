@@ -1,8 +1,7 @@
 ---
 layout: home
-chapter: "Crypto-02"
-course: "Cibersecurity"
-permalink: "chapter-02-03/"
+chapter: "Secret Key Cryptography"
+course: "Cryptography"
+permalink: "crypto-/"
 sort_by_number: 1 
 ---
-this is capitulo 02 03 
