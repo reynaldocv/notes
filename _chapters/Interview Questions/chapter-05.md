@@ -10,19 +10,22 @@ Using the STAR method for your next behavioral interview (worksheet included)
 
 The purpose of behavioral interviewing is to objectively measure a potential employee’s past behaviors as a predictor of future results. In behavioral interviews, candidates are asked to give specific examples of when they demonstrated particular behaviors or skills. Here are some example behavioral interview questions:
 
-Tell me about a time when you worked as part of a team to successfully execute a project.
-Do you have any experience with solving complex problems?
-What is a project that you are most proud of?
-Tell me about a time you failed.
+- Tell me about a time when you worked as part of a team to successfully execute a project.
+- Do you have any experience with solving complex problems?
+- What is a project that you are most proud of?
+- Tell me about a time you failed.
+
 You may notice that a couple of these questions are close-ended, meaning that in a normal every-day conversation you may respond with a simple “yes” or “no.” In a behavioral interview, it is important to practice a “yes, and…” mentality. In other words, provide context for your interviewer with an example that can help you demonstrate the depth of your skills and knowledge.
 
-The purpose of behavioral interviewing is to objectively measure a potential employee’s past behaviors as a predictor of future results. In behavioral interviews, candidates are asked to give specific examples of when they demonstrated particular behaviors or skills. Here are some example behavioral interview questions:
+## Interview Tips
+When preparing your responses for a behavioral interview, you will also want to keep in mind the following:
 
-Tell me about a time when you worked as part of a team to successfully execute a project.
-Do you have any experience with solving complex problems?
-What is a project that you are most proud of?
-Tell me about a time you failed.
-You may notice that a couple of these questions are close-ended, meaning that in a normal every-day conversation you may respond with a simple “yes” or “no.” In a behavioral interview, it is important to practice a “yes, and…” mentality. In other words, provide context for your interviewer with an example that can help you demonstrate the depth of your skills and knowledge.
+- Focus your responses on actual behaviors and emotions. It can be tempting to say what you think will help you get the job, but bending the truth in a job interview can be risky. What you say, if not truthful, can come across as disingenuous to an interviewer, and may not match up with your application materials (resume, CV, cover letter) or what a referral has shared about you.
+- Describe your role in past situations. When it comes to sharing your experiences with a potential employer, it is important to show ownership of accomplishments by using “I” statements. This can be especially tricky when giving examples of teamwork or collaboration, but using “we” statements can make it difficult for an employer to have a clear understanding of what your skills are. Instead, focus your response on how you contributed to the outcomes of the team efforts.
+- Provide specific examples of your actions. Avoid giving answers that are too generalized. When responding to behavioral interview questions, it is important to share specific and clear examples that can give your interviewer insight to your potential as a candidate.
+- Reveal your skills related to the job. Your interviewer will prepare questions that will relate directly to the responsibilities of the role. For example, if the target role requires supervision of others or working in a team-based environment, you may be asked to share examples of times when you demonstrated effective leadership or collaboration. If you are asked to share your strengths, refer to the job description to hone in on what skills are important to the role. The ability to communicate effectively, work well with others, and think creatively are a few common descriptors used in internship postings.
+
+
 
 ## The STAR method
 S.T.A.R. is a useful acronym and an effective formula for structuring your behavioral interview response. Let’s start by breaking down the formula:
