@@ -46,19 +46,11 @@
       <a onclick="myAccFunc('{{forloop.index}}')" href="javascript:void(0)" class="w3-button w3-block w3-left-align" id="myBtn">
         {{ group.name }} <i class="fa fa-caret-down"></i>
       </a>
-        <li>
-          <!-- This outputs the Subfolder Name -->
-          <strong> </strong>
-          
-          <!-- This lists the items inside this specific subfolder -->
-          <ul>
-            {% for item in group.items %}
-              <li>
-                <a href="{{ item.url | relative_url }}">{{ item.chapter | default: item.name }}</a>
-              </li>
-            {% endfor %}
-          </ul>
-        </li>
+      <div id="demoAcc-{{ forloop.index }}" class="w3-bar-block w3-hide w3-padding-large w3-small">        
+        {% for item in group.items %}
+            <a href="{{ item.url | relative_url }}">{{ item.chapter | default: item.name }}</a>
+        {% endfor %}
+        </div>
       {% endfor %}
     
 
