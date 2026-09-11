@@ -43,7 +43,7 @@ The percentages listed in the graphic above represent the time to dedicate to ea
 ## Sample response
 Here is an example STAR-formatted response for the prompt, 
 
-### tell me about a time when you demonstrated leadership. 
+### Tell me about a time when you demonstrated leadership. 
 
 Instead of responding simply with “I tutored kids in math,” provide context for your interviewer and demonstrate your skills through an engaging example.
 
