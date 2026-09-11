@@ -2,7 +2,7 @@
 layout: home
 chapter: "Design Consistent Hashing"
 course: "System Design"
-permalink: "chapter-04/"
+permalink: "chapter-05/"
 ---
 
 
