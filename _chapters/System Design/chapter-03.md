@@ -2,7 +2,7 @@
 layout: home
 chapter: "A Framework for System Design Interviews"
 course: "System Design"
-permalink: "chapter-03-01/"
+permalink: "chapter-03/"
 ---
 
 # Chapter 3: A Framework for System Design Interviews
