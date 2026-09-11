@@ -6,16 +6,6 @@ layout: home
 ---
 THis repository contains notes about some courses and learnings. 
 
-<ul>
-  {% for p in site.pages %}
-    {% if p.url contains '/chapter/' %}
-      <li>
-        <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
-      </li>
-    {% endif %}
-  {% endfor %}
-</ul>
-
 {% comment %} Group all documents in the chapters collection by their parent subfolder {% endcomment %}
 {% assign grouped_chapters = site.chapters | group_by_exp: "item", "item.path | split: '/' | slice: 1" %}
 
