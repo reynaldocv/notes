@@ -62,6 +62,10 @@ As the user base grows, the database is moved to a dedicated server to allow ind
 
 ## Section 4: Load Balancer
 
+<div style="margin-left:3rem">
+   <img src="./images/load-balancer.png" width="400" />
+</div>
+
 ![image]({{site.baseurl}}/assets/images/System%20Design/01.%20Scaling/images/load-balancer.png")
 
 
@@ -78,9 +82,6 @@ A **load balancer** distributes traffic among multiple servers. Benefits include
 <div style="margin-left:3rem">
    <img src="./images/database-replication.png" width="400" />
 </div>
-
-![image]({{site.baseurl}}/assets/images/System%20Design/01.%20Scaling/images/database-replication.png")
-
 
 ### Master-Slave Model
 - **Master Database:** Handles write operations.
