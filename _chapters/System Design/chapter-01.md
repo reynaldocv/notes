@@ -31,7 +31,7 @@ Initially, all components (web app, database, cache) run on a single server.
 ## Section 2: Database Separation
 As the user base grows, the database is moved to a dedicated server to allow independent scaling of web and database tiers.
 
-![image]({{site.baseurl}}/assets/images/System%20Design/01.%20Scaling/images/database.png")
+![image1]({{site.baseurl}}/assets/images/System%20Design/01.%20Scaling/images/database.png")
 
 ### Database Choices
 
