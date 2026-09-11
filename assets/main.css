@@ -195,6 +195,10 @@ table td { border: 1px solid #e8e8e8; }
 .highlight .vi { color: #008080; }
 .highlight .il { color: #099; }
 
+h1 {
+  font-size: 20px;
+}
+
 h2 {
   color:darkblue
 }
