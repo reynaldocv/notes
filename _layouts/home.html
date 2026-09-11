@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html>
-{% include head.html %}
+<head>
+<title>reynaldocv - Cibersecurity</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<script type="text/javascript" async src="https://cloudflare.com">
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="{{site.baseurl}}/assets/main.css">
+
+
+<style>
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+</style>
+</head>
 <body class="w3-content" style="max-width:1200px">
 
 <!-- Sidebar/menu -->
@@ -14,7 +29,44 @@
   <!-- Top header -->
   <div class="w3-container w3-padding-32">
   {% include header.html %}
-  
+
+  {% assign items = site.chapters %}
+  {% for item in items %}
+    {% if item.path == page.path %}
+      {% unless forloop.first %}
+        {% assign prev = prev_item %}
+      {% endunless %}
+      {% unless forloop.last %}
+        {% assign next = items[forloop.index] %}
+      {% endunless %}
+    {% endif %}
+    {% assign prev_item = item %}
+  {% endfor %}
+
+  {% if prev %}
+    <p class="w3-left">
+      <a href="{{site.baseurl}}{{ prev.url }}">
+        <i class="fa fa-caret-left"><i class="fa fa-caret-left"></i></i> 
+        {{ prev.section }}
+        <i class="fa fa-caret-left"><i class="fa fa-caret-left"></i></i>
+      </a>
+    </p>
+  {% endif %}
+
+  {% if next %}
+    <p class="w3-right">
+      <a href="{{site.baseurl}}{{ next.url }}">
+        <i class="fa fa-caret-right"><i class="fa fa-caret-right"></i></i>
+        {{ next.section }} 
+        <i class="fa fa-caret-right"><i class="fa fa-caret-right"></i></i>
+      </a>
+    </p>
+  {% endif %}
+  </div>
+
+  <div class="w3-container w3-center">
+    <h1>{{ page.section }}</h1>
+  </div>
   <div class="w3-container w3-padding-32">
     {{content}}    
   </div>

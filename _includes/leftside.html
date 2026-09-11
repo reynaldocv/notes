@@ -5,16 +5,45 @@
       <a href="{{site.url}}">
         <img class="w3-circle" src=" {{ site.baseurl }}/assets/images/profile.jpeg" width="50%">        
       </a>
+      <p>{{site.title}}</p>
     </h3>
-    <a href="{{site.baseurl}}/" >
-        <i class="fa fa-book w3-medium"> All books </i>
-      </a><br>  
-
-     
   </div>
-  
+  <div class="w3-padding-64 w3-medium w3-text-grey" style="font-weight:bold">
+    
 
+    {% assign stack = '' | split: ',' %}
+    
+    {% for chapter in site.chapters %}
+      {% for tag in chapter.chapter %}
+        {% assign stack = stack | push: tag %}
+      {% endfor %}
+    {% endfor %}
+
+    {% assign uniqueChapters = stack | uniq %}
+
+    {% for chapter in uniqueChapters %}
+      <a onclick="myAccFunc('{{forloop.index}}')" href="javascript:void(0)" class="w3-button w3-block w3-left-align" id="myBtn">
+        {{ chapter }} <i class="fa fa-caret-down"></i>
+      </a>
+        <div id="demoAcc-{{ forloop.index }}" class="w3-bar-block w3-hide w3-padding-large w3-small">
+          {% for item in site.chapters %}
+            {% for tag in item.chapter %}
+              {% if tag == chapter %}
+                <a href="{{ site.baseurl }}/{{item.permalink}}" class="w3-bar-item w3-button w3-light-grey">
+                  <i class="fa fa-caret-right w3-margin-right"></i>{{ item.section }}
+                </a>
+              {% endif %}
+            {% endfor %}
+          {% endfor %}
+      </div>
+    {% endfor %}
+  </div>
+  <!--<a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a>-->
+  <!--<a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('contact').style.display='block'">Contact</a> -->
+  <!--<a href="#footer"  class="w3-bar-item w3-button w3-padding">Subscribe</a>-->
 </nav>
+
+<!-- Top menu on small screens -->
 <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
   <div class="w3-bar-item w3-padding-24 w3-wide">
     {{site.title}}
@@ -22,10 +51,7 @@
   <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()">
     <i class="fa fa-bars"></i>
   </a>
-  
 </header>
 
 <!-- Overlay effect when opening sidebar on small screens -->
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-<!-- Overlay effect when opening sidebar on small screens -->
-

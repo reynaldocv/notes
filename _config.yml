@@ -16,7 +16,7 @@
 title: Notes
 email: reynaldocv@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  A blog about some notes.
+  A blog about my learning and experiences.
 baseurl: "/notes" # the subpath of your site, e.g. /blog
 url: "https://reynaldocv.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
@@ -27,7 +27,6 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed  
-  - jekyll-archives
   
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -41,8 +40,7 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-jekyll-archives:
-  enabled: all
-  layout: archive
-  permalinks:
-    category: '/category/:name/'
+collections :
+  chapters: 
+    output: true
+
