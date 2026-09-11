@@ -223,11 +223,9 @@ It is insufficient to believe that a server is down because another server says 
    
 
 ### 2. Read Path
-<div style="margin-left:3rem">
 
    ![image]({{site.baseurl}}/assets/images/System%20Design/06.%20Key-Value%20Store/images/read-path.png)
    ![image]({{site.baseurl}}/assets/images/System%20Design/06.%20Key-Value%20Store/images/read-path-without-cache.png)
-</div>
 
 - Check **memory cache** for the data.
 - If absent, use a **Bloom Filter** to locate the data in SSTables.
@@ -238,12 +236,7 @@ It is insufficient to believe that a server is down because another server says 
 
 ## Final Architecture
 
-<p align="center">
-
 ![image]({{site.baseurl}}/assets/images/System%20Design/06.%20Key-Value%20Store/images/final-architecture.png)
-
-</p>
-
 
 -  Clients communicate with the key-value store through simple APIs: get(key) and put(key,
 value).
