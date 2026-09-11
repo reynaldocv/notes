@@ -5,3 +5,11 @@
 layout: home
 ---
 This is the index.md
+
+<ul>
+  {% for chapter in site.chapters %}
+    <li>
+      <a href="{{ chapter.url | relative_url }}">{{ chapter.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
