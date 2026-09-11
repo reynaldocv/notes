@@ -1,10 +1,3 @@
----
-layout: poema
-title:  "Some Concepts"
-date:   2018-08-06 16:59:43 +0000
-category: System Design
----
-
 # Chapter 1: Scale from Zero to Millions of Users
 
 ## Introduction
