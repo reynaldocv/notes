@@ -29,7 +29,7 @@ This is the index.md
       <ul>
         {% for item in group.items %}
           <li>
-            <a href="{{ item.url | relative_url }}">{{ item.title | default: item.name }}</a>
+            <a href="{{ item.url | relative_url }}">{{ item.section | default: item.name }}</a>
           </li>
         {% endfor %}
       </ul>
