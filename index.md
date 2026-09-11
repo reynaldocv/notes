@@ -7,9 +7,11 @@ layout: home
 This is the index.md
 
 <ul>
-  {% for chapter in site.chapters %}
-    <li>
-      <a href="{{ chapter.url | relative_url }}">{{ chapter.title }}</a>
-    </li>
+  {% for p in site.pages %}
+    {% if p.url contains '/chapter/' %}
+      <li>
+        <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
+      </li>
+    {% endif %}
   {% endfor %}
 </ul>
