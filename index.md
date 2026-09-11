@@ -23,7 +23,7 @@ This is the index.md
   {% for group in grouped_chapters %}
     <li>
       <!-- This outputs the Subfolder Name -->
-      <strong>Folder: {{ group.name }}</strong>
+      <strong> {{ group.name }}</strong>
       
       <!-- This lists the items inside this specific subfolder -->
       <ul>
