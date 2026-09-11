@@ -5,7 +5,7 @@ course: "Interview Questions"
 permalink: "interview-01/"
 ---
 
-# Question 01
+## Question 01
 
 **Question**: "Tell me about a time you made an ordering mistake or faced a major inventory glitch.
 
