@@ -1,7 +1,7 @@
 ---
 layout: home
 chapter: "Personal Cybersecurity"
-section: "Cibersecurity"
+section: "System Design"
 permalink: "chapter-02-01/"
 
 ---

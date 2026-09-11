@@ -1,7 +1,7 @@
 ---
 layout: home
 chapter: "Cybersecurity Basics"
-section: "Common Cyberattacks"
+section: "System Design"
 permalink: "chapter-01-02/"
 
 ---

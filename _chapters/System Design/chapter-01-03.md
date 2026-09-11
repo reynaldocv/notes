@@ -1,7 +1,7 @@
 ---
 layout: home
 chapter: "Cybersecurity Basics"
-section: "Bad Guys"
+section: "System Design"
 permalink: "chapter-01-03/"
 sort_by_number: 1 
 ---
