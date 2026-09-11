@@ -1,8 +1,8 @@
 ---
 layout: home
-chapter: "Introducing"
+chapter: "STAR method"
 course: "Interview Questions"
-permalink: "interview-01/"
+permalink: "interview-02/"
 ---
 # STAR method 
 
