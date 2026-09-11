@@ -4,6 +4,26 @@ chapter: "Introducing"
 course: "Interview Questions"
 permalink: "interview-01/"
 ---
+# STAR method 
+
+Using the STAR method for your next behavioral interview (worksheet included)
+
+The purpose of behavioral interviewing is to objectively measure a potential employee’s past behaviors as a predictor of future results. In behavioral interviews, candidates are asked to give specific examples of when they demonstrated particular behaviors or skills. Here are some example behavioral interview questions:
+
+Tell me about a time when you worked as part of a team to successfully execute a project.
+Do you have any experience with solving complex problems?
+What is a project that you are most proud of?
+Tell me about a time you failed.
+You may notice that a couple of these questions are close-ended, meaning that in a normal every-day conversation you may respond with a simple “yes” or “no.” In a behavioral interview, it is important to practice a “yes, and…” mentality. In other words, provide context for your interviewer with an example that can help you demonstrate the depth of your skills and knowledge.
+
+The purpose of behavioral interviewing is to objectively measure a potential employee’s past behaviors as a predictor of future results. In behavioral interviews, candidates are asked to give specific examples of when they demonstrated particular behaviors or skills. Here are some example behavioral interview questions:
+
+Tell me about a time when you worked as part of a team to successfully execute a project.
+Do you have any experience with solving complex problems?
+What is a project that you are most proud of?
+Tell me about a time you failed.
+You may notice that a couple of these questions are close-ended, meaning that in a normal every-day conversation you may respond with a simple “yes” or “no.” In a behavioral interview, it is important to practice a “yes, and…” mentality. In other words, provide context for your interviewer with an example that can help you demonstrate the depth of your skills and knowledge.
+
 
 ## Some Questions
 
