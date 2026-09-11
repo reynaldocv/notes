@@ -15,7 +15,7 @@
   left: 50%; /* Mueve al 50% de ancho */
   transform: translate(-50%, -50%); /* Centra el elemento exactamente */
   color: white; /* Color del texto */
-  font-size: 24px;
+  font-size: medium; /* Ajusta según sea necesario */
   font-weight: bold;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Mejora la legibilidad */
 }
