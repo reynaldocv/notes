@@ -11,5 +11,5 @@ But once you understand the core concepts and building blocks, it becomes much l
 
 In this article, I’ll walk you through the 30 most important System Design concepts every developer should know.
 
-
+![images](/assets/images/System%20Design/post%2001/image01.webp)
  
