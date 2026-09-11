@@ -33,7 +33,8 @@ layout: home
         </a>        
   <ul>
     {% assign count = 0 %}
-    {% for post in site.posts %}
+    {% assign sorted_posts = site.posts | sort: 'date' | reverse %}
+    {% for post in sorted_posts %}
       {% if post.path contains folder and count < 100 %}
         <li>  <a href="{{site.baseurl}}{{post.url}}"> {{ post.title }}</a></li>
         {% assign count = count | plus: 1 %}
