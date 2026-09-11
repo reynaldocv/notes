@@ -58,6 +58,7 @@ As the user base grows, the database is moved to a dedicated server to allow ind
 ### Horizontal Scaling
 - Adds more servers to the pool, making it more suitable for large-scale systems.
 - A load balancer is used to handle the request routing between the servers.
+
 ---
 
 ## Section 4: Load Balancer
