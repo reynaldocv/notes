@@ -49,10 +49,8 @@ The design includes two main flows:
 
 ### Feed Publishing
 
-   <div style="margin-left:3rem">
-      <img src="./images/feed-publishing.png" alt="Feed Publishing" width="400">
-   </div>
-
+   ![image]({{system.baseurl}}/assets/images/System%20Design/11.%20News%20Feed%20System/images/feed-publishing.png)
+   
 1. **User Interaction:** The user publishes a post via the feed publishing API.
 2. **Load Balancer:** Distributes traffic to web servers.
 3. **Web Servers:** Authenticate requests and redirect to services.
@@ -64,9 +62,7 @@ The design includes two main flows:
 
 ### News Feed Building
 
-   <div style="margin-left:3rem">
-      <img src="./images/news-feed-building.png" alt="News Feed Building" width="400">
-   </div>
+   ![image]({{system.baseurl}}/assets/images/System%20Design/11.%20News%20Feed%20System/images/news-feed-building.png)
 
 1. **User Interaction:** The user requests their news feed via the retrieval API.
 2. **Load Balancer:** Distributes traffic to web servers.
@@ -92,7 +88,7 @@ The design includes two main flows:
      - **Cons:** Slower feed retrieval.
    - **Hybrid Approach:** Use a push model for most users and a pull model for high-connection users (e.g., celebrities).
 
-        <img src="./images/feed-publishing-deep-dive.png" alt="Feed Publishing Deep Dive" width="500">
+        ![image]({{system.baseurl}}/assets/images/System%20Design/11.%20News%20Feed%20System/images/feed-publishing-deep-dive.png)
 
     The **fanout service** works as following:
 
@@ -102,7 +98,7 @@ The design includes two main flows:
     4. **Fanout Workers:** Workers retrieve data from the message queue and update the news feed cache. The cache stores `<post_id, user_id>` mappings instead of full user and post objects to save memory.
     5. **Store in News Feed Cache:** Append new post IDs to the friends’ news feed cache. A configurable limit ensures that only recent posts are stored, as most users focus on the latest content, keeping cache memory consumption manageable.
 
-        <img src="./images/fanout-service.png" alt="Fanout Service" width="500">
+        ![image]({{system.baseurl}}/assets/images/System%20Design/11.%20News%20Feed%20System/images/fanout-service.png)
 
 ## News Feed Retrieval Deep Dive
 
@@ -114,7 +110,8 @@ The cache is divided into five layers:
 4. **Action Cache:** Tracks user actions (likes, replies, shares).
 5. **Counter Cache:** Maintains counts for likes, replies, followers, etc.
 
-    <img src="./images/cache-architecture.png" alt="Cache Architecture" width="500">
+    ![image]({{system.baseurl}}/assets/images/System%20Design/11.%20News%20Feed%20System/images/cache-architecture.png)
+    
 ---
 
 ## Key Optimizations

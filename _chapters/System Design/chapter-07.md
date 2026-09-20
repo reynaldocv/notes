@@ -28,10 +28,8 @@ This chapter addresses the challenge of designing a **unique ID generator** for 
 ### 1. Multi-Master Replication
 - **Approach:** Use database `auto_increment` with step increments (e.g., `+k` for k servers).
 
-    <p align="left">
-    <img src="./images/multi-master.png"  alt="Multi Master" width="400">
-    </p>
-
+    ![image]({{sytem.baseurl}}/assets/images/System%20Design/07.%20Unique-Id%20Generator/images/multi-master.png)
+    
 - **Drawbacks:**
   - Hard to scale across data centers.
   - IDs do not always increase with time.
@@ -42,9 +40,7 @@ This chapter addresses the challenge of designing a **unique ID generator** for 
     - Generate 128-bit unique identifiers independently on each server using UUID.
     - UUIDs can be generated independently without coordination between servers
 
-        <p align="left">
-        <img src="./images/uuid.png"  alt="UUID generator" width="600">
-        </p>
+        ![image]({{sytem.baseurl}}/assets/images/System%20Design/07.%20Unique-Id%20Generator/images/uuid.png)
 
 - **Advantages:**
   - No coordination needed between servers.
@@ -57,9 +53,7 @@ This chapter addresses the challenge of designing a **unique ID generator** for 
 ### 3. Ticket Server
 - **Approach:** Use a centralized database server to increment and assign IDs.
 
-    <p align="left">
-    <img src="./images/ticket-server.png"  alt="UUID generator" width="500">
-    </p>
+    ![image]({{sytem.baseurl}}/assets/images/System%20Design/07.%20Unique-Id%20Generator/images/ticket-server.png)
 
 - **Advantages:**
   - Simple to implement for small-scale systems.
@@ -71,12 +65,9 @@ This chapter addresses the challenge of designing a **unique ID generator** for 
 ### 4. Twitter Snowflake Approach
 - **Approach:** 
 
-    <div style="margin-left:3rem">
-      <img src="./images/twitter-snowflake.png"  alt="Snowflake approach" width="500">
-    </div>
-    <div style="margin-left:3rem">
-      <img src="./images/snowflake-id-breakdown.png"  alt="Snowflake ID breakdow" width="500">
-    </div>
+    ![image]({{sytem.baseurl}}/assets/images/System%20Design/07.%20Unique-Id%20Generator/images/twitter-snowflake.png)
+    
+    ![image]({{sytem.baseurl}}/assets/images/System%20Design/07.%20Unique-Id%20Generator/images/snowflake-id-breakdown.png)
 
     - Divide IDs into sections to ensure uniqueness and scalability.
     - **Sign Bit (1 bit):** Always `0`, potentially distinguishing signed and unsigned numbers.
