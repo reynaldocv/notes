@@ -2,7 +2,7 @@
 layout: home
 chapter: "Design a Chat System"
 course: "System Design"
-permalink: "sysDes-07/"
+permalink: "sysDes-12/"
 ---
 
 # Chapter 12: Design a Chat System
