@@ -1,8 +1,8 @@
 ---
 layout: home
-chapter: "Design a Unique ID Generator in Distributed Systems"
+chapter: "Nearby Friends"
 course: "System Design"
-permalink: "sysDes-07/"
+permalink: "sysDes-17/"
 ---
 
 # Chapter 17: Nearby Friends

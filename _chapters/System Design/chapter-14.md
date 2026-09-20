@@ -1,8 +1,8 @@
 ---
 layout: home
-chapter: "Design a Unique ID Generator in Distributed Systems"
+chapter: "Design YouTube"
 course: "System Design"
-permalink: "sysDes-07/"
+permalink: "sysDes-14/"
 ---
 
 # Chapter 14: Design YouTube

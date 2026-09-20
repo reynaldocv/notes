@@ -1,8 +1,8 @@
 ---
 layout: home
-chapter: "Design a Unique ID Generator in Distributed Systems"
+chapter: "Proximity Service"
 course: "System Design"
-permalink: "sysDes-07/"
+permalink: "sysDes-16/"
 ---
 
 # Chapter 16: Proximity Service

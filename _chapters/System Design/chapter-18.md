@@ -1,8 +1,8 @@
 ---
 layout: home
-chapter: "Design a Unique ID Generator in Distributed Systems"
+chapter: "Google Maps"
 course: "System Design"
-permalink: "sysDes-07/"
+permalink: "sysDes-18/"
 ---
 
 # Chapter 18: Google Maps

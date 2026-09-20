@@ -1,8 +1,8 @@
 ---
 layout: home
-chapter: "Design a Unique ID Generator in Distributed Systems"
+chapter: "Design Google Drive"
 course: "System Design"
-permalink: "sysDes-07/"
+permalink: "sysDes-15/"
 ---
 
 # Chapter 15: Design Google Drive

@@ -1,8 +1,8 @@
 ---
 layout: home
-chapter: "Design a Unique ID Generator in Distributed Systems"
+chapter: "Distributed Message Queue"
 course: "System Design"
-permalink: "sysDes-07/"
+permalink: "sysDes-19/"
 ---
 
 # Chapter 19: Distributed Message Queue
