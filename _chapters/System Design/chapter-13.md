@@ -41,7 +41,7 @@ At the high-level, the system is broken down into two services:
 ---
 
 ### Data Gathering Service
-   ![image]({{system.baseurl}}/assets/images/System%20Design/13.%20Search%20Autocomplete/images/data-gathering.png)
+   ![image]({{site.baseurl}}/assets/images/System%20Design/13.%20Search%20Autocomplete/images/data-gathering.png)
 
 - Aggregates query data from analytics logs and updates the frequency table.
 - Processes historical data weekly to build a **trie** (prefix tree).
@@ -50,9 +50,9 @@ At the high-level, the system is broken down into two services:
 
 
 ### Query Service
-![image]({{system.baseurl}}/assets/images/System%20Design/13.%20Search%20Autocomplete/images/frequency-table.png)
+![image]({{site.baseurl}}/assets/images/System%20Design/13.%20Search%20Autocomplete/images/frequency-table.png)
 
-![image]({{system.baseurl}}/assets/images/System%20Design/13.%20Search%20Autocomplete/images/basic-search-suggestions.png)
+![image]({{site.baseurl}}/assets/images/System%20Design/13.%20Search%20Autocomplete/images/basic-search-suggestions.png)
 
 - Uses the frequency table from data gathering service.
 - Processes user input and retrieves top-k suggestions from the frequency table using a Trie.
@@ -72,7 +72,7 @@ The **trie** is a tree-like data structure used to store and retrieve query stri
 2. **Frequency Information:** Stores the popularity of queries at each node.
 
 4. **Steps to get top k most searched queries**
-   ![image]({{system.baseurl}}/assets/images/System%20Design/13.%20Search%20Autocomplete/images/trie-structure.png)
+   ![image]({{site.baseurl}}/assets/images/System%20Design/13.%20Search%20Autocomplete/images/trie-structure.png)
 
     - Find the prefix
     - Traverse the subtree from prefix node to get all valid children
@@ -82,7 +82,7 @@ The **trie** is a tree-like data structure used to store and retrieve query stri
 3. **Optimizations:**
    - Cache top-k queries at each node to speed up retrieval and avoid traversing the whole trie.
 
-        ![image]({{system.baseurl}}/assets/images/System%20Design/13.%20Search%20Autocomplete/images/cached-trie.png)
+        ![image]({{site.baseurl}}/assets/images/System%20Design/13.%20Search%20Autocomplete/images/cached-trie.png)
 
    - Limit prefix length to reduce search space as users rarely type a loong search query (say 50).
 
@@ -93,7 +93,7 @@ The **trie** is a tree-like data structure used to store and retrieve query stri
 2. **Update:** Rarely updated in real-time; weekly updates replace old data.
 3. **Delete:** 
 
-      ![image]({{system.baseurl}}/assets/images/System%20Design/13.%20Search%20Autocomplete/images/delete-kv.png)
+      ![image]({{site.baseurl}}/assets/images/System%20Design/13.%20Search%20Autocomplete/images/delete-kv.png)
 
     - Filters remove unwanted or harmful suggestions (e.g., hate speech).
     - Having a filter layer gives us the flexibility of removing results based on different filter rules.
@@ -133,7 +133,7 @@ In the high-level design, whenever a user types a search query, data is updated 
 
 #### Updated Design
 
-![image]({{system.baseurl}}/assets/images/System%20Design/13.%20Search%20Autocomplete/images/data-gathering-flow.png)
+![image]({{site.baseurl}}/assets/images/System%20Design/13.%20Search%20Autocomplete/images/data-gathering-flow.png)
 
 1. **Analytics Logs:**
    - Stores raw query data as logs for weekly aggregation.
@@ -153,7 +153,7 @@ In the high-level design, whenever a user types a search query, data is updated 
             - Every prefix in the trie is mapped to a key in a hash table.
             - Data on each trie node is mapped to a value in a hash table.
 
-               ![image]({{system.baseurl}}/assets/images/System%20Design/13.%20Search%20Autocomplete/images/trie-db.png)
+               ![image]({{site.baseurl}}/assets/images/System%20Design/13.%20Search%20Autocomplete/images/trie-db.png)
                
 ---
 
@@ -163,7 +163,7 @@ In the high-level design, whenever a user types a search query, data is updated 
    - Further shard within prefixes to balance uneven distributions (e.g., `aa-ag`, `ah-an`).
 2. **Load Balancing:**
 
-   ![image]({{system.baseurl}}/assets/images/System%20Design/13.%20Search%20Autocomplete/images/sharding.png)
+   ![image]({{site.baseurl}}/assets/images/System%20Design/13.%20Search%20Autocomplete/images/sharding.png)
 
    - Use a shard map manager to route requests to the appropriate server.
 

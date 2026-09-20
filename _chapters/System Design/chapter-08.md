@@ -30,7 +30,7 @@ This chapter discusses the design of a URL shortening service like TinyURL. The 
    - Endpoint: `GET api/v1/shortUrl`  
    - Returns: `longURL` for redirection.
 
-    ![image]({{system.baseurl}}/assets/images/System%20Design/08.%20URL%20Shortener/images/url-redirection.png)
+    ![image]({{site.baseurl}}/assets/images/System%20Design/08.%20URL%20Shortener/images/url-redirection.png)
     
 ### URL Redirection
 - **301 Redirect:**  A 301 redirect shows that the requested URL is “permanently” moved to the long URL. The browser caches the response, and
@@ -38,7 +38,7 @@ subsequent requests for the same URL will not be sent to the URL shortening serv
 - **302 Redirect:** Temporary; useful for analytics like tracking clicks.
 
 ### URL Shortening
-![image]({{system.baseurl}}/assets/images/System%20Design/08.%20URL%20Shortener/images/url-shortening.png)
+![image]({{site.baseurl}}/assets/images/System%20Design/08.%20URL%20Shortener/images/url-shortening.png)
 
 - Use a **hash function** to generate a short URL, mapping long URLs to unique shortened versions.
 - The hash function must satisfy the following requirements:
@@ -56,7 +56,7 @@ Store `<shortURL, longURL>` mappings in a relational database to optimize memory
 - `shortURL`,
 - `longURL`.
 
-    ![image]({{system.baseurl}}/assets/images/System%20Design/08.%20URL%20Shortener/images/table-schema.png)
+    ![image]({{site.baseurl}}/assets/images/System%20Design/08.%20URL%20Shortener/images/table-schema.png)
 
 ### Hash Function
 #### 1. Base 62 Conversion:
@@ -72,13 +72,13 @@ Convert ID `2009215674938` to Base 62:
 #### 2. Hash + Collision Resolution:
 - Use hash functions like CRC32, MD5, or SHA-1.
 
-    ![image]({{system.baseurl}}/assets/images/System%20Design/08.%20URL%20Shortener/images/hash-function.png)
+    ![image]({{site.baseurl}}/assets/images/System%20Design/08.%20URL%20Shortener/images/hash-function.png)
     
 - One approach is to collect the first 7 characters of a hash value; however, this method can lead to hash collisions.
 - To resolve collisions,recursively append a new predefined string until no more collision but this can be expensive.
 - Resolve collisions with **Bloom Filters** for efficient lookup.
 
-    ![image]({{system.baseurl}}/assets/images/System%20Design/08.%20URL%20Shortener/images/url-lookup.png)
+    ![image]({{site.baseurl}}/assets/images/System%20Design/08.%20URL%20Shortener/images/url-lookup.png)
 
 ### Comparison
 
@@ -99,7 +99,7 @@ Convert ID `2009215674938` to Base 62:
 
 ### URL Shortening Flow
 
-![image]({{system.baseurl}}/assets/images/System%20Design/08.%20URL%20Shortener/images/url-shortening-flow.png)
+![image]({{site.baseurl}}/assets/images/System%20Design/08.%20URL%20Shortener/images/url-shortening-flow.png)
 
 1. Check if `longURL` exists in the database.
 2. If found, return the existing `shortURL`.
@@ -113,7 +113,7 @@ Convert ID `2009215674938` to Base 62:
 ---
 
 ### URL Redirecting Flow
-![image]({{system.baseurl}}/assets/images/System%20Design/08.%20URL%20Shortener/images/url-redirecting-flow.png)
+![image]({{site.baseurl}}/assets/images/System%20Design/08.%20URL%20Shortener/images/url-redirecting-flow.png)
 
 1. User clicks a `shortURL`.
 2. Query `<shortURL, longURL>` mapping:
