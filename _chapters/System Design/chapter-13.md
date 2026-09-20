@@ -162,9 +162,8 @@ In the high-level design, whenever a user types a search query, data is updated 
    - Distribute trie nodes across servers based on prefix ranges (e.g., `a-m`, `n-z`).
    - Further shard within prefixes to balance uneven distributions (e.g., `aa-ag`, `ah-an`).
 2. **Load Balancing:**
-   <div style="margin-left:3rem">
-      <img src="{{system.baseurl}}/assets/images/System%20Design/13.%20Search%20Autocomplete/images/sharding.png" alt="Sharding" width="400">
-   </div>
+
+   ![image]({{system.baseurl}}/assets/images/System%20Design/13.%20Search%20Autocomplete/images/sharding.png)
 
    - Use a shard map manager to route requests to the appropriate server.
 
