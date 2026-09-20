@@ -32,4 +32,7 @@ Cryptographic protocols: These are formalized procedures that use cryptographic 
 
 - Zero Knowledge proofs: A zero-knowledge proof is a cryptographic method by which one party (the prover) can prove to another party (the verifier) that they know a value (e.g., a password), without revealing any information about the value itself. This is useful for authentication and privacy-preserving protocols.
 
+- Post-quantum cryptography: Post-quantum cryptography refers to cryptographic algorithms that are designed to be secure against the potential threats posed by quantum computers. Quantum computers have the potential to break many of the widely used cryptographic algorithms, such as RSA and ECC, which rely on the difficulty of certain mathematical problems. Post-quantum cryptography aims to develop new algorithms that can withstand attacks from quantum computers, ensuring the security of sensitive information in a post-quantum era.
+
+- Homorphic encryption: Homomorphic encryption is a form of encryption that allows computations to be performed on encrypted data without needing to decrypt it first. This means that sensitive data can be processed and analyzed while remaining encrypted, preserving privacy and security. Homomorphic encryption has applications in secure data analysis, cloud computing, and privacy-preserving machine learning.
 
