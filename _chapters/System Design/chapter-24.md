@@ -1,3 +1,10 @@
+---
+layout: home
+chapter: "S3-like Object Storage"
+course: "System Design"
+permalink: "sysDes-24/"
+---
+
 # Chapter 24: S3-like Object Storage
 
 ## Introduction

@@ -1,3 +1,10 @@
+---
+layout: home
+chapter: "Stock Exchange"
+course: "System Design"
+permalink: "sysDes-28/"
+---
+
 # Chapter 28: Stock Exchange
 
 ## Introduction

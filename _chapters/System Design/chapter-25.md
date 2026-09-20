@@ -1,3 +1,10 @@
+---
+layout: home
+chapter: "Real-time Gaming Leaderboard"
+course: "System Design"
+permalink: "sysDes-25/"
+---
+
 # Chapter 25: Real-time Gaming Leaderboard
 
 ## Introduction

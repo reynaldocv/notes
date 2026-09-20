@@ -1,3 +1,10 @@
+---
+layout: home
+chapter: "Ad Click Event Aggregation"
+course: "System Design"
+permalink: "sysDes-21/"
+---
+
 # Chapter 21: Ad Click Event Aggregation
 
 ## Introduction

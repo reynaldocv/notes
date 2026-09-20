@@ -1,3 +1,10 @@
+---
+layout: home
+chapter: "Digital Wallet"
+course: "System Design"
+permalink: "sysDes-27/"
+---
+
 # Chapter 27: Digital Wallet
 
 ## Introduction

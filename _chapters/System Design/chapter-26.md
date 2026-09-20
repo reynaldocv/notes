@@ -1,3 +1,10 @@
+---
+layout: home
+chapter: "Payment System"
+course: "System Design"
+permalink: "sysDes-26/"
+---
+
 # Chapter 26: Payment System
 
 ## Introduction

@@ -1,3 +1,10 @@
+---
+layout: home
+chapter: "Hotel Reservation System"
+course: "System Design"
+permalink: "sysDes-22/"
+---
+
 # Chapter 22: Hotel Reservation System
 
 ## Introduction

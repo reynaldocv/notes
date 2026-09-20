@@ -1,4 +1,12 @@
+---
+layout: home
+chapter: "Design a Unique ID Generator in Distributed Systems"
+course: "System Design"
+permalink: "sysDes-07/"
+---
+
 # Chapter 20: Metrics Monitoring and Alerting System
+
 
 ## Introduction
 This chapter focuses on designing a highly scalable **metrics monitoring and alerting system**, which is critical for ensuring high availability and reliability.
