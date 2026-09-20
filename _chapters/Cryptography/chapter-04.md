@@ -2,6 +2,5 @@
 layout: home
 chapter: "CKKS"
 course: "Cryptogrphy"
-permalink: "crypto-ckks/"
+permalink: "crypto-04/"
 ---
-this is capitulo 03 01 
