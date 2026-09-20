@@ -2,7 +2,7 @@
 layout: home
 chapter: "Design a Unique ID Generator in Distributed Systems"
 course: "System Design"
-permalink: "sysDes-07/"
+permalink: "sysDes-20/"
 ---
 
 # Chapter 20: Metrics Monitoring and Alerting System
