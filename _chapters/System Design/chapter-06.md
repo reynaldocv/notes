@@ -104,13 +104,10 @@ vector locks are used to solve inconsistency problems.
 - **Versioning:** 
     - Use **vector clocks** to track data versions and resolve conflicts.
     - Versioning means treating each data modification as a new immutable version of data.
-        <div>        
         
         ![image]({{site.baseurl}}/assets/images/System%20Design/06.%20Key-Value%20Store/images/consistent-server.png)        
         ![image]({{site.baseurl}}/assets/images/System%20Design/06.%20Key-Value%20Store/images/inconsistent-server.png)
         
-        </div>
-    
     - Server 1 changes the name , and server 2 also changes the name. These two changes are performed simultaneously. Now, we have conflicting values, called versions v1 and v2.
 
 
