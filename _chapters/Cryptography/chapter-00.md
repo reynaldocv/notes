@@ -2,8 +2,7 @@
 layout: home
 chapter: "Pre-concepts"
 course: "Cryptography"
-permalink: "crypto-01/"
-sort_by_number: 1 
+permalink: "crypto-00/"
 ---
 
 # What is the cryptography?
