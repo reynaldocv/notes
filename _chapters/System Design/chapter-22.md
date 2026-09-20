@@ -195,6 +195,7 @@ reservation management and easier queries.
 The rows in the table are pre-populated using a daily CRON job.
 
 Sample data:
+
 | hotel_id | room_type_id | date       | total_inventory | total_reserved |
 |----------|--------------|------------|-----------------|----------------|
 | 211      | 1001         | 2021-06-01 | 100             | 80             |
