@@ -3,9 +3,8 @@ layout: home
 chapter: "Distributed Email Service"
 course: "System Design"
 permalink: "sysDes-23/"
----# Chapter 23: Distributed Email Service
-
-
+---
+# Chapter 23: Distributed Email Service
 
 ## Introduction
 

@@ -1,8 +1,8 @@
 ---
 layout: home
-chapter: "Design a Unique ID Generator in Distributed Systems"
+chapter: "Design a Web Crawler"
 course: "System Design"
-permalink: "sysDes-07/"
+permalink: "sysDes-09/"
 ---
 
 # Chapter 9: Design a Web Crawler

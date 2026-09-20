@@ -1,8 +1,8 @@
 ---
 layout: home
-chapter: "Design a Unique ID Generator in Distributed Systems"
+chapter: "Design a Search Autocomplete System"
 course: "System Design"
-permalink: "sysDes-07/"
+permalink: "sysDes-13/"
 ---
 
 # Chapter 13: Design a Search Autocomplete System

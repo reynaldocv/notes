@@ -1,6 +1,6 @@
 ---
 layout: home
-chapter: "Design a Unique ID Generator in Distributed Systems"
+chapter: "Design a Chat System"
 course: "System Design"
 permalink: "sysDes-07/"
 ---

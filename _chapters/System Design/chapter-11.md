@@ -1,8 +1,8 @@
 ---
 layout: home
-chapter: "Design a Unique ID Generator in Distributed Systems"
+chapter: "Design a News Feed System"
 course: "System Design"
-permalink: "sysDes-07/"
+permalink: "sysDes-11/"
 ---
 
 # Chapter 11: Design a News Feed System

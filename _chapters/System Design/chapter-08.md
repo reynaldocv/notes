@@ -1,8 +1,8 @@
 ---
 layout: home
-chapter: "Design a Unique ID Generator in Distributed Systems"
+chapter: "Design a URL Shortener"
 course: "System Design"
-permalink: "sysDes-07/"
+permalink: "sysDes-08/"
 ---
 
 # Chapter 8: Design a URL Shortener
