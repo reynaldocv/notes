@@ -42,7 +42,9 @@ A **distributed key-value store** partitions data across multiple servers and mu
 
 **Trade-off:** According to CAP theorem only two of the three guarantees can be achieved.
 
-![image]({{site.baseurl}}/assets/images/System%20Design/06.%20Key-Value%20Store/images/cap.png)
+<p align="center">
+  <img src="{{site.baseurl}}/assets/images/System Design/06. Design a Key-Value Store/images/cap.png" alt="CAP" width="400">
+</p>
 
 #### System Types:
 - **CP Systems:** Consistency and partition tolerance while sacrificing availability (e.g., banking systems).
@@ -54,7 +56,9 @@ A **distributed key-value store** partitions data across multiple servers and mu
     In a distributed system, partitions are inevitable. When a partition occurs, we must choose between consistency and availability. For example, if node n3 goes down, 
     any data written to nodes n1 or n2 cannot be propagated to n3. Conversely, if data is written to n3 but not yet propagated to n1 and n2, nodes n1 and n2 will have stale data.
 
-![image]({{site.baseurl}}/assets/images/System%20Design/06.%20Key-Value%20Store/images/server-down.png)
+    <p align="center">
+    <img src="{{site.baseurl}}/assets/images/System Design/06. Design a Key-Value Store/images/server-down.png"  alt="Server down" width="400">
+    </p>
     
 - If we choose CP system, we must block all write operations to n1 and n2 to avoid data inconsistency.
 - If we choose AP system, the system keeps accepting reads, even though it might return stale data. 
@@ -74,7 +78,9 @@ and data will be synced to n3 when the network partition is resolved.
 - Replicate data across `N` servers for high availability.
 - The N servers are chosen by walking clockwise from the server position and choose the first N servers on the ring to store data copies.Place replicas in distinct data centers to improve reliability in case of virtual nodes.
 
-    ![image]({{site.baseurl}}/assets/images/System%20Design/06.%20Key-Value%20Store/images/data-replication.png)
+    <p align="center">
+    <img src="{{site.baseurl}}/assets/images/System Design/06. Design a Key-Value Store/images/data-replication.png" alt="Data replication" width="300">
+    </p>
 
 ### 3. Consistency
 Since data is replicated at multiple nodes, it must be synchronized across replicas.
@@ -85,7 +91,9 @@ Since data is replicated at multiple nodes, it must be synchronized across repli
   - **Rule:** `W + R > N` ensures strong consistency.
   - The configuration of W, R and N is a typical tradeoff between latency and consistency. 
 
-    ![image]({{site.baseurl}}/assets/images/System%20Design/06.%20Key-Value%20Store/images/quorum-consensus.png)
+    <p align="center">
+    <img src="{{site.baseurl}}/assets/images/System Design/06. Design a Key-Value Store/images/quorum-consensus.png"   alt="Quorum consensus" width="400">
+    </p>
     
     - If R = 1 and W = N, the system is optimized for a fast read.
     - If W = 1 and R = N, the system is optimized for fast write.
@@ -104,10 +112,11 @@ vector locks are used to solve inconsistency problems.
 - **Versioning:** 
     - Use **vector clocks** to track data versions and resolve conflicts.
     - Versioning means treating each data modification as a new immutable version of data.
-        
-        ![image]({{site.baseurl}}/assets/images/System%20Design/06.%20Key-Value%20Store/images/consistent-server.png)        
-        ![image]({{site.baseurl}}/assets/images/System%20Design/06.%20Key-Value%20Store/images/inconsistent-server.png)
-        
+        <div>
+        <img src="{{site.baseurl}}/assets/images/System Design/06. Design a Key-Value Store/images/consistent-server.png"   alt="Consisten hashing" width="400">
+        <img src="{{site.baseurl}}/assets/images/System Design/06. Design a Key-Value Store/images/inconsistent-server.png"   alt="Inconsistent server" height="230">
+        </div>
+    
     - Server 1 changes the name , and server 2 also changes the name. These two changes are performed simultaneously. Now, we have conflicting values, called versions v1 and v2.
 
 
@@ -128,7 +137,9 @@ vector locks are used to solve inconsistency problems.
 
     4. **Conflict Resolution:** When conflicts are detected (sibling versions), the system relies on application-specific logic or client intervention to   reconcile the data.
 
-        ![image]({{site.baseurl}}/assets/images/System%20Design/06.%20Key-Value%20Store/images/vector-clock.png)
+        <p align="center">
+        <img src="{{site.baseurl}}/assets/images/System Design/06. Design a Key-Value Store/images/vector-clock.png"  alt="Server hashing" width="500">
+        </p>
 
 - **Challenges:**
   - Increased complexity for clients.
@@ -140,7 +151,9 @@ vector locks are used to solve inconsistency problems.
 #### a. Failure Detection
 It is insufficient to believe that a server is down because another server says so.Usually, it requires at least two independent sources of information to mark a server down.
 - **Gossip Protocol:**
-    ![image]({{site.baseurl}}/assets/images/System%20Design/06.%20Key-Value%20Store/images/gossip-protocol.png)
+    <div style="margin-left:3rem">
+        <img src="{{site.baseurl}}/assets/images/System Design/06. Design a Key-Value Store/images/gossip-protocol.png"  alt="Gossip protocol" width="600">
+    </div>
 
     - Each node maintains member IDs and heartbeat counters.
     - Each node periodically increments its heartbeat counter.
@@ -152,7 +165,9 @@ It is insufficient to believe that a server is down because another server says 
 
 #### b. Temporary Failures
 - **Sloppy Quorum:** Use healthy nodes to maintain operations temporarily.
-        ![image]({{site.baseurl}}/assets/images/System%20Design/06.%20Key-Value%20Store/images/sloppy-quorum.png)
+        <p align="center">
+        <img src="{{site.baseurl}}/assets/images/System Design/06. Design a Key-Value Store/images/sloppy-quorum.png"   alt="Sloppy Quorum" width="400">
+        </p>
 
     - After detecting failures, the system needs to deploy certain mechanisms to ensure availability
     - Instead of enforcing the quorum requirement, the system chooses the first W healthy servers for writes and first R
@@ -176,19 +191,19 @@ It is insufficient to believe that a server is down because another server says 
     2. **Building a Merkle Tree:**
         - **Step 1:** Divide the key space into buckets.
             
-            ![image]({{site.baseurl}}/assets/images/System%20Design/06.%20Key-Value%20Store/images/key-bucket.png)
+            <img src="{{site.baseurl}}/assets/images/System Design/06. Design a Key-Value Store/images/key-bucket.png"   alt="Key Bucket" width="500">
 
         - **Step 2:** Hash each key in a bucket using uniform hashing.
 
-            ![image]({{site.baseurl}}/assets/images/System%20Design/06.%20Key-Value%20Store/images/hash-key-bucket.png)
+            <img src="{{site.baseurl}}/assets/images/System Design/06. Design a Key-Value Store/images/hash-key-bucket.png"   alt="Hash Key Bucket" width="500">
 
         - **Step 3:** Create a single hash for each bucket.
         
-           ![image]({{site.baseurl}}/assets/images/System%20Design/06.%20Key-Value%20Store/images/hash-bucket.png)
-            
+            <img src="{{site.baseurl}}/assets/images/System Design/06. Design a Key-Value Store/images/hash-bucket.png"   alt="Hash Bucket" width="500">
+
         - **Step 4:** Combine hashes of buckets to compute higher-level hashes, culminating in the root hash.
 
-            ![image]({{site.baseurl}}/assets/images/System%20Design/06.%20Key-Value%20Store/images/merkel-tree.png)
+            <img src="{{site.baseurl}}/assets/images/System Design/06. Design a Key-Value Store/images/merkel-tree.png"   alt="Merkel Tree" width="500">
 
 
 
@@ -213,7 +228,9 @@ It is insufficient to believe that a server is down because another server says 
 ## Write and Read Paths
 ### 1. Write Path (Based on Cassandra architecture)
 
-![image]({{site.baseurl}}/assets/images/System%20Design/06.%20Key-Value%20Store/images/write-path.png)
+<div style="margin-left:3rem">
+    <img src="{{site.baseurl}}/assets/images/System Design/06. Design a Key-Value Store/images/write-path.png"   alt="Hash Bucket" width="500">
+</div>
 
 - Persist the write in a **commit log**.
 - Save data to a **memory cache**.
@@ -222,9 +239,10 @@ It is insufficient to believe that a server is down because another server says 
    
 
 ### 2. Read Path
-
-   ![image]({{site.baseurl}}/assets/images/System%20Design/06.%20Key-Value%20Store/images/read-path.png)
-   ![image]({{site.baseurl}}/assets/images/System%20Design/06.%20Key-Value%20Store/images/read-path-without-cache.png)
+<div style="margin-left:3rem">
+    <img src="{{site.baseurl}}/assets/images/System Design/06. Design a Key-Value Store/images/read-path.png"   alt="Hash Bucket" width="500">
+    <img src="{{site.baseurl}}/assets/images/System Design/06. Design a Key-Value Store/images/read-path-without-cache.png"   alt="Hash Bucket" width="500">
+</div>
 
 - Check **memory cache** for the data.
 - If absent, use a **Bloom Filter** to locate the data in SSTables.
@@ -235,7 +253,10 @@ It is insufficient to believe that a server is down because another server says 
 
 ## Final Architecture
 
-![image]({{site.baseurl}}/assets/images/System%20Design/06.%20Key-Value%20Store/images/final-architecture.png)
+<p align="center">
+<img src="{{site.baseurl}}/assets/images/System Design/06. Design a Key-Value Store/images/final-architecture.png"   alt="Hash Bucket" width="500">
+</p>
+
 
 -  Clients communicate with the key-value store through simple APIs: get(key) and put(key,
 value).
@@ -244,5 +265,7 @@ value).
 - The system is completely decentralized so adding and moving nodes can be automatic.
 - Data is replicated at multiple nodes.
 - There is no single point of failure as every node has the same set of responsibilities.
+
+
 
 
