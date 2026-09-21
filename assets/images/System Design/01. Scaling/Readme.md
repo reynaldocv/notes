@@ -1,9 +1,3 @@
----
-layout: home
-chapter: "Scaling"
-course: "System Design"
-permalink: "sysDes-01/"
----
 # Chapter 1: Scale from Zero to Millions of Users
 
 ## Introduction
@@ -15,7 +9,7 @@ Scaling a system to support millions of users is a complex, iterative journey re
 Initially, all components (web app, database, cache) run on a single server. 
 
 <div style="margin-left:3rem">
-   <img src="{{site.baseurl}}/assets/images/System Design/01. Scaling/images/single-server.png" width="400" />
+   <img src="./images/single-server.png" width="400" />
 </div>
 
 ### Request Flow
@@ -33,7 +27,7 @@ Initially, all components (web app, database, cache) run on a single server.
 As the user base grows, the database is moved to a dedicated server to allow independent scaling of web and database tiers.
 
 <div style="margin-left:3rem">
-   <img src="{{site.baseurl}}/assets/images/System Design/01. Scaling/images/database.png" width="400" />
+   <img src="./images/database.png" width="400" />
 </div>
 
 ### Database Choices
@@ -66,7 +60,7 @@ As the user base grows, the database is moved to a dedicated server to allow ind
 ## Section 4: Load Balancer
 
 <div style="margin-left:3rem">
-   <img src="{{site.baseurl}}/assets/images/System Design/01. Scaling/images/load-balancer.png" width="400" />
+   <img src="./images/load-balancer.png" width="400" />
 </div>
 
 A **load balancer** distributes traffic among multiple servers. Benefits include:
@@ -80,7 +74,7 @@ A **load balancer** distributes traffic among multiple servers. Benefits include
 ## Section 5: Database Replication
 
 <div style="margin-left:3rem">
-   <img src="{{site.baseurl}}/assets/images/System Design/01. Scaling/images/database-replication.png" width="400" />
+   <img src="./images/database-replication.png" width="400" />
 </div>
 
 ### Master-Slave Model
@@ -111,7 +105,7 @@ recovery scripts (methods like multi-masters and circular replication could help
 A **cache** stores frequently accessed data in memory to reduce database load. The cache tier is a temporary data store layer, much faster than the database. 
 
 <div style="margin-left:3rem">
-   <img src="{{site.baseurl}}/assets/images/System Design/01. Scaling/images/cache.png" width="500" />
+   <img src="./images/cache.png" width="500" />
 </div>
 
 ### Caching considerations
@@ -130,7 +124,7 @@ cache servers across different data centers are recommended to avoid SPOF.
 A **CDN** improves load times by caching static content (images, CSS, JavaScript) on geographically distributed servers.
 
 <div style="margin-left:3rem">
-   <img src="{{site.baseurl}}/assets/images/System Design/01. Scaling/images/cdn.png" width="400" />
+   <img src="./images/cdn.png" width="400" />
 </div>
 
 ### Workflow
@@ -153,7 +147,7 @@ By moving session data to a shared datastore, web servers become stateless. This
 2. Auto-scaling based on traffic.
 
 <div style="margin-left:3rem">
-   <img src="{{site.baseurl}}/assets/images/System Design/01. Scaling/images/stateless.png" width="400" />
+   <img src="./images/stateless.png" width="400" />
 </div>
 
 ---
@@ -162,7 +156,7 @@ By moving session data to a shared datastore, web servers become stateless. This
 Deploying across multiple data centers improves availability and reduces latency. Strategies include:
 
 <div style="margin-left:3rem">
-   <img src="{{site.baseurl}}/assets/images/System Design/01. Scaling/images/data-center.png" width="400" />
+   <img src="./images/data-center.png" width="400" />
 </div>
 
 1. **GeoDNS Routing:** Direct users to the nearest data center.
@@ -180,7 +174,7 @@ A **message queue** is a durable component, stored in memory, that supports asyn
 communication. It serves as a buffer and distributes asynchronous requests.
 
 <div style="margin-left:3rem">
-   <img src="{{site.baseurl}}/assets/images/System Design/01. Scaling/images//message-queue.png" width="500" />
+   <img src="./images//message-queue.png" width="500" />
 </div>
 
 - Input services, called producers/publishers, create messages, and publish them to a message queue.
@@ -191,7 +185,7 @@ communication. It serves as a buffer and distributes asynchronous requests.
 ## Section 11: Logging, Metrics, and Automation
 
 <div style="margin-left:3rem">
-   <img src="{{site.baseurl}}/assets/images/System Design/01. Scaling/images/logging.png" width="400" />
+   <img src="./images/logging.png" width="400" />
 </div>
 
 ### Importance
@@ -211,7 +205,7 @@ communication. It serves as a buffer and distributes asynchronous requests.
 ### Horizontal Scaling (Sharding)
 
 <div style="margin-left:3rem">
-   <img src="{{site.baseurl}}/assets/images/System Design/01. Scaling/images/horizontal-scaling.png" width="400" />
+   <img src="./images/horizontal-scaling.png" width="400" />
 </div>
 
 - Divides data across multiple shards using keys (e.g., `user_id`).
