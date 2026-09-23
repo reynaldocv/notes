@@ -43,7 +43,7 @@ A **distributed key-value store** partitions data across multiple servers and mu
 **Trade-off:** According to CAP theorem only two of the three guarantees can be achieved.
 
 <p align="center">
-  <img src="{{site.baseurl}}/assets/images/System Design/06. Design a Key-Value Store/images/cap.png" alt="CAP" width="400">
+  <img src="{{site.baseurl}}/assets/images/System Design/06. Key-Value Store/images/cap.png" alt="CAP" width="400">
 </p>
 
 #### System Types:
@@ -57,7 +57,7 @@ A **distributed key-value store** partitions data across multiple servers and mu
     any data written to nodes n1 or n2 cannot be propagated to n3. Conversely, if data is written to n3 but not yet propagated to n1 and n2, nodes n1 and n2 will have stale data.
 
     <p align="center">
-    <img src="{{site.baseurl}}/assets/images/System Design/06. Design a Key-Value Store/images/server-down.png"  alt="Server down" width="400">
+    <img src="{{site.baseurl}}/assets/images/System Design/06. Key-Value Store/images/server-down.png"  alt="Server down" width="400">
     </p>
     
 - If we choose CP system, we must block all write operations to n1 and n2 to avoid data inconsistency.
@@ -79,7 +79,7 @@ and data will be synced to n3 when the network partition is resolved.
 - The N servers are chosen by walking clockwise from the server position and choose the first N servers on the ring to store data copies.Place replicas in distinct data centers to improve reliability in case of virtual nodes.
 
     <p align="center">
-    <img src="{{site.baseurl}}/assets/images/System Design/06. Design a Key-Value Store/images/data-replication.png" alt="Data replication" width="300">
+    <img src="{{site.baseurl}}/assets/images/System Design/06. Key-Value Store/images/data-replication.png" alt="Data replication" width="300">
     </p>
 
 ### 3. Consistency
@@ -92,7 +92,7 @@ Since data is replicated at multiple nodes, it must be synchronized across repli
   - The configuration of W, R and N is a typical tradeoff between latency and consistency. 
 
     <p align="center">
-    <img src="{{site.baseurl}}/assets/images/System Design/06. Design a Key-Value Store/images/quorum-consensus.png"   alt="Quorum consensus" width="400">
+    <img src="{{site.baseurl}}/assets/images/System Design/06. Key-Value Store/images/quorum-consensus.png"   alt="Quorum consensus" width="400">
     </p>
     
     - If R = 1 and W = N, the system is optimized for a fast read.
@@ -113,8 +113,8 @@ vector locks are used to solve inconsistency problems.
     - Use **vector clocks** to track data versions and resolve conflicts.
     - Versioning means treating each data modification as a new immutable version of data.
         <div>
-        <img src="{{site.baseurl}}/assets/images/System Design/06. Design a Key-Value Store/images/consistent-server.png"   alt="Consisten hashing" width="400">
-        <img src="{{site.baseurl}}/assets/images/System Design/06. Design a Key-Value Store/images/inconsistent-server.png"   alt="Inconsistent server" height="230">
+        <img src="{{site.baseurl}}/assets/images/System Design/06. Key-Value Store/images/consistent-server.png"   alt="Consisten hashing" width="400">
+        <img src="{{site.baseurl}}/assets/images/System Design/06. Key-Value Store/images/inconsistent-server.png"   alt="Inconsistent server" height="230">
         </div>
     
     - Server 1 changes the name , and server 2 also changes the name. These two changes are performed simultaneously. Now, we have conflicting values, called versions v1 and v2.
@@ -138,7 +138,7 @@ vector locks are used to solve inconsistency problems.
     4. **Conflict Resolution:** When conflicts are detected (sibling versions), the system relies on application-specific logic or client intervention to   reconcile the data.
 
         <p align="center">
-        <img src="{{site.baseurl}}/assets/images/System Design/06. Design a Key-Value Store/images/vector-clock.png"  alt="Server hashing" width="500">
+        <img src="{{site.baseurl}}/assets/images/System Design/06. Key-Value Store/images/vector-clock.png"  alt="Server hashing" width="500">
         </p>
 
 - **Challenges:**
@@ -152,7 +152,7 @@ vector locks are used to solve inconsistency problems.
 It is insufficient to believe that a server is down because another server says so.Usually, it requires at least two independent sources of information to mark a server down.
 - **Gossip Protocol:**
     <div style="margin-left:3rem">
-        <img src="{{site.baseurl}}/assets/images/System Design/06. Design a Key-Value Store/images/gossip-protocol.png"  alt="Gossip protocol" width="600">
+        <img src="{{site.baseurl}}/assets/images/System Design/06. Key-Value Store/images/gossip-protocol.png"  alt="Gossip protocol" width="600">
     </div>
 
     - Each node maintains member IDs and heartbeat counters.
@@ -166,7 +166,7 @@ It is insufficient to believe that a server is down because another server says 
 #### b. Temporary Failures
 - **Sloppy Quorum:** Use healthy nodes to maintain operations temporarily.
         <p align="center">
-        <img src="{{site.baseurl}}/assets/images/System Design/06. Design a Key-Value Store/images/sloppy-quorum.png"   alt="Sloppy Quorum" width="400">
+        <img src="{{site.baseurl}}/assets/images/System Design/06. Key-Value Store/images/sloppy-quorum.png"   alt="Sloppy Quorum" width="400">
         </p>
 
     - After detecting failures, the system needs to deploy certain mechanisms to ensure availability
@@ -191,19 +191,19 @@ It is insufficient to believe that a server is down because another server says 
     2. **Building a Merkle Tree:**
         - **Step 1:** Divide the key space into buckets.
             
-            <img src="{{site.baseurl}}/assets/images/System Design/06. Design a Key-Value Store/images/key-bucket.png"   alt="Key Bucket" width="500">
+            <img src="{{site.baseurl}}/assets/images/System Design/06. Key-Value Store/images/key-bucket.png"   alt="Key Bucket" width="500">
 
         - **Step 2:** Hash each key in a bucket using uniform hashing.
 
-            <img src="{{site.baseurl}}/assets/images/System Design/06. Design a Key-Value Store/images/hash-key-bucket.png"   alt="Hash Key Bucket" width="500">
+            <img src="{{site.baseurl}}/assets/images/System Design/06. Key-Value Store/images/hash-key-bucket.png"   alt="Hash Key Bucket" width="500">
 
         - **Step 3:** Create a single hash for each bucket.
         
-            <img src="{{site.baseurl}}/assets/images/System Design/06. Design a Key-Value Store/images/hash-bucket.png"   alt="Hash Bucket" width="500">
+            <img src="{{site.baseurl}}/assets/images/System Design/06. Key-Value Store/images/hash-bucket.png"   alt="Hash Bucket" width="500">
 
         - **Step 4:** Combine hashes of buckets to compute higher-level hashes, culminating in the root hash.
 
-            <img src="{{site.baseurl}}/assets/images/System Design/06. Design a Key-Value Store/images/merkel-tree.png"   alt="Merkel Tree" width="500">
+            <img src="{{site.baseurl}}/assets/images/System Design/06. Key-Value Store/images/merkel-tree.png"   alt="Merkel Tree" width="500">
 
 
 
@@ -229,7 +229,7 @@ It is insufficient to believe that a server is down because another server says 
 ### 1. Write Path (Based on Cassandra architecture)
 
 <div style="margin-left:3rem">
-    <img src="{{site.baseurl}}/assets/images/System Design/06. Design a Key-Value Store/images/write-path.png"   alt="Hash Bucket" width="500">
+    <img src="{{site.baseurl}}/assets/images/System Design/06. Key-Value Store/images/write-path.png"   alt="Hash Bucket" width="500">
 </div>
 
 - Persist the write in a **commit log**.
@@ -240,8 +240,8 @@ It is insufficient to believe that a server is down because another server says 
 
 ### 2. Read Path
 <div style="margin-left:3rem">
-    <img src="{{site.baseurl}}/assets/images/System Design/06. Design a Key-Value Store/images/read-path.png"   alt="Hash Bucket" width="500">
-    <img src="{{site.baseurl}}/assets/images/System Design/06. Design a Key-Value Store/images/read-path-without-cache.png"   alt="Hash Bucket" width="500">
+    <img src="{{site.baseurl}}/assets/images/System Design/06. Key-Value Store/images/read-path.png"   alt="Hash Bucket" width="500">
+    <img src="{{site.baseurl}}/assets/images/System Design/06. Key-Value Store/images/read-path-without-cache.png"   alt="Hash Bucket" width="500">
 </div>
 
 - Check **memory cache** for the data.
@@ -254,7 +254,7 @@ It is insufficient to believe that a server is down because another server says 
 ## Final Architecture
 
 <p align="center">
-<img src="{{site.baseurl}}/assets/images/System Design/06. Design a Key-Value Store/images/final-architecture.png"   alt="Hash Bucket" width="500">
+<img src="{{site.baseurl}}/assets/images/System Design/06. Key-Value Store/images/final-architecture.png"   alt="Hash Bucket" width="500">
 </p>
 
 

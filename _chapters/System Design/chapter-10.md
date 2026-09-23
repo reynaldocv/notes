@@ -43,7 +43,7 @@ The chapter focuses on designing a scalable system capable of sending millions o
 
 2. **Contact Info Gathering:**
    <div style="margin-left:3rem">
-      <img src="{{site.baseurl}}/assets/images/System Design/10. Design a Notification System/images/contact-info-gathering.png" alt="Contact Info Gathering" width="500">
+      <img src="{{site.baseurl}}/assets/images/System Design/10. Notification System/images/contact-info-gathering.png" alt="Contact Info Gathering" width="500">
    </div>
 
    - Collect device tokens, phone numbers, or email addresses during app installation or signup.
@@ -55,7 +55,7 @@ The chapter focuses on designing a scalable system capable of sending millions o
 3. **Notification Sending Flow:**
 
    <div style="margin-left:3rem">
-      <img src="{{site.baseurl}}/assets/images/System Design/10. Design a Notification System/images/high-level-design.png" alt="High Level Design" width="500">
+      <img src="{{site.baseurl}}/assets/images/System Design/10. Notification System/images/high-level-design.png" alt="High Level Design" width="500">
    </div>
 
    - **Trigger Services:**
@@ -77,7 +77,7 @@ The chapter focuses on designing a scalable system capable of sending millions o
 ### Improved Design
 
    <div style="margin-left:3rem">
-      <img src="{{site.baseurl}}/assets/images/System Design/10. Design a Notification System/images/improved-design.png" alt="Improved Design" width="500">
+      <img src="{{site.baseurl}}/assets/images/System Design/10. Notification System/images/improved-design.png" alt="Improved Design" width="500">
    </div>
 
 - Move databases and caches out of the notification server.
@@ -95,7 +95,7 @@ The chapter focuses on designing a scalable system capable of sending millions o
 ### Reliability
 1. **Prevent Data Loss:** 
    <div style="margin-left:3rem">
-   <img src="{{site.baseurl}}/assets/images/System Design/10. Design a Notification System/images/data-loss.png" alt="Data Loss" width="400">
+   <img src="{{site.baseurl}}/assets/images/System Design/10. Notification System/images/data-loss.png" alt="Data Loss" width="400">
    </div>
 
    - Persist notification data in a database and implement a retry mechanism. 
@@ -110,7 +110,7 @@ If seen before discard it, otherwise send out the notification.
 
 ### Additional Components
    <div style="margin-left:3rem">
-   <img src="{{site.baseurl}}/assets/images/System Design/10. Design a Notification System/images/events-tracking.png" alt="Events Tracking" width="400">
+   <img src="{{site.baseurl}}/assets/images/System Design/10. Notification System/images/events-tracking.png" alt="Events Tracking" width="400">
    </div>
 
 1. **Notification Templates:** Preformatted templates for consistent and efficient notifications.
@@ -129,7 +129,7 @@ If seen before discard it, otherwise send out the notification.
 ### Notification Flow
 
    <div style="margin-left:3rem">
-   <img src="{{site.baseurl}}/assets/images/System Design/10. Design a Notification System/images/updated-design.png" alt="Updated Design" width="500">
+   <img src="{{site.baseurl}}/assets/images/System Design/10. Notification System/images/updated-design.png" alt="Updated Design" width="500">
    </div>
 
 1. Trigger services call APIs to send notifications.

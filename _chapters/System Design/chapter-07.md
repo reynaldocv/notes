@@ -28,9 +28,9 @@ This chapter addresses the challenge of designing a **unique ID generator** for 
 - **Approach:** Use database `auto_increment` with step increments (e.g., `+k` for k servers).
 
     <p align="left">
-    <img src="{{site.baseurl}}/assets/images/System Design/07. Design a Unique ID Generator in Distributed Systems/images/multi-master.png"  alt="Multi Master" width="400">
+    <img src="{{site.baseurl}}/assets/images/System Design/07. Unique-Id Generator/images/multi-master.png"  alt="Multi Master" width="400">
     </p>
-
+    
 - **Drawbacks:**
   - Hard to scale across data centers.
   - IDs do not always increase with time.
@@ -42,7 +42,7 @@ This chapter addresses the challenge of designing a **unique ID generator** for 
     - UUIDs can be generated independently without coordination between servers
 
         <p align="left">
-        <img src="{{site.baseurl}}/assets/images/System Design/07. Design a Unique ID Generator in Distributed Systems/images/uuid.png"  alt="UUID generator" width="600">
+        <img src="{{site.baseurl}}/assets/images/System Design/07. Unique-Id Generator/images/uuid.png"  alt="UUID generator" width="600">
         </p>
 
 - **Advantages:**
@@ -57,7 +57,7 @@ This chapter addresses the challenge of designing a **unique ID generator** for 
 - **Approach:** Use a centralized database server to increment and assign IDs.
 
     <p align="left">
-    <img src="{{site.baseurl}}/assets/images/System Design/07. Design a Unique ID Generator in Distributed Systems/images/ticket-server.png"  alt="UUID generator" width="500">
+    <img src="{{site.baseurl}}/assets/images/System Design/07. Unique-Id Generator/images/ticket-server.png"  alt="UUID generator" width="500">
     </p>
 
 - **Advantages:**
@@ -71,10 +71,10 @@ This chapter addresses the challenge of designing a **unique ID generator** for 
 - **Approach:** 
 
     <div style="margin-left:3rem">
-      <img src="{{site.baseurl}}/assets/images/System Design/07. Design a Unique ID Generator in Distributed Systems/images/twitter-snowflake.png"  alt="Snowflake approach" width="500">
+      <img src="{{site.baseurl}}/assets/images/System Design/07. Unique-Id Generator/images/twitter-snowflake.png"  alt="Snowflake approach" width="500">
     </div>
     <div style="margin-left:3rem">
-      <img src="{{site.baseurl}}/assets/images/System Design/07. Design a Unique ID Generator in Distributed Systems/images/snowflake-id-breakdown.png"  alt="Snowflake ID breakdow" width="500">
+      <img src="{{site.baseurl}}/assets/images/System Design/07. Unique-Id Generator/images/snowflake-id-breakdown.png"  alt="Snowflake ID breakdow" width="500">
     </div>
 
     - Divide IDs into sections to ensure uniqueness and scalability.
