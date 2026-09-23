@@ -12,7 +12,7 @@ permalink: "sysDes-25/"
 We are going to design a **leaderboard** for an online mobile game:
 
 <div style="margin-left:3rem">
-    <img src="./images/leaderboard.png" alt="leaderboard" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/25. Real-time Gaming Leaderboard/images/leaderboard.png" alt="leaderboard" width="500" />
 </div>
 
 ---
@@ -123,7 +123,7 @@ Example response:
 ### **High-level architecture**
 
 <div style="margin-left:3rem">
-    <img src="./images/high-level-architecture.png" alt="high-level-architecture" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/25. Real-time Gaming Leaderboard/images/high-level-architecture.png" alt="high-level-architecture" width="500" />
 </div>
 
 - When a player wins a game, client sends a request to the game service
@@ -134,7 +134,7 @@ Example response:
 An alternative design which was considered is the client updating their score directly within the leaderboard service:
 
 <div style="margin-left:3rem">
-    <img src="./images/alternative-design.png" alt="alternative-design" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/25. Real-time Gaming Leaderboard/images/alternative-design.png" alt="alternative-design" width="500" />
 </div>
 
 This option is not secure as it's susceptible to man-in-the-middle attacks. Players can put a proxy and change their score as they please.
@@ -145,7 +145,7 @@ Servers do it automatically for them based on the game logic.
 One additional consideration is whether we should put a message queue between the game server and the leaderboard service. This would be useful if other services are interested in game results, but that is not an explicit requirement in the interview so far, hence it's not included in the design:
 
 <div style="margin-left:3rem">
-    <img src="./images/message-queue-based-comm.png" alt="message-queue-based-comm" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/25. Real-time Gaming Leaderboard/images/message-queue-based-comm.png" alt="message-queue-based-comm" width="500" />
 </div>
 
 ### **Data models**
@@ -161,7 +161,7 @@ If the scale doesn't matter and we don't have that many users, a relational DB s
 We can start from a simple leaderboard table, one for each month (personal note - this doesn't make sense. You can just add a `month` column and avoid the headache of maintaining new tables each month):
 
 <div style="margin-left:3rem">
-    <img src="./images/leaderboard-table.png" alt="leaderboard-table" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/25. Real-time Gaming Leaderboard/images/leaderboard-table.png" alt="leaderboard-table" width="500" />
 </div>
 
 There is additional data to include in there, but that is irrelevant to the queries we'd run, so it's omitted.
@@ -169,7 +169,7 @@ There is additional data to include in there, but that is irrelevant to the quer
 What happens when a user wins a point?
 
 <div style="margin-left:3rem">
-    <img src="./images/user-wins-point.png" alt="user-wins-point" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/25. Real-time Gaming Leaderboard/images/user-wins-point.png" alt="user-wins-point" width="500" />
 </div>
 
 If a user doesn't exist in the table yet, we need to insert them first:
@@ -187,7 +187,7 @@ UPDATE leaderboard set score=score + 1 where user_id='mary1934';
 How do we find the top players of a leaderboard?
 
 <div style="margin-left:3rem">
-    <img src="./images/find-leaderboard-position.png" alt="find-leaderboard-position" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/25. Real-time Gaming Leaderboard/images/find-leaderboard-position.png" alt="find-leaderboard-position" width="500" />
 </div>
 
 We can run the following query:
@@ -221,7 +221,7 @@ A sorted set is a data structure similar to sets in programming languages, which
 Internally, it is implemented using a hash-map to maintain mapping between key (user_id) and value (score) and a skip list which maps scores to users in sorted order:
 
 <div style="margin-left:3rem">
-    <img src="./images/sorted-set.png" alt="sorted-set" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/25. Real-time Gaming Leaderboard/images/sorted-set.png" alt="sorted-set" width="500" />
 </div>
 
 How does a skip list work?
@@ -229,14 +229,14 @@ How does a skip list work?
 - It consists of a sorted linked list and multi-level indexes
 
 <div style="margin-left:3rem">
-    <img src="./images/skip-list.png" alt="skip-list" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/25. Real-time Gaming Leaderboard/images/skip-list.png" alt="skip-list" width="500" />
 </div>
 
 This structure enables us to quickly search for specific values when the data set is large enough.
 In the example below (64 nodes), it requires traversing 62 nodes in a base linked list to find the given value and 11 nodes in the skip-list case:
 
 <div style="margin-left:3rem">
-    <img src="./images/skip-list-performance.png" alt="skip-list-performance" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/25. Real-time Gaming Leaderboard/images/skip-list-performance.png" alt="skip-list-performance" width="500" />
 </div>
 
 Sorted sets are more performant than relational databases as the data is kept sorted at all times at the price of O(logN) add and find operation.
@@ -279,7 +279,7 @@ Example result:
 What about user fetching their leaderboard position?
 
 <div style="margin-left:3rem">
-    <img src="./images/leaderboard-position-of-user.png" alt="leaderboard-position-of-user" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/25. Real-time Gaming Leaderboard/images/leaderboard-position-of-user.png" alt="leaderboard-position-of-user" width="500" />
 </div>
 
 This can be easily achieved by the following query, given that we know a user's leaderboard position:
@@ -315,13 +315,13 @@ We can either choose to deploy and manage our own services or use a cloud provid
 If we choose to manage the services our selves, we'll use redis for leaderboard data, mysql for user profile and potentially a cache for user profile if we want to scale the database:
 
 <div style="margin-left:3rem">
-    <img src="./images/manage-services-ourselves.png" alt="manage-services-ourselves" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/25. Real-time Gaming Leaderboard/images/manage-services-ourselves.png" alt="manage-services-ourselves" width="500" />
 </div>
 
 Alternatively, we could use cloud offerings to manage a lot of the services for us. For example, we can use AWS API Gateway to route API calls to AWS Lambda functions:
 
 <div style="margin-left:3rem">
-    <img src="./images/api-gateway-mapping.png" alt="api-gateway-mapping" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/25. Real-time Gaming Leaderboard/images/api-gateway-mapping.png" alt="api-gateway-mapping" width="500" />
 </div>
 
 AWS Lambda enables us to run code without managing or provisioning servers ourselves. It runs only when needed and scales automatically.
@@ -329,13 +329,13 @@ AWS Lambda enables us to run code without managing or provisioning servers ourse
 Exmaple user scoring a point:
 
 <div style="margin-left:3rem">
-    <img src="./images/user-scoring-point-lambda.png" alt="user-scoring-point-lambda" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/25. Real-time Gaming Leaderboard/images/user-scoring-point-lambda.png" alt="user-scoring-point-lambda" width="500" />
 </div>
 
 Example user retrieving leaderboard:
 
 <div style="margin-left:3rem">
-    <img src="./images/user-retrieve-leaderboard.png" alt="user-retrieve-leaderboard" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/25. Real-time Gaming Leaderboard/images/user-retrieve-leaderboard.png" alt="user-retrieve-leaderboard" width="500" />
 </div>
 
 Lambdas are an implementation of a serverless architecture. We don't need to manage scaling and environment setup.
@@ -353,7 +353,7 @@ Such scale would require sharding.
 One way to achieve it is by range-partitioning the data:
 
 <div style="margin-left:3rem">
-    <img src="./images/range-partition.png" alt="range-partition" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/25. Real-time Gaming Leaderboard/images/range-partition.png" alt="range-partition" width="500" />
 </div>
 
 In this example, we'll shard based on user's score. We'll maintain the mapping between user_id and shard in application code.
@@ -367,13 +367,13 @@ The latter is a O(1) operation as total records per shard can quickly be accesse
 Alternatively, we can use hash partitioning via Redis Cluster. It is a proxy which distributes data across redis nodes based on partitioning similar to consistent hashing, but not exactly the same:
 
 <div style="margin-left:3rem">
-    <img src="./images/hash-partition.png" alt="hash-partition" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/25. Real-time Gaming Leaderboard/images/hash-partition.png" alt="hash-partition" width="500" />
 </div>
 
 Calculating the top 10 players is challenging with this setup. We'll need to get the top 10 players of each shard and merge the results in the application:
 
 <div style="margin-left:3rem">
-    <img src="./images/top-10-players-calculation.png" alt="top-10-players-calculation" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/25. Real-time Gaming Leaderboard/images/top-10-players-calculation.png" alt="top-10-players-calculation" width="500" />
 </div>
 
 There are some limitations with the hash partitioning:
@@ -399,19 +399,19 @@ In this chapter, the author has decided to use DynamoDB. It is a fully-managed N
 It also enables usage of global secondary indexes when we need to query fields not part of the primary key.
 
 <div style="margin-left:3rem">
-    <img src="./images/dynamo-db.png" alt="dynamo-db" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/25. Real-time Gaming Leaderboard/images/dynamo-db.png" alt="dynamo-db" width="500" />
 </div>
 
 Let's start from a table for storing a leaderboard for a chess game:
 
 <div style="margin-left:3rem">
-    <img src="./images/chess-game-leaderboard-table-1.png" alt="chess-game-leaderboard-table-1" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/25. Real-time Gaming Leaderboard/images/chess-game-leaderboard-table-1.png" alt="chess-game-leaderboard-table-1" width="500" />
 </div>
 
 This works well, but doesn't scale well if we need to query anything by score. Hence, we can put the score as a sort key:
 
 <div style="margin-left:3rem">
-    <img src="./images/chess-game-leaderboard-table-2.png" alt="chess-game-leaderboard-table-2" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/25. Real-time Gaming Leaderboard/images/chess-game-leaderboard-table-2.png" alt="chess-game-leaderboard-table-2" width="500" />
 </div>
 
 Another problem with this design is that we're partitioning by month. This leads to a hotspot partition as the latest month will be unevenly accessed compared to the others.
@@ -419,7 +419,7 @@ Another problem with this design is that we're partitioning by month. This leads
 We could use a technique called write sharding, where we append a partition number for each key, calculated via `user_id % num_partitions`:
 
 <div style="margin-left:3rem">
-    <img src="./images/chess-game-leaderboard-table-3.png" alt="chess-game-leaderboard-table-3" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/25. Real-time Gaming Leaderboard/images/chess-game-leaderboard-table-3.png" alt="chess-game-leaderboard-table-3" width="500" />
 </div>
 
 An important trade-off to consider is how many partitions we should use:
@@ -429,7 +429,7 @@ An important trade-off to consider is how many partitions we should use:
 Using this approach requires that we use the "scatter-gather" technique we saw earlier, which grows in time complexity as we add more partitions:
 
 <div style="margin-left:3rem">
-    <img src="./images/scatter-gather-2.png" alt="scatter-gather-2" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/25. Real-time Gaming Leaderboard/images/scatter-gather-2.png" alt="scatter-gather-2" width="500" />
 </div>
 
 To make a good evaluation on the number of partitions, we'd need to do some benchmarking.

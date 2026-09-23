@@ -184,7 +184,7 @@ A highly simplified is shown below version as it only includes the most importan
    - Conflicting versions are saved separately for user resolution.
 
 <div style="margin-left:5rem">
-<img src="{{site.baseurl}}/assets/images/System Design/15. Google Drive/images/file-sync.png" alt="File Sync" width="400" />
+<img src="{{site.baseurl}}/assets/images/System Design/15. Google Drive/images/file-sync.png" alt="File Synce " width="400" />
 </div>
 
 ---
@@ -234,4 +234,5 @@ downloads blocks to construct the file.
    - Redirect traffic to remaining replicas.
 4. **Cloud Storage Failure:** Use cross-region replication to fetch unavailable files.
 5. **Notification Service Failure:** Clients reconnect to alternative servers.
+
 

@@ -41,7 +41,9 @@ At the high-level, the system is broken down into two services:
 ---
 
 ### Data Gathering Service
-   ![image]({{system.baseurl}}/assets/images/System%20Design/13.%20Search%20Autocomplete/images/data-gathering.png)
+<div style="margin-left:3rem">
+    <img src="{{site.baseurl}}/assets/images/System Design/13. Search Autocomplete/images/data-gathering.png" alt="Data Gathering" width="600">
+</div>
 
 - Aggregates query data from analytics logs and updates the frequency table.
 - Processes historical data weekly to build a **trie** (prefix tree).
@@ -50,9 +52,10 @@ At the high-level, the system is broken down into two services:
 
 
 ### Query Service
-![image]({{system.baseurl}}/assets/images/System%20Design/13.%20Search%20Autocomplete/images/frequency-table.png)
-
-![image]({{system.baseurl}}/assets/images/System%20Design/13.%20Search%20Autocomplete/images/basic-search-suggestions.png)
+<div style="margin-left:3rem">
+    <img src="{{site.baseurl}}/assets/images/System Design/13. Search Autocomplete/images/frequency-table.png" alt="Frequency Table" width="400">
+    <img src="{{site.baseurl}}/assets/images/System Design/13. Search Autocomplete/images/basic-search-suggestions.png" alt="Search Suggestions" width="360">
+</div>
 
 - Uses the frequency table from data gathering service.
 - Processes user input and retrieves top-k suggestions from the frequency table using a Trie.
@@ -72,7 +75,9 @@ The **trie** is a tree-like data structure used to store and retrieve query stri
 2. **Frequency Information:** Stores the popularity of queries at each node.
 
 4. **Steps to get top k most searched queries**
-   ![image]({{system.baseurl}}/assets/images/System%20Design/13.%20Search%20Autocomplete/images/trie-structure.png)
+   <div style="margin-left:3rem">
+      <img src="{{site.baseurl}}/assets/images/System Design/13. Search Autocomplete/images/trie-structure.png" alt="Trie Structure" width="500">
+   </div>
 
     - Find the prefix
     - Traverse the subtree from prefix node to get all valid children
@@ -82,7 +87,7 @@ The **trie** is a tree-like data structure used to store and retrieve query stri
 3. **Optimizations:**
    - Cache top-k queries at each node to speed up retrieval and avoid traversing the whole trie.
 
-        ![image]({{system.baseurl}}/assets/images/System%20Design/13.%20Search%20Autocomplete/images/cached-trie.png)
+        <img src="{{site.baseurl}}/assets/images/System Design/13. Search Autocomplete/images/cached-trie.png" alt="Cached Trie" width="600">
 
    - Limit prefix length to reduce search space as users rarely type a loong search query (say 50).
 
@@ -92,8 +97,9 @@ The **trie** is a tree-like data structure used to store and retrieve query stri
     - The source of data is from Analytics Log/DB.
 2. **Update:** Rarely updated in real-time; weekly updates replace old data.
 3. **Delete:** 
-
-      ![image]({{system.baseurl}}/assets/images/System%20Design/13.%20Search%20Autocomplete/images/delete-kv.png)
+      <div style="margin-left:3rem">
+         <img src="{{site.baseurl}}/assets/images/System Design/13. Search Autocomplete/images/delete-kv.png" alt="Delete KV" width="500">
+      </div>
 
     - Filters remove unwanted or harmful suggestions (e.g., hate speech).
     - Having a filter layer gives us the flexibility of removing results based on different filter rules.
@@ -133,7 +139,9 @@ In the high-level design, whenever a user types a search query, data is updated 
 
 #### Updated Design
 
-![image]({{system.baseurl}}/assets/images/System%20Design/13.%20Search%20Autocomplete/images/data-gathering-flow.png)
+<div style="margin-left:3rem">
+   <img src="{{site.baseurl}}/assets/images/System Design/13. Search Autocomplete/images/data-gathering-flow.png" alt="Updated Data Gathering Flow" width="600">
+</div>
 
 1. **Analytics Logs:**
    - Stores raw query data as logs for weekly aggregation.
@@ -153,8 +161,7 @@ In the high-level design, whenever a user types a search query, data is updated 
             - Every prefix in the trie is mapped to a key in a hash table.
             - Data on each trie node is mapped to a value in a hash table.
 
-               ![image]({{system.baseurl}}/assets/images/System%20Design/13.%20Search%20Autocomplete/images/trie-db.png)
-               
+                <img src="{{site.baseurl}}/assets/images/System Design/13. Search Autocomplete/images/trie-db.png" alt="Trie DB" width="600">
 ---
 
 ### Scalability
@@ -162,8 +169,9 @@ In the high-level design, whenever a user types a search query, data is updated 
    - Distribute trie nodes across servers based on prefix ranges (e.g., `a-m`, `n-z`).
    - Further shard within prefixes to balance uneven distributions (e.g., `aa-ag`, `ah-an`).
 2. **Load Balancing:**
-
-   ![image]({{system.baseurl}}/assets/images/System%20Design/13.%20Search%20Autocomplete/images/sharding.png)
+   <div style="margin-left:3rem">
+      <img src="{{site.baseurl}}/assets/images/System Design/13. Search Autocomplete/images/sharding.png" alt="Sharding" width="400">
+   </div>
 
    - Use a shard map manager to route requests to the appropriate server.
 

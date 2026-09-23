@@ -28,7 +28,7 @@ There is no hierarchical directory structure, all data is stored as objects in a
 It is relatively slow compared to other storage types. Most cloud providers have an object storage offering - Amazon S3, Google GCS, etc.
 
 <div style="margin-left:3rem">
-    <img src="./images/storage-comparison.png" alt="storage-comparison" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/24. S3-like Object Storage/images/storage-comparison.png" alt="storage-comparison" width="500" />
 </div>
 
 |                 | Block Storage                    | File Storage                            | Object Storage                 |
@@ -104,19 +104,19 @@ When accessing a file, we first fetch its metadata from the inode, prior to fetc
 Object storage works similarly - metadata store is used for file information, but contents are stored on disk:
 
 <div style="margin-left:3rem">
-    <img src="./images/object-store-vs-unix.png" alt="object-store-vs-unix" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/24. S3-like Object Storage/images/object-store-vs-unix.png" alt="object-store-vs-unix" width="500" />
 </div>
 
 By separating metadata from file contents, we can scale the different stores independently:
 
 <div style="margin-left:3rem">
-    <img src="./images/bucket-and-object.png" alt="bucket-and-object" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/24. S3-like Object Storage/images/bucket-and-object.png" alt="bucket-and-object" width="500" />
 </div>
 
 ### **High-level design**
 
 <div style="margin-left:3rem">
-    <img src="./images/high-level-design.png" alt="high-level-design" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/24. S3-like Object Storage/images/high-level-design.png" alt="high-level-design" width="500" />
 </div>
 
 - **Load balancer** - distributes API requests across service replicas
@@ -128,7 +128,7 @@ By separating metadata from file contents, we can scale the different stores ind
 ### **Uploading an object**
 
 <div style="margin-left:3rem">
-    <img src="./images/uploading-object.png" alt="uploading-object" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/24. S3-like Object Storage/images/uploading-object.png" alt="uploading-object" width="500" />
 </div>
 
 - Create a bucket named "bucket-to-share" via HTTP PUT request
@@ -167,7 +167,7 @@ Authorization: authorization string
 ```
 
 <div style="margin-left:3rem">
-    <img src="./images/download-object.png" alt="download-object" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/24. S3-like Object Storage/images/download-object.png" alt="download-object" width="500" />
 </div>
 
 - Client sends an HTTP GET request to the load balancer, ie `GET /bucket-to-share/script.txt`
@@ -186,13 +186,13 @@ Authorization: authorization string
 Here's how the API service interacts with the data store:
 
 <div style="margin-left:3rem">
-    <img src="./images/data-store-interactions.png" alt="data-store-interactions" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/24. S3-like Object Storage/images/data-store-interactions.png" alt="data-store-interactions" width="500" />
 </div>
 
 The data store's main components:
 
 <div style="margin-left:3rem">
-    <img src="./images/data-store-main-components.png" alt="data-store-main-components" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/24. S3-like Object Storage/images/data-store-main-components.png" alt="data-store-main-components" width="500" />
 </div>
 
 The data routing service provides a RESTful or gRPC API to access the data node cluster.
@@ -207,7 +207,7 @@ The placement service determines which data nodes should store an object.
 It maintains a virtual cluster map, which determines the physical topology of a cluster.
 
 <div style="margin-left:3rem">
-    <img src="./images/virtual-cluster-map.png" alt="virtual-cluster-map" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/24. S3-like Object Storage/images/virtual-cluster-map.png" alt="virtual-cluster-map" width="500" />
 </div>
 
 The service also sends heartbeats to all data nodes to determine if they should be removed from the virtual cluster.
@@ -227,7 +227,7 @@ The heartbeat includes:
 #### Data persistence flow
 
 <div style="margin-left:3rem">
-    <img src="./images/data-persistence-flow.png" alt="data-persistence-flow" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/24. S3-like Object Storage/images/data-persistence-flow.png" alt="data-persistence-flow" width="500" />
 </div>
 
 - API service forwards the object data to data store
@@ -240,7 +240,7 @@ Caveats:
 - In step 4, the primary data node replicates the object data before returning a response. This favors strong consistency over higher latency.
 
 <div style="margin-left:3rem">
-    <img src="./images/consistency-vs-latency.png" alt="consistency-vs-latency" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/24. S3-like Object Storage/images/consistency-vs-latency.png" alt="consistency-vs-latency" width="500" />
 </div>
 
 #### How data is organized
@@ -254,7 +254,7 @@ This works, but is not performant with many small files in a file system:
 These issues can be addressed by merging many small files into bigger ones via a write-ahead log (WAL). Once the file reaches its capacity (typically a few GB), a new file is created:
 
 <div style="margin-left:3rem">
-    <img src="./images/wal-optimization.png" alt="wal-optimization" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/24. S3-like Object Storage/images/wal-optimization.png" alt="wal-optimization" width="500" />
 </div>
 
 The downside of this approach is that write access to the file needs to be serialized. Multiple cores accessing the same file must wait for each other.
@@ -286,7 +286,7 @@ SQLite is a good option as it's a lightweight file-based relational database.
 #### Updated data persistence flow
 
 <div style="margin-left:3rem">
-    <img src="./images/updated-data-persistence-flow.png" alt="updated-data-persistence-flow" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/24. S3-like Object Storage/images/updated-data-persistence-flow.png" alt="updated-data-persistence-flow" width="500" />
 </div>
 
 - API Service sends a request to save a new object
@@ -302,7 +302,7 @@ But in addition to that, we also ought to replicate across different failure dom
 A critical event can cause multiple hardware failures within the same domain:
 
 <div style="margin-left:3rem">
-    <img src="./images/failure-domain-isolation.png" alt="failure-domain-isolation" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/24. S3-like Object Storage/images/failure-domain-isolation.png" alt="failure-domain-isolation" width="500" />
 </div>
 
 Assuming annual failure rate of a typical HDD is 0.81%, making three copies gives us 6 nines of durability.
@@ -312,7 +312,7 @@ Replicating the data nodes like that grants us the durability we want, but we co
 Erasure coding enables us to use parity bits, which allow us to reconstruct lost bits in the event of a failure:
 
 <div style="margin-left:3rem">
-    <img src="./images/erasure-coding.png" alt="erasure-coding" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/24. S3-like Object Storage/images/erasure-coding.png" alt="erasure-coding" width="500" />
 </div>
 
 Imagine those bits are data nodes. If two of them go down, they can be recovered using the remaining four ones.
@@ -320,13 +320,13 @@ Imagine those bits are data nodes. If two of them go down, they can be recovered
 There are different erasure coding schemes. In our case, we could use 8+4 erasure coding, split across different failure domains to maximize reliability:
 
 <div style="margin-left:3rem">
-    <img src="./images/erasure-coding-across-failure-domains.png" alt="erasure-coding-across-failure-domains" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/24. S3-like Object Storage/images/erasure-coding-across-failure-domains.png" alt="erasure-coding-across-failure-domains" width="500" />
 </div>
 
 Erasure coding enables us to achieve a much lower storage cost (50% improvement) at the expense of access speed due to the data routing service having to collect data from multiple locations:
 
 <div style="margin-left:3rem">
-    <img src="./images/erasure-coding-vs-replication.png" alt="erasure-coding-vs-replication" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/24. S3-like Object Storage/images/erasure-coding-vs-replication.png" alt="erasure-coding-vs-replication" width="500" />
 </div>
 
 Other caveats:
@@ -346,7 +346,7 @@ To detect this, we can use checksums - a hash of the file contents, which can be
 In our case, we'll store checksums for each file and each object:
 
 <div style="margin-left:3rem">
-    <img src="./images/checksums-for-correctness.png" alt="checksums-for-correctness" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/24. S3-like Object Storage/images/checksums-for-correctness.png" alt="checksums-for-correctness" width="500" />
 </div>
 
 In the case of erasure coding (8+4), we'll need to fetch each of the 8 pieces of data separately and verify each of their checksums.
@@ -358,7 +358,7 @@ In the case of erasure coding (8+4), we'll need to fetch each of the 8 pieces of
 Table schemas:
 
 <div style="margin-left:3rem">
-    <img src="./images/metadata-data-model.png" alt="metadata-data-model" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/24. S3-like Object Storage/images/metadata-data-model.png" alt="metadata-data-model" width="500" />
 </div>
 
 Queries we need to support:
@@ -398,13 +398,13 @@ Versioning works by having another `object_version` column which is of type TIME
 Each new version produces a new `object_id`:
 
 <div style="margin-left:3rem">
-    <img src="./images/object-versioning.png" alt="object-versioning" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/24. S3-like Object Storage/images/object-versioning.png" alt="object-versioning" width="500" />
 </div>
 
 Deleting an object creates a new version with a special `object_id` indicating that the object was deleted. Queries for it return 404:
 
 <div style="margin-left:3rem">
-    <img src="./images/deleting-versioned-object.png" alt="deleting-versioned-object" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/24. S3-like Object Storage/images/deleting-versioned-object.png" alt="deleting-versioned-object" width="500" />
 </div>
 
 ### **Optimizing uploads of large files**
@@ -412,7 +412,7 @@ Deleting an object creates a new version with a special `object_id` indicating t
 Uploading large files can be optimized by using multipart uploads - splitting a big file into several chunks, uploaded independently:
 
 <div style="margin-left:3rem">
-    <img src="./images/multipart-upload.png" alt="multipart-upload" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/24. S3-like Object Storage/images/multipart-upload.png" alt="multipart-upload" width="500" />
 </div>
 
 - Client calls service to initiate a multipart upload
@@ -440,7 +440,7 @@ To facilitate the deletion, we'll use a process called compaction:
 - To avoid making too many small files, compaction is done on files which grow beyond a certain threshold
 
 <div style="margin-left:3rem">
-    <img src="./images/compaction.png" alt="compaction" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/24. S3-like Object Storage/images/compaction.png" alt="compaction" width="500" />
 </div>
 
 ---

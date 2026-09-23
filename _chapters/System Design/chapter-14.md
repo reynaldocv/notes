@@ -47,7 +47,7 @@ YouTube is a massive video streaming platform supporting video uploads, playback
 ### Components
 
 <div style="margin-left:3rem">
-    <img src="./images/high-level-design.png" alt="High Level Design" width="400">
+    <img src="{{site.baseurl}}/assets/images/System Design/14. YouTube/images/high-level-design.png" alt="High Level Design" width="400">
 </div>
 
 1. **Client:** Devices like smartphones, computers, and TVs.
@@ -70,7 +70,7 @@ YouTube is a massive video streaming platform supporting video uploads, playback
 - **Video Upload (Steps):**
 
     <div style="margin-left:3rem">
-        <img src="./images/video-uploading-flow.png" alt="Video Upload Flow" width="500">
+        <img src="{{site.baseurl}}/assets/images/System Design/14. YouTube/images/video-uploading-flow.png" alt="Video Upload Flow" width="500">
     </div>
 
     - [1] Videos are uploaded to blob storage. 
@@ -86,7 +86,7 @@ YouTube is a massive video streaming platform supporting video uploads, playback
 - **Metadata Upload (Steps):**
 
     <div style="margin-left:3rem">
-        <img src="./images/metadata-upload.png" alt="Metadata Upload" height="500">
+        <img src="{{site.baseurl}}/assets/images/System Design/14. YouTube/images/metadata-upload.png" alt="Metadata Upload" height="500">
     </div>
 
     - The client in parallel sends a request to update the video metadata 
@@ -98,7 +98,7 @@ YouTube is a massive video streaming platform supporting video uploads, playback
 #### 2. Video Streaming Flow
 
 <div style="margin-left: 3em;">
-  <img src="./images/video-streaming-flow.png" alt="Video Streaming Flow" height="400">
+  <img src="{{site.baseurl}}/assets/images/System Design/14. YouTube/images/video-streaming-flow.png" alt="Video Streaming Flow" height="400">
 </div>
 
 - Videos are streamed directly from the CDN using edge servers to minimize latency.
@@ -122,7 +122,7 @@ YouTube is a massive video streaming platform supporting video uploads, playback
 
 #### Directed Acyclic Graph (DAG) Model
 <div style="margin-left: 3em;">
-    <img src="./images/dag-video-transcoding.png" alt="DAG Video Transcoding" width="600">
+    <img src="{{site.baseurl}}/assets/images/System Design/14. YouTube/images/dag-video-transcoding.png" alt="DAG Video Transcoding" width="600">
 </div>
 
 - Transcoding a video is computationally expensive and time-consuming.
@@ -140,13 +140,13 @@ YouTube is a massive video streaming platform supporting video uploads, playback
 ### Video Transcoding Architecture
 
 <div style="margin-left: 3em;">
-<img src="./images/video-transcoding-architecture.png" alt="Video Transcoding" width="600">
+<img src="{{site.baseurl}}/assets/images/System Design/14. YouTube/images/video-transcoding-architecture.png" alt="Video Transcoding" width="600">
 </div>
 
 1. **Preprocessor:** Splits videos into smaller chunks (GOP alignment). It has 4 responsibilities.
 
     <div style="margin-left: 3em;">
-        <img src="./images/dag-config.png" alt="DAG Config" width="500">
+        <img src="{{site.baseurl}}/assets/images/System Design/14. YouTube/images/dag-config.png" alt="DAG Config" width="500">
     </div>
 
     - Video splitting: Video stream is split or further split into smaller Group of Pictures (GOP) alignment.
@@ -157,7 +157,7 @@ YouTube is a massive video streaming platform supporting video uploads, playback
 
 2. **DAG Scheduler:** Organizes tasks into sequential or parallel stages.
     <div style="margin-left: 3em;">
-        <img src="./images/dag-scheduler.png" alt="DAG Scheduler" width="500">
+        <img src="{{site.baseurl}}/assets/images/System Design/14. YouTube/images/dag-scheduler.png" alt="DAG Scheduler" width="500">
     </div>
 
     - It splits a DAG graph into stages of tasks and puts them in the task queue in the resource manager. 
@@ -168,7 +168,7 @@ YouTube is a massive video streaming platform supporting video uploads, playback
 3. **Resource Manager:** Responsible for managing the efficiency of resource allocation.It
 contains 3 queues and a task scheduler.
     <div style="margin-left: 3em;">
-        <img src="./images/resource-manager.png" alt="Resource Manager" width="700">
+        <img src="{{site.baseurl}}/assets/images/System Design/14. YouTube/images/resource-manager.png" alt="Resource Manager" width="700">
     </div>
 
     - Task queue: priority queue that contains tasks to be executed.
@@ -179,7 +179,7 @@ contains 3 queues and a task scheduler.
 
 4. **Task Workers:** Perform transcoding and other operations.
     <div style="margin-left: 3em;">
-        <img src="./images/task-worker.png" alt="Task Worker" width="250">
+        <img src="{{site.baseurl}}/assets/images/System Design/14. YouTube/images/task-worker.png" alt="Task Worker" width="250">
    </div>
 
     - Different task workers may run different tasks 
@@ -197,18 +197,18 @@ contains 3 queues and a task scheduler.
 ### Speed Optimizations
 1. **Parallel Video Uploads:** Split videos into smaller chunks for faster, resumable uploads.
 
-    <img src="./images/video-split.png" alt="Video Split" width="600">
+    <img src="{{site.baseurl}}/assets/images/System Design/14. YouTube/images/video-split.png" alt="Video Split" width="600">
 
 2. **Distributed Upload Centers:** Use CDNs as upload hubs close to users.
 3. **Parallel Processing:** Decouple modules using message queues for high parallelism.
 
-    <img src="./images/message-queue1.png" alt="Message Queue" width="600">
-    <img src="./images/message-queue2.png" alt="Message Queue" height="170" width="500">
+    <img src="{{site.baseurl}}/assets/images/System Design/14. YouTube/images/message-queue1.png" alt="Message Queue" width="600">
+    <img src="{{site.baseurl}}/assets/images/System Design/14. YouTube/images/message-queue2.png" alt="Message Queue" height="170" width="500">
 
 ### Safety Optimizations
 1. **Pre-Signed URLs:** Restrict video uploads to authorized users.
 
-    <img src="./images/pres-signed-urls.png" alt="Pre Signed" width="500">
+    <img src="{{site.baseurl}}/assets/images/System Design/14. YouTube/images/pres-signed-urls.png" alt="Pre Signed" width="500">
 
 2. **Protect Videos:**
    - **DRM Systems** (e.g., Apple FairPlay, Google Widevine).

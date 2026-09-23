@@ -44,7 +44,6 @@ GET /v1/search/nearby
   - `radius`: Search radius (default: 5000m).
 
 #### **Business APIs**
-
 | API Endpoint                     | Description                                      |
 |-----------------------------------|--------------------------------------------------|
 | `GET /v1/businesses/{id}`         | Fetch detailed business info                    |
@@ -66,7 +65,7 @@ GET /v1/search/nearby
 The system comprises of two parts: Location based service (LBS) and business related service.
 
 <div style="margin-left:3rem">
-    <img src="./images/high-level-design.png" alt="HLD" width="400" />
+    <img src="{{site.baseurl}}/assets/images/System Design/16. Nearby Businesses/images/high-level-design.png" alt="HLD" width="400" />
 </div>
 
 - **Location-Based Service (LBS)**: 
@@ -90,7 +89,7 @@ The system comprises of two parts: Location based service (LBS) and business rel
 ### **Option 1: Two-Dimensional Search (Naive Approach)**
 
 <div style="margin-left:3rem">
-    <img src="./images/2d-search.png" alt="2D" width="250" />
+    <img src="{{site.baseurl}}/assets/images/System Design/16. Nearby Businesses/images/2d-search.png" alt="2D" width="250" />
 </div>
 
 The most intuitive way is to draw a circle with pre-defined radius and find all the businesses within the circle.
@@ -115,14 +114,14 @@ A potiential improvement is to build index on logitude and latitude columns, alh
   - Tree: Quadtree, Google S2, RTree
 
   <div style="margin-left:3rem">
-    <img src="./images/geospatial-index-types.png" alt="2D" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/16. Nearby Businesses/images/geospatial-index-types.png" alt="2D" width="500" />
   </div>
 
 
 ### **Option 2: Evenly Divided Grid**
 
   <div style="margin-left:3rem">
-    <img src="./images/even-grid.png" alt="Even Grid" width="400" />
+    <img src="{{site.baseurl}}/assets/images/System Design/16. Nearby Businesses/images/even-grid.png" alt="Even Grid" width="400" />
   </div>
 
 - **Divides the world into fixed-size grids**.
@@ -134,8 +133,8 @@ A potiential improvement is to build index on logitude and latitude columns, alh
 - Repeat this subdivision
 
   <div style="margin-left:3rem">
-    <img src="./images/geohash.png" alt="Geohash" width="300" />
-    <img src="./images/geohash-1.png" alt="Geohash" width="285" />
+    <img src="{{site.baseurl}}/assets/images/System Design/16. Nearby Businesses/images/geohash.png" alt="Geohash" width="300" />
+    <img src="{{site.baseurl}}/assets/images/System Design/16. Nearby Businesses/images/geohash-1.png" alt="Geohash" width="285" />
   </div>
 
 
@@ -143,13 +142,13 @@ A potiential improvement is to build index on logitude and latitude columns, alh
 - **Hierarchical grid structure** allows for efficient searching.
 - The right precision is chosen by using the minimal geohash length according to the table.
   <div style="margin-left:3rem">
-    <img src="./images/geohash-radius-mapping.png" alt="Geohash Radius" width="400" />
+    <img src="{{site.baseurl}}/assets/images/System Design/16. Nearby Businesses/images/geohash-radius-mapping.png" alt="Geohash Radius" width="400" />
   </div>
 - Geohash guarantees that the longer a shared prefix is between two geohashes, the closer they are.
 
 - **Challenges**:
   <div style="margin-left:3rem">
-    <img src="./images/boundary-issue.png" alt="Boundary Issue" width="300" />
+    <img src="{{site.baseurl}}/assets/images/System Design/16. Nearby Businesses/images/boundary-issue.png" alt="Boundary Issue" width="300" />
   </div>
 
   - **Boundary issues** (businesses close to grid edges may get excluded).
@@ -164,13 +163,13 @@ A potiential improvement is to build index on logitude and latitude columns, alh
   - The quadtree is an in-memory data structure and it runs on each LBS server and built on server startup time.
 
   <div style="margin-left:3rem">
-    <img src="./images/quadtree.png" alt="Quadtree" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/16. Nearby Businesses/images/quadtree.png" alt="Quadtree" width="500" />
   </div>
 
   - The root node is recursively broken down into 4 quadrants until no nodes are left with more than x number of businesses (100 in this case).
 
   <div style="margin-left:3rem">
-    <img src="./images/building-quadtree.png" alt="Building Quadtree" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/16. Nearby Businesses/images/building-quadtree.png" alt="Building Quadtree" width="500" />
   </div>
 
 - The quadtree index doen't take too much memory (typically in GBs) and can easily fit in one server.
@@ -178,7 +177,7 @@ A potiential improvement is to build index on logitude and latitude columns, alh
 - **Efficient for k-nearest search queries** (e.g., find the closest gas station).
 
   <div style="margin-left:3rem">
-    <img src="./images/realworld-quadtree.png" alt="Real World Quadtree" width="400" />
+    <img src="{{site.baseurl}}/assets/images/System Design/16. Nearby Businesses/images/realworld-quadtree.png" alt="Real World Quadtree" width="400" />
   </div>
 
 #### Operational considerations
@@ -192,8 +191,8 @@ It maps a sphere to a !D index based on Hilbert curve.Two points that are close 
 
 
   <div style="margin-left:3rem">
-    <img src="./images/hilbert-curve.png" alt="Hilbert curve" width="300" />
-    <img src="./images/geofence.png" alt="Geofence" width="355" />
+    <img src="{{site.baseurl}}/assets/images/System Design/16. Nearby Businesses/images/hilbert-curve.png" alt="Hilbert curve" width="300" />
+    <img src="{{site.baseurl}}/assets/images/System Design/16. Nearby Businesses/images/geofence.png" alt="Geofence" width="355" />
   </div>
 
 - **Divides the earth into small cells using a Hilbert curve**.
@@ -263,7 +262,7 @@ The most obvious cache key choice is the location coordinate, however it has a f
 
 
   <div style="margin-left:3rem">
-    <img src="./images/final-design.png" alt="Final Design" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/16. Nearby Businesses/images/final-design.png" alt="Final Design" width="500" />
   </div>
 
 

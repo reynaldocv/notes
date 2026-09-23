@@ -51,14 +51,14 @@ This is not a high throughput for any database system, so it's not the focus of 
 At a high-level, we have three actors, participating in money movement:
 
 <div style="margin-left:3rem">
-    <img src="./images/high-level-flow.png" alt="high-level-flow" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/26. Payment Processing/images/high-level-flow.png" alt="high-level-flow" width="500" />
 </div>
 
 ### **Pay-in flow**
 Here's the high-level overview of the pay-in flow:
 
 <div style="margin-left:3rem">
-    <img src="./images/payin-flow-high-level.png" alt="pay-in-flow-high-level" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/26. Payment Processing/images/payin-flow-high-level.png" alt="pay-in-flow-high-level" width="500" />
 </div>
 
  * Payment service - accepts payment events and coordinates the payment process. It typically also does a risk check using a third-party provider for AML violations or criminal activity.
@@ -157,7 +157,7 @@ Sum of all transaction entries is always zero. This mechanism provides end-to-en
 To avoid storing credit card information and having to comply with various heavy regulations, most companies prefer utilizing a widget, provided by PSPs, which store and handle credit card payments for you:
 
 <div style="margin-left:3rem">
-    <img src="./images/hosted-payment-page.png" alt="hosted-payment-page" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/26. Payment Processing/images/hosted-payment-page.png" alt="hosted-payment-page" width="500" />
 </div>
 
 ### **Pay-out flow**
@@ -184,7 +184,7 @@ If we go down the traditional route, a PSP can be integrated in one of two ways:
 Here's how the hosted payment page workflow works:
 
 <div style="margin-left:3rem">
-    <img src="./images/hosted-payment-page-workflow.png" alt="hosted-payment-page-workflow" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/26. Payment Processing/images/hosted-payment-page-workflow.png" alt="hosted-payment-page-workflow" width="500" />
 </div>
 
  * User clicks "checkout" button in the browser
@@ -204,7 +204,7 @@ The previous section explains the happy path of a payment. Unhappy paths are det
 Every night, the PSP sends a settlement file which our system uses to compare the external system's state against our internal system's state.
 
 <div style="margin-left:3rem">
-    <img src="./images/settlement-report.png" alt="settlement-report" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/26. Payment Processing/images/settlement-report.png" alt="settlement-report" width="500" />
 </div>
 
 This process can also be used to detect internal inconsistencies between eg the ledger and the wallet services.
@@ -239,13 +239,13 @@ Asynchronous communication can be divided into two categories.
 Single receiver - multiple receivers subscribe to the same topic and messages are processed only once:
 
 <div style="margin-left:3rem">
-    <img src="./images/single-receiver.png" alt="single-receiver" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/26. Payment Processing/images/single-receiver.png" alt="single-receiver" width="500" />
 </div>
 
 Multiple receivers - multiple receivers subscribe to the same topic, but messages are forwarded to all of them:
 
 <div style="margin-left:3rem">
-    <img src="./images/multiple-receiver.png" alt="multiple-receiver" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/26. Payment Processing/images/multiple-receiver.png" alt="multiple-receiver" width="500" />
 </div>
 
 Latter model works well for our payment system as a payment can trigger multiple side effects, handled by different services.
@@ -260,7 +260,7 @@ Every payment system needs to address failed payments. Here are some of the mech
  * Dead-letter queue - payments which have terminally failed are pushed to a dead-letter queue, where the failed payment can be debugged and inspected.
 
 <div style="margin-left:3rem">
-    <img src="./images/failed-payments.png" alt="failed-payments" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/26. Payment Processing/images/failed-payments.png" alt="failed-payments" width="500" />
 </div>
 
 ### **Exactly-once delivery**
@@ -271,7 +271,7 @@ An operation is executed exactly-once if it is executed at-least-once and at-mos
 To achieve the at-least-once guarantee, we'll use a retry mechanism:
 
 <div style="margin-left:3rem">
-    <img src="./images/retry-mechanism.png" alt="retry-mechanism" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/26. Payment Processing/images/retry-mechanism.png" alt="retry-mechanism" width="500" />
 </div>
 
 Here are some common strategies on deciding the retry intervals:
@@ -293,7 +293,7 @@ From an API perspective, clients can make multiple calls which produce the same 
 Idempotency is managed by a special header in the request (eg `idempotency-key`), which is typically a UUID.
 
 <div style="margin-left:3rem">
-    <img src="./images/idempotency-example.png" alt="idempotency-example" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/26. Payment Processing/images/idempotency-example.png" alt="idempotency-example" width="500" />
 </div>
 
 Idempotency can be achieved using the database's mechanism of adding unique key constraints:

@@ -54,7 +54,7 @@ There are various protocols used for sending and receiving emails:
 Apart from the mailing protocol, there are some DNS records we need to configure for our email server - the MX records:
 
 <div style="margin-left:3rem">
-    <img src="./images/dns-lookup.png" alt="dns-lookup" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/23. Email System/images/dns-lookup.png" alt="dns-lookup" width="500" />
 </div>
 
 Email attachments are sent base64-encoded and there is usually a size limit of 25mb on most mail services.
@@ -65,7 +65,7 @@ This is configurable and varies from individual to corporate accounts.
 Traditional mail servers work well when there are a limited number of users, connected to a single server.
 
 <div style="margin-left:3rem">
-    <img src="./images/traditional-mail-server.png" alt="traditional-mail-server" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/23. Email System/images/traditional-mail-server.png" alt="traditional-mail-server" width="500" />
 </div>
 
 - Alice logs into her Outlook email and presses "send". Email is sent to Outlook mail server. Communication is via SMTP.
@@ -75,7 +75,7 @@ Traditional mail servers work well when there are a limited number of users, con
 In traditional mail servers, emails were stored on the local file system. Every email was a separate file.
 
 <div style="margin-left:3rem">
-    <img src="./images/local-dir-storage.png" alt="local-dir-storage" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/23. Email System/images/local-dir-storage.png" alt="local-dir-storage" width="500" />
 </div>
 
 As the scale grew, disk I/O became a bottleneck. Also, it doesn't satisfy our high availability and reliability requirements.
@@ -124,7 +124,7 @@ Example response:
 Here's the high-level design of the distributed mail server:
 
 <div style="margin-left:3rem">
-    <img src="./images/high-level-architecture.png" alt="high-level-architecture" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/23. Email System/images/high-level-architecture.png" alt="high-level-architecture" width="500" />
 </div>
 
 - **Webmail** - users use web browsers to send/receive emails
@@ -138,7 +138,7 @@ Here's the high-level design of the distributed mail server:
 Here's what the email sending flow looks like:
 
 <div style="margin-left:3rem">
-    <img src="./images/email-sending-flow.png" alt="email-sending-flow" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/23. Email System/images/email-sending-flow.png" alt="email-sending-flow" width="500" />
 </div>
 
 - User writes an email and presses "send". Email is sent to load balancer.
@@ -156,7 +156,7 @@ We need to also monitor size of outgoing message queue. Growing too large might 
 Here's the email receiving flow:
 
 <div style="margin-left:3rem">
-    <img src="./images/email-receiving-flkow.png" alt="email-receiving-flow" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/23. Email System/images/email-receiving-flkow.png" alt="email-receiving-flow" width="500" />
 </div>
 
 - Incoming emails arrive at the SMTP load balancer. Mails are distributed to SMTP servers, where mail acceptance policy is done (eg invalid emails are directly discarded).
@@ -204,19 +204,19 @@ Let's define the tables:
 Legend for tables to follow:
 
 <div style="margin-left:3rem">
-    <img src="./images/legend.png" alt="legend" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/23. Email System/images/legend.png" alt="legend" width="500" />
 </div>
 
 Here is the folders table:
 
 <div style="margin-left:3rem">
-    <img src="./images/folders-table.png" alt="folders-table" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/23. Email System/images/folders-table.png" alt="folders-table" width="500" />
 </div>
 
 emails table:
 
 <div style="margin-left:3rem">
-    <img src="./images/emails-table.png" alt="emails-table" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/23. Email System/images/emails-table.png" alt="emails-table" width="500" />
 </div>
 
 - email_id is timeuuid which allows sorting based on timestamp when email was created
@@ -224,7 +224,7 @@ emails table:
 Attachments are stored in a separate table, identified by filename:
 
 <div style="margin-left:3rem">
-    <img src="./images/attachments.png" alt="attachments" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/23. Email System/images/attachments.png" alt="attachments" width="500" />
 </div>
 
 Supporting fetchin read/unread emails is easy in a traditional relational database, but not in Cassandra, since filtering on non-partition/clustering key is prohibited.
@@ -233,7 +233,7 @@ One workaround to fetch all emails in a folder and filter in-memory, but that do
 What we can do is denormalize the emails table into read/unread emails tables:
 
 <div style="margin-left:3rem">
-    <img src="./images/read-unread-emails.png" alt="read-unread-emails" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/23. Email System/images/read-unread-emails.png" alt="read-unread-emails" width="500" />
 </div>
 
 In order to support conversation threads, we can include some headers, which mail clients interpret and use to reconstruct a conversation thread:
@@ -284,7 +284,7 @@ Let's compare google search with email search:
 To achieve this search functionality, one option is to use an Elasticsearch cluster. We can use `user_id` as the partition key to group data under the same node:
 
 <div style="margin-left:3rem">
-    <img src="./images/elasticsearch.png" alt="elasticsearch" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/23. Email System/images/elasticsearch.png" alt="elasticsearch" width="500" />
 </div>
 
 Mutating operations are async via Kafka in order to decouple services from the reindexing flow.
@@ -302,7 +302,7 @@ This technique is used in Cassandra, BigTable and RocksDB.
 Its core idea is to store data in-memory until a predefined threshold is reached, after which it is merged in the next layer (disk):
 
 <div style="margin-left:3rem">
-    <img src="./images/lsm-tree.png" alt="lsm-tree" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/23. Email System/images/lsm-tree.png" alt="lsm-tree" width="500" />
 </div>
 
 Main trade-offs between the two approaches:
@@ -317,7 +317,7 @@ Since individual user operations don't collide with other users, most components
 To ensure high availability, we can also use a multi-DC setup with leader-folower failover in case of failures:
 
 <div style="margin-left:3rem">
-    <img src="./images/multi-dc-example.png" alt="multi-dc-example" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/23. Email System/images/multi-dc-example.png" alt="multi-dc-example" width="500" />
 </div>
 
 ---

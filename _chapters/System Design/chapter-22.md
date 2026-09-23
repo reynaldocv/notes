@@ -45,7 +45,7 @@ Let's estimate the QPS. If we assume that there are three steps to reach the res
 we can estimate that if there are 3 reservations, then there must be 30 views of reservation page and 300 views of hotel room detail page.
 
 <div style="margin-left:3rem">
-    <img src="./images/qps-estimation.png" alt="qps-estimation" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/22. Hotel Reservation System/images/qps-estimation.png" alt="qps-estimation" width="500" />
 </div>
 
 ---
@@ -111,13 +111,13 @@ Given this knowledge, we'll choose a relational database because:
 Here is our schema design:
 
 <div style="margin-left:3rem">
-    <img src="./images/schema-design.png" alt="schema-design" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/22. Hotel Reservation System/images/schema-design.png" alt="schema-design" width="500" />
 </div>
 
 Most fields are self-explanatory. Only field worth mentioning is the `status` field which represents the state machine of a given room:
 
 <div style="margin-left:3rem">
-    <img src="./images/status-state-machine.png" alt="status-state-machine" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/22. Hotel Reservation System/images/status-state-machine.png" alt="status-state-machine" width="500" />
 </div>
 
 This data model works well for a system like Airbnb, but not for hotels where users don't reserve a particular room but a room type.
@@ -129,7 +129,7 @@ This shortcoming will be addressed in the [Improved Data Model](#improved-data-m
 We've chosen a microservice architecture for this design. It has gained great popularity in recent years:
 
 <div style="margin-left:3rem">
-    <img src="./images/high-level-design.png" alt="high-level-design" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/22. Hotel Reservation System/images/high-level-design.png" alt="high-level-design" width="500" />
 </div>
 
  - **Users**: book a hotel room on their phone or computer
@@ -174,7 +174,7 @@ POST /v1/reservations
 Here's the updated schema:
 
 <div style="margin-left:3rem">
-    <img src="./images/updated-schema.png" alt="updated-schema" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/22. Hotel Reservation System/images/updated-schema.png" alt="updated-schema" width="500" />
 </div>
 
  - **room**: contains information about a room
@@ -244,7 +244,7 @@ There are two issues to address:
 Here's a visualization of the first problem:
 
 <div style="margin-left:3rem">
-    <img src="./images/double-booking-single-user.png" alt="double-booking-single-user" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/22. Hotel Reservation System/images/double-booking-single-user.png" alt="double-booking-single-user" width="500" />
 </div>
 
 There are two approaches to solving this problem:
@@ -252,7 +252,7 @@ There are two approaches to solving this problem:
  - Idemptent API - Add an idempotency key to the API, which enables a user to execute an action once, regardless of how many times the endpoint is invoked:
 
 <div style="margin-left:3rem">
-    <img src="./images/idempotency.png" alt="idempotency" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/22. Hotel Reservation System/images/idempotency.png" alt="idempotency" width="500" />
 </div>
 
 Here's how this flow works:
@@ -262,13 +262,13 @@ Here's how this flow works:
  - The duplication is avoided by making the `reservation_id` column have a unique constraint, preventing multiple records with that id being stored in the DB.
 
 <div style="margin-left:3rem">
-    <img src="./images/unique-constraint-violation.png" alt="unique-constraint-violation" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/22. Hotel Reservation System/images/unique-constraint-violation.png" alt="unique-constraint-violation" width="500" />
 </div>
 
 What if there are multiple users making the same reservation?
 
 <div style="margin-left:3rem">
-    <img src="./images/double-booking-multiple-users.png" alt="double-booking-multiple-users" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/22. Hotel Reservation System/images/double-booking-multiple-users.png" alt="double-booking-multiple-users" width="500" />
 </div>
 
  - Let's assume the transaction isolation level is not serializable
@@ -313,7 +313,7 @@ Pessimistic locking prevents simultaneous updates by putting a lock on a record 
 This can be done in MySQL by using the `SELECT... FOR UPDATE` query, which locks the rows selected by the query until the transaction is committed.
 
 <div style="margin-left:3rem">
-    <img src="./images/pessimistic-locking.png" alt="pessimistic-locking" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/22. Hotel Reservation System/images/pessimistic-locking.png" alt="pessimistic-locking" width="500" />
 </div>
 
 Pros:
@@ -333,7 +333,7 @@ Optimistic locking allows multiple users to attempt to update a record at the sa
 There are two common ways to implement it - version numbers and timestamps. Version numbers are recommended as server clocks can be inaccurate.
 
 <div style="margin-left:3rem">
-    <img src="./images/optimistic-locking.png" alt="optimistic-locking" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/22. Hotel Reservation System/images/optimistic-locking.png" alt="optimistic-locking" width="500" />
 </div>
 
  - A new `version` column is added to the database table
@@ -362,7 +362,7 @@ CONSTRAINT `check_room_count` CHECK((`total_inventory - total_reserved` >= 0))
 ```
 
 <div style="margin-left:3rem">
-    <img src="./images/database-constraint.png" alt="database-constraint" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/22. Hotel Reservation System/images/database-constraint.png" alt="database-constraint" width="500" />
 </div>
 
 Pros:
@@ -392,13 +392,13 @@ We can shard based on `hotel_id` as all queries filter based on it.
 Assuming, QPS is 30,000, after sharding the database in 16 shards, each shard handles 1875 QPS, which is within a single MySQL cluster's load capacity.
 
 <div style="margin-left:3rem">
-    <img src="./images/database-sharding.png" alt="database-sharding" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/22. Hotel Reservation System/images/database-sharding.png" alt="database-sharding" width="500" />
 </div>
 
 We can also utilize caching for room inventory and reservations via Redis. We can set TTL so that old data can expire for days which are past.
 
 <div style="margin-left:3rem">
-    <img src="./images/inventory-cache.png" alt="inventory-cache" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/22. Hotel Reservation System/images/inventory-cache.png" alt="inventory-cache" width="500" />
 </div>
 
 The way we store an inventory is based on the `hotel_id`, `room_type_id` and `date`:
@@ -435,19 +435,19 @@ This is done because we want to leverage the relational database's ACID guarante
 However, the interviewer might challenge this approach as it's not a pure microservice architecture, where each service has a dedicated database:
 
 <div style="margin-left:3rem">
-    <img src="./images/microservices-vs-monolith.png" alt="microservices-vs-monolith" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/22. Hotel Reservation System/images/microservices-vs-monolith.png" alt="microservices-vs-monolith" width="500" />
 </div>
 
 This can lead to consistency issues. In a monolithic server, we can leverage a relational DBs transaction capabilities to implement atomic operations:
 
 <div style="margin-left:3rem">
-    <img src="./images/atomicity-monolith.png" alt="atomicity-monolith" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/22. Hotel Reservation System/images/atomicity-monolith.png" alt="atomicity-monolith" width="500" />
 </div>
 
 It's more challenging, however, to guarantee this atomicity when the operation spans across multiple services:
 
 <div style="margin-left:3rem">
-    <img src="./images/microservice-non-atomic-operation.png" alt="microservice-non-atomic-operation" width="500" />
+    <img src="{{site.baseurl}}/assets/images/System Design/22. Hotel Reservation System/images/microservice-non-atomic-operation.png" alt="microservice-non-atomic-operation" width="500" />
 </div>
 
 There are some well-known techniques to handle these data inconsistencies:
