@@ -4,7 +4,6 @@ chapter: "Design a Unique ID Generator in Distributed Systems"
 course: "System Design"
 permalink: "sysDes-07/"
 ---
-
 # Chapter 7: Design a Unique ID Generator in Distributed Systems
 
 ## Introduction
@@ -28,8 +27,10 @@ This chapter addresses the challenge of designing a **unique ID generator** for 
 ### 1. Multi-Master Replication
 - **Approach:** Use database `auto_increment` with step increments (e.g., `+k` for k servers).
 
-    ![image]({{site.baseurl}}/assets/images/System%20Design/07.%20Unique-Id%20Generator/images/multi-master.png)
-    
+    <p align="left">
+    <img src="{{site.baseurl}}/assets/images/System Design/07. Design a Unique ID Generator in Distributed Systems/images/multi-master.png"  alt="Multi Master" width="400">
+    </p>
+
 - **Drawbacks:**
   - Hard to scale across data centers.
   - IDs do not always increase with time.
@@ -40,7 +41,9 @@ This chapter addresses the challenge of designing a **unique ID generator** for 
     - Generate 128-bit unique identifiers independently on each server using UUID.
     - UUIDs can be generated independently without coordination between servers
 
-        ![image]({{site.baseurl}}/assets/images/System%20Design/07.%20Unique-Id%20Generator/images/uuid.png)
+        <p align="left">
+        <img src="{{site.baseurl}}/assets/images/System Design/07. Design a Unique ID Generator in Distributed Systems/images/uuid.png"  alt="UUID generator" width="600">
+        </p>
 
 - **Advantages:**
   - No coordination needed between servers.
@@ -53,7 +56,9 @@ This chapter addresses the challenge of designing a **unique ID generator** for 
 ### 3. Ticket Server
 - **Approach:** Use a centralized database server to increment and assign IDs.
 
-    ![image]({{site.baseurl}}/assets/images/System%20Design/07.%20Unique-Id%20Generator/images/ticket-server.png)
+    <p align="left">
+    <img src="{{site.baseurl}}/assets/images/System Design/07. Design a Unique ID Generator in Distributed Systems/images/ticket-server.png"  alt="UUID generator" width="500">
+    </p>
 
 - **Advantages:**
   - Simple to implement for small-scale systems.
@@ -65,9 +70,12 @@ This chapter addresses the challenge of designing a **unique ID generator** for 
 ### 4. Twitter Snowflake Approach
 - **Approach:** 
 
-    ![image]({{site.baseurl}}/assets/images/System%20Design/07.%20Unique-Id%20Generator/images/twitter-snowflake.png)
-
-    ![image]({{site.baseurl}}/assets/images/System%20Design/07.%20Unique-Id%20Generator/images/snowflake-id-breakdown.png)
+    <div style="margin-left:3rem">
+      <img src="{{site.baseurl}}/assets/images/System Design/07. Design a Unique ID Generator in Distributed Systems/images/twitter-snowflake.png"  alt="Snowflake approach" width="500">
+    </div>
+    <div style="margin-left:3rem">
+      <img src="{{site.baseurl}}/assets/images/System Design/07. Design a Unique ID Generator in Distributed Systems/images/snowflake-id-breakdown.png"  alt="Snowflake ID breakdow" width="500">
+    </div>
 
     - Divide IDs into sections to ensure uniqueness and scalability.
     - **Sign Bit (1 bit):** Always `0`, potentially distinguishing signed and unsigned numbers.

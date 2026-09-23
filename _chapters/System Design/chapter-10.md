@@ -42,8 +42,9 @@ The chapter focuses on designing a scalable system capable of sending millions o
    - **Emails:** Commercial email services like SendGrid or Mailchimp.
 
 2. **Contact Info Gathering:**
-
-   ![image]({{site.baseurl}}/assets/images/System%20Design/10.%20Notification%20System/images/contact-info-gathering.png)
+   <div style="margin-left:3rem">
+      <img src="{{site.baseurl}}/assets/images/System Design/10. Design a Notification System/images/contact-info-gathering.png" alt="Contact Info Gathering" width="500">
+   </div>
 
    - Collect device tokens, phone numbers, or email addresses during app installation or signup.
    - Store contact info in the database:
@@ -53,7 +54,9 @@ The chapter focuses on designing a scalable system capable of sending millions o
 
 3. **Notification Sending Flow:**
 
-   ![image]({{site.baseurl}}/assets/images/System%20Design/10.%20Notification%20System/images/high-level-design.png)
+   <div style="margin-left:3rem">
+      <img src="{{site.baseurl}}/assets/images/System Design/10. Design a Notification System/images/high-level-design.png" alt="High Level Design" width="500">
+   </div>
 
    - **Trigger Services:**
       - Generate events to initiate notifications (e.g., billing reminders, shipping updates).
@@ -73,7 +76,9 @@ The chapter focuses on designing a scalable system capable of sending millions o
 
 ### Improved Design
 
-   ![image]({{site.baseurl}}/assets/images/System%20Design/10.%20Notification%20System/images/improved-design.png)
+   <div style="margin-left:3rem">
+      <img src="{{site.baseurl}}/assets/images/System Design/10. Design a Notification System/images/improved-design.png" alt="Improved Design" width="500">
+   </div>
 
 - Move databases and caches out of the notification server.
 - Introduce **horizontal scaling** with multiple notification servers.
@@ -89,22 +94,24 @@ The chapter focuses on designing a scalable system capable of sending millions o
 
 ### Reliability
 1. **Prevent Data Loss:** 
-   
-   ![image]({{site.baseurl}}/assets/images/System%20Design/10.%20Notification%20System/images/data-loss.png)
+   <div style="margin-left:3rem">
+   <img src="{{site.baseurl}}/assets/images/System Design/10. Design a Notification System/images/data-loss.png" alt="Data Loss" width="400">
+   </div>
 
    - Persist notification data in a database and implement a retry mechanism. 
    - The Notification log database is included for data persistence.
 
-
 2. **Deduplication:** 
    - Check event IDs to avoid sending duplicate notifications.
    - When a notification event first arrives, check if it is seen before by checking the event ID.
+
 If seen before discard it, otherwise send out the notification. 
 
 
 ### Additional Components
-   
-   ![image]({{site.baseurl}}/assets/images/System%20Design/10.%20Notification%20System/images/events-tracking.png)
+   <div style="margin-left:3rem">
+   <img src="{{site.baseurl}}/assets/images/System Design/10. Design a Notification System/images/events-tracking.png" alt="Events Tracking" width="400">
+   </div>
 
 1. **Notification Templates:** Preformatted templates for consistent and efficient notifications.
 2. **Notification Settings:**
@@ -121,7 +128,9 @@ If seen before discard it, otherwise send out the notification.
 
 ### Notification Flow
 
-   ![image]({{site.baseurl}}/assets/images/System%20Design/10.%20Notification%20System/images/updated-design.png)
+   <div style="margin-left:3rem">
+   <img src="{{site.baseurl}}/assets/images/System Design/10. Design a Notification System/images/updated-design.png" alt="Updated Design" width="500">
+   </div>
 
 1. Trigger services call APIs to send notifications.
 2. Notification servers validate requests and fetch metadata from caches or databases.
