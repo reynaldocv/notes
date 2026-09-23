@@ -34,7 +34,7 @@ This chapter explores the design and implementation of a rate limiter—a system
 ## Step 2: High-Level Design
 ### Placement Options
 <div style="margin-left:2rem">
-    <img src="{{site.baseurl}}/assets/images/System Design/04. Design a Rate Limiter/images/rate_limiter_architecture.png"  alt="Rate Limiting Middleware Architecture" width="550">
+    <img src="{{site.baseurl}}/assets/images/System%20Design/04.%20Design%20a%20Rate%20Limiter/images/rate_limiter_architecture.png"  alt="Rate Limiting Middleware Architecture" width="550">
 </div>
 
 1. **Client-Side Implementation:** Unreliable due to potential misuse.
@@ -51,7 +51,7 @@ This chapter explores the design and implementation of a rate limiter—a system
 ## Step 3: Rate Limiting Algorithms
 ### 1. Token Bucket
 <div style="margin-left:2rem">
-  <img src="{{site.baseurl}}/assets/images/System Design/04. Design a Rate Limiter/images/token-bucket.png"  alt="Token Bucket Algorithm" width="550">
+  <img src="{{site.baseurl}}/assets/images/System%20Design/04.%20Design%20a%20Rate%20Limiter/images/token-bucket.png"  alt="Token Bucket Algorithm" width="550">
 </div>
 
 - **Description:** Tokens are added to a bucket at a fixed rate; each request consumes a token.
@@ -63,7 +63,7 @@ This chapter explores the design and implementation of a rate limiter—a system
 
 ### 2. Leaking Bucket
 <div style="margin-left:2rem">
-  <img src="{{site.baseurl}}/assets/images/System Design/04. Design a Rate Limiter/images/leaking-bucket.png"  alt="Leaking Bucket Algorithm" width="550">
+  <img src="{{site.baseurl}}/assets/images/System%20Design/04.%20Design%20a%20Rate%20Limiter/images/leaking-bucket.png"  alt="Leaking Bucket Algorithm" width="550">
 </div>
 
 - **Description:** Processes requests at a fixed rate using a FIFO queue.
@@ -77,7 +77,7 @@ This chapter explores the design and implementation of a rate limiter—a system
 
 ### 3. Fixed Window Counter
 <div style="margin-left:2rem">
-  <img src="{{site.baseurl}}/assets/images/System Design/04. Design a Rate Limiter/images/fixed-window-counter.png"  alt="Fixed Window Counter" width="550">
+  <img src="{{site.baseurl}}/assets/images/System%20Design/04.%20Design%20a%20Rate%20Limiter/images/fixed-window-counter.png"  alt="Fixed Window Counter" width="550">
 </div>
 
 - **Description:** Divides time into fixed intervals and uses counters to limit requests.
@@ -87,12 +87,12 @@ This chapter explores the design and implementation of a rate limiter—a system
 - Sudden burst of traffic at the edges of time windows
 could cause more requests than allowed quota to go through.
 
-  <img src="{{site.baseurl}}/assets/images/System Design/04. Design a Rate Limiter/images/fixed-window-issue.png"  alt="Fixed Window Issue" width="550">
+  <img src="{{site.baseurl}}/assets/images/System%20Design/04.%20Design%20a%20Rate%20Limiter/images/fixed-window-issue.png"  alt="Fixed Window Issue" width="550">
 
 
 ### 4. Sliding Window Log
 <div style="margin-left:2rem">
-  <img src="{{site.baseurl}}/assets/images/System Design/04. Design a Rate Limiter/images/sliding-window-log.png"  alt="Sliding Window Log" width="550">
+  <img src="{{site.baseurl}}/assets/images/System%20Design/04.%20Design%20a%20Rate%20Limiter/images/sliding-window-log.png"  alt="Sliding Window Log" width="550">
 </div>
 
 - **Description:** Tracks timestamps to allow a rolling time window.
@@ -103,7 +103,7 @@ could cause more requests than allowed quota to go through.
 
 ### 5. Sliding Window Counter
 <div style="margin-left:2rem">
-  <img src="{{site.baseurl}}/assets/images/System Design/04. Design a Rate Limiter/images/sliding-window-counter.png"  alt="Fixed Window Counter" width="550">
+  <img src="{{site.baseurl}}/assets/images/System%20Design/04.%20Design%20a%20Rate%20Limiter/images/sliding-window-counter.png"  alt="Fixed Window Counter" width="550">
 </div>
 
 - **Description:** Combines fixed window and sliding log methods for smoothing spikes.
@@ -115,7 +115,7 @@ could cause more requests than allowed quota to go through.
 
 ## High-Level Architecture
 <div style="margin-left:2rem">
-  <img src="{{site.baseurl}}/assets/images/System Design/04. Design a Rate Limiter/images/architecture.png" style="margin-left: 40px; margin-top: 40px; margin-bottom: 20px;" alt="Architecture" width="550">
+  <img src="{{site.baseurl}}/assets/images/System%20Design/04.%20Design%20a%20Rate%20Limiter/images/architecture.png" style="margin-left: 40px; margin-top: 40px; margin-bottom: 20px;" alt="Architecture" width="550">
 </div>
 
 - **Data Storage:** Use in-memory caching (e.g., Redis) for fast counter operations.
