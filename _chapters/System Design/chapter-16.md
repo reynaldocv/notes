@@ -44,6 +44,7 @@ GET /v1/search/nearby
   - `radius`: Search radius (default: 5000m).
 
 #### **Business APIs**
+
 | API Endpoint                     | Description                                      |
 |-----------------------------------|--------------------------------------------------|
 | `GET /v1/businesses/{id}`         | Fetch detailed business info                    |
