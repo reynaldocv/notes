@@ -8,84 +8,84 @@ permalink: "interview-04/"
 # Phases for Everyday English Conversations
 
 Beginner Phrases:
-- [10 Ways to Say Hello and Goodbye](#10-ways-to-say-hello-and-goodbye)
-- [10 Informal Ways to Say Yes and No](#10-informal-ways-to-say-yes-and-no)
-- [10 Ways to Ask How Someone Is](#10-ways-to-ask-how-someone-is)
-- [10 Ways to Say How You Are](#10-ways-to-say-how-you-are)
-- [10 Ways to Say “Thank You”](#10-ways-to-say-thank-you)
-- [10 Ways to Respond to “Thank You”](#10-ways-to-respond-to-thank-you)
-- [5 Phrases for Apologizing](#5-phrases-for-apologizing)
-- [5 Ways to Respond to an Apology](#5-ways-to-respond-to-an-apology)
-- [10 Phrases for Introductions](#10-phrases-for-introductions)
-- [6 Ways to Show Interest](#6-ways-to-show-interest)
-- [5 Ways to End a Conversation Politely](#5-ways-to-end-a-conversation-politely)
-- [10 Phrases for Telephone Calls](#10-phrases-for-telephone-calls)
-- [10 Phrases for Asking for Information](#10-phrases-for-asking-for-information)
-- [5 Ways to Say “I don’t know”](#5-ways-to-say-i-dont-know)
-- [10 Phrases for Asking for Someone’s Opinion & Giving Your Opinion](#10-phrases-for-asking-for-someones-opinion-&-giving-your-opinion)
-- [5 Phrases for Not Having an Opinion](#5-phrases-for-not-having-an-opinion)
-- [10 Phrases for Agreeing](#10-phrases-for-agreeing)
-- [10 Phrases for Disagreeing](#10-phrases-for-disagreeing)
-- [5 Phrases for Responding to Good News](#5-phrases-for-responding-to-good-news)
-- [5 Phrases for Responding to Bad News](#5-phrases-for-responding-to-bad-news)
-- [10 Phrases for Invitations](#10-phrases-for-invitations)
-- [5 Ways to Make & Respond to an Offer](#5-ways-to-make-&-respond-to-an-offer)
-- [6 Phrases for Talking About Future Plans](#6-phrases-for-talking-about-future-plans)
-- [10 Ways to Talk about Likes & Dislikes](#10-ways-to-talk-about-likes-&-dislikes)
-- [5 Ways to Make a Suggestion](#5-ways-to-make-a-suggestion)
-- [10 Phrases for Asking/Talking about Jobs](#10-phrases-for-asking/talking-about-jobs)
-- [10 Phrases for Describing Relationships](#10-phrases-for-describing-relationships)
+- [10 Ways to Say Hello and Goodbye](##10-ways-to-say-hello-and-goodbye)
+- [10 Informal Ways to Say Yes and No](##10-informal-ways-to-say-yes-and-no)
+- [10 Ways to Ask How Someone Is](##10-ways-to-ask-how-someone-is)
+- [10 Ways to Say How You Are](##10-ways-to-say-how-you-are)
+- [10 Ways to Say “Thank You”](##10-ways-to-say-thank-you)
+- [10 Ways to Respond to “Thank You”](##10-ways-to-respond-to-thank-you)
+- [5 Phrases for Apologizing](##5-phrases-for-apologizing)
+- [5 Ways to Respond to an Apology](##5-ways-to-respond-to-an-apology)
+- [10 Phrases for Introductions](##10-phrases-for-introductions)
+- [6 Ways to Show Interest](##6-ways-to-show-interest)
+- [5 Ways to End a Conversation Politely](##5-ways-to-end-a-conversation-politely)
+- [10 Phrases for Telephone Calls](##10-phrases-for-telephone-calls)
+- [10 Phrases for Asking for Information](##10-phrases-for-asking-for-information)
+- [5 Ways to Say “I don’t know”](##5-ways-to-say-i-dont-know)
+- [10 Phrases for Asking for Someone’s Opinion & Giving Your Opinion](##10-phrases-for-asking-for-someones-opinion-&-giving-your-opinion)
+- [5 Phrases for Not Having an Opinion](##5-phrases-for-not-having-an-opinion)
+- [10 Phrases for Agreeing](##10-phrases-for-agreeing)
+- [10 Phrases for Disagreeing](##10-phrases-for-disagreeing)
+- [5 Phrases for Responding to Good News](##5-phrases-for-responding-to-good-news)
+- [5 Phrases for Responding to Bad News](##5-phrases-for-responding-to-bad-news)
+- [10 Phrases for Invitations](##10-phrases-for-invitations)
+- [5 Ways to Make & Respond to an Offer](##5-ways-to-make-&-respond-to-an-offer)
+- [6 Phrases for Talking About Future Plans](##6-phrases-for-talking-about-future-plans)
+- [10 Ways to Talk about Likes & Dislikes](##10-ways-to-talk-about-likes-&-dislikes)
+- [5 Ways to Make a Suggestion](##5-ways-to-make-a-suggestion)
+- [10 Phrases for Asking/Talking about Jobs](##10-phrases-for-asking/talking-about-jobs)
+- [10 Phrases for Describing Relationships](##10-phrases-for-describing-relationships)
 
 Intermediate Phrases:
-- [5 Ways to Ask for Clarification](#5-ways-to-ask-for-clarification)
-- [5 Ways to Check if the Other Person Understands You](#5-ways-to-check-if-the-other-person-understands-you)
-- [5 Ways to Ask for Help](#5-ways-to-ask-for-help)
-- [5 Ways to Ask Someone Else to Do Something](#5-ways-to-ask-someone-else-to-do-something)
-- [5 Ways to Interrupt Someone](#5-ways-to-interrupt-someone)
-- [10 Ways to Encourage Someone](#10-ways-to-encourage-someone)
-- [5 Phrases for Complaining](#5-phrases-for-complaining)
-- [10 Phrases for Remembering, Reminding, & Forgetting](#10-phrases-for-remembering,-reminding,-&-forgetting)
-- [10 Phrases for Saying Something is Easy & Difficult](#10-phrases-for-saying-something-is-easy-&-difficult)
-- [10 Expressions about Age](#10-expressions-about-age)
-- [10 Phrases for Shopping](#10-phrases-for-shopping)
-- [10 Phrases for Talking about Food](#10-phrases-for-talking-about-food)
-- [10 Phrases for Talking About TV](#10-phrases-for-talking-about-tv)
-- [10 Phrases You’ll Hear in the Airport](#10-phrases-you’ll-hear-in-the-airport)
-- [10 Ways to Talk About Price](#10-ways-to-talk-about-price)
-- [5 Phrases for Hot Weather](#5-phrases-for-hot-weather)
-- [5 Phrases for Cold Weather](#5-phrases-for-cold-weather)
-- [5 Phrases for Talking about Rain](#5-phrases-for-talking-about-rain)
-- [10 Ways to Say You’re Tired](#10-ways-to-say-you’re-tired)
-- [5 Phrases for Promises & Resolutions](#5-phrases-for-promises-&-resolutions)
-- [10 Excuses for Being Late](#10-excuses-for-being-late)
-- [5 Ways to Say Someone is Correct](#5-ways-to-say-someone-is-correct)
-- [5 Ways to Say Someone is Wrong](#5-ways-to-say-someone-is-wrong)
-- [5 Ways to Say Someone is Smart](#5-ways-to-say-someone-is-smart)
-- [5 Ways to Say Someone is Stupid](#5-ways-to-say-someone-is-stupid)
+- [5 Ways to Ask for Clarification](##5-ways-to-ask-for-clarification)
+- [5 Ways to Check if the Other Person Understands You](##5-ways-to-check-if-the-other-person-understands-you)
+- [5 Ways to Ask for Help](##5-ways-to-ask-for-help)
+- [5 Ways to Ask Someone Else to Do Something](##5-ways-to-ask-someone-else-to-do-something)
+- [5 Ways to Interrupt Someone](##5-ways-to-interrupt-someone)
+- [10 Ways to Encourage Someone](##10-ways-to-encourage-someone)
+- [5 Phrases for Complaining](##5-phrases-for-complaining)
+- [10 Phrases for Remembering, Reminding, & Forgetting](##10-phrases-for-remembering,-reminding,-&-forgetting)
+- [10 Phrases for Saying Something is Easy & Difficult](##10-phrases-for-saying-something-is-easy-&-difficult)
+- [10 Expressions about Age](##10-expressions-about-age)
+- [10 Phrases for Shopping](##10-phrases-for-shopping)
+- [10 Phrases for Talking about Food](##10-phrases-for-talking-about-food)
+- [10 Phrases for Talking About TV](##10-phrases-for-talking-about-tv)
+- [10 Phrases You’ll Hear in the Airport](##10-phrases-you’ll-hear-in-the-airport)
+- [10 Ways to Talk About Price](##10-ways-to-talk-about-price)
+- [5 Phrases for Hot Weather](##5-phrases-for-hot-weather)
+- [5 Phrases for Cold Weather](##5-phrases-for-cold-weather)
+- [5 Phrases for Talking about Rain](##5-phrases-for-talking-about-rain)
+- [10 Ways to Say You’re Tired](##10-ways-to-say-you’re-tired)
+- [5 Phrases for Promises & Resolutions](##5-phrases-for-promises-&-resolutions)
+- [10 Excuses for Being Late](##10-excuses-for-being-late)
+- [5 Ways to Say Someone is Correct](##5-ways-to-say-someone-is-correct)
+- [5 Ways to Say Someone is Wrong](##5-ways-to-say-someone-is-wrong)
+- [5 Ways to Say Someone is Smart](##5-ways-to-say-someone-is-smart)
+- [5 Ways to Say Someone is Stupid](##5-ways-to-say-someone-is-stupid)
 
 Advanced Phrases:
 - [10 Ways to Avoid Answering a Question](##10-ways-to-avoid-answering-a-question)
-- [15 Phrases for Being Rich & Poor](#15-phrases-for-being-rich-&-poor)
-- [10 Phrases for Talking about Statistics](#10-phrases-for-talking-about-statistics)
-- [10 Ways to Say Someone’s Talented](#10-ways-to-say-someone’s-talented)
-- [10 Phrases for Telling Someone to Wait](#10-phrases-for-telling-someone-to-wait)
-- [10 Phrases for Estimating & Guessing](#10-phrases-for-estimating-&-guessing)
-- [10 Phrases for Decisions](#10-phrases-for-decisions)
-- [10 Phrases for Good Luck & Bad Luck](#10-phrases-for-good-luck-&-bad-luck)
-- [10 Phrases for Worries & Relief](#10-phrases-for-worries-&-relief)
-- [10 Phrases for Talking about the Future](#10-phrases-for-talking-about-the-future)
-- [10 Phrases for Compliments](#10-phrases-for-compliments)
-- [15 Phrases for Certainty & Probability](#15-phrases-for-certainty-&-probability)
-- [10 Ways to Say Something is Interesting/Boring](#10-ways-to-say-something-is-interesting/boring)
-- [7 Phrases for Disappointment](#7-phrases-for-disappointment)
-- [10 Ways to Say You Don’t Believe Someone](#10-ways-to-say-you-don’t-believe-someone)
-- [10 Expressions for Bad People](#10-expressions-for-bad-people)
-- [10 Words for Describing Speaking](#10-words-for-describing-speaking)
-- [10 Phrases for Facial Expressions](#10-phrases-for-facial-expressions)
-- [10 Phrases to Describe Offending or Upsetting People](#10-phrases-to-describe-offending-or-upsetting-people)
-- [10 Phrases for Bad Travel Experiences](#10-phrases-for-bad-travel-experiences)
-- [10 Phrases for Drinking (Alcohol)](#10-phrases-for-drinking-alcohol)
-- [15 Comparative Idioms](#15-comparative-idoms)
+- [15 Phrases for Being Rich & Poor](##15-phrases-for-being-rich-&-poor)
+- [10 Phrases for Talking about Statistics](##10-phrases-for-talking-about-statistics)
+- [10 Ways to Say Someone’s Talented](##10-ways-to-say-someone’s-talented)
+- [10 Phrases for Telling Someone to Wait](##10-phrases-for-telling-someone-to-wait)
+- [10 Phrases for Estimating & Guessing](##10-phrases-for-estimating-&-guessing)
+- [10 Phrases for Decisions](##10-phrases-for-decisions)
+- [10 Phrases for Good Luck & Bad Luck](##10-phrases-for-good-luck-&-bad-luck)
+- [10 Phrases for Worries & Relief](##10-phrases-for-worries-&-relief)
+- [10 Phrases for Talking about the Future](##10-phrases-for-talking-about-the-future)
+- [10 Phrases for Compliments](##10-phrases-for-compliments)
+- [15 Phrases for Certainty & Probability](##15-phrases-for-certainty-&-probability)
+- [10 Ways to Say Something is Interesting/Boring](##10-ways-to-say-something-is-interesting/boring)
+- [7 Phrases for Disappointment](##7-phrases-for-disappointment)
+- [10 Ways to Say You Don’t Believe Someone](##10-ways-to-say-you-don’t-believe-someone)
+- [10 Expressions for Bad People](##10-expressions-for-bad-people)
+- [10 Words for Describing Speaking](##10-words-for-describing-speaking)
+- [10 Phrases for Facial Expressions](##10-phrases-for-facial-expressions)
+- [10 Phrases to Describe Offending or Upsetting People](##10-phrases-to-describe-offending-or-upsetting-people)
+- [10 Phrases for Bad Travel Experiences](##10-phrases-for-bad-travel-experiences)
+- [10 Phrases for Drinking (Alcohol)](##10-phrases-for-drinking-alcohol)
+- [15 Comparative Idioms](##15-comparative-idoms)
 
 ## 10 Ways to Say Hello and Goodbye
 1. Hello
@@ -193,7 +193,8 @@ Note: The way to respond to “What’s up?” and “What’s new?” is typica
 10. And you.
 #1 and #2 are used to introduce yourself; #3-#6 are used to introduce someone else.
 #9 and #10 can be used as a response to #7 and #8.
-# 6 Ways to Show Interest
+
+## 6 Ways to Show Interest
 1. Really?
 2. That’s interesting.
 3. Uh-huh.
@@ -201,13 +202,15 @@ Note: The way to respond to “What’s up?” and “What’s new?” is typica
 5. Gotcha.
 6. Sure.
 You can use these phrases to show the other person that you are listening.
-# 5 Ways to End a Conversation Politely
+
+## 5 Ways to End a Conversation Politely
 1. It was nice chatting with you.
 2. Well, it’s getting late.
 3. Anyway, I should get going.
 4. (formal) Sorry, but I’m afraid I need to… 
 5. I’m sorry to cut you off, but I actually gotta run.
 (cut you off = interrupt you)
+
 10 Phrases for Telephone Calls
 1. Hi, this is Jane.
 2. (formal) May I speak with John Smith?
@@ -219,9 +222,8 @@ You can use these phrases to show the other person that you are listening.
 8. He’s not here. Would you like to leave a message?
 9. Could you ask him to call me back?
 10. Thanks for calling.
-Learn more telephone English:
-www.espressoenglish.net/telephone-english-phrases
-# 10 Phrases for Asking for Information
+
+## 10 Phrases for Asking for Information
 1. Can you tell me...?
 2. Could you tell me...?
 3. I'd like to know...
@@ -235,13 +237,15 @@ www.espressoenglish.net/telephone-english-phrases
 10. I’m calling to find out…
 (use this phrase on the telephone)
 Use #4, #5, #7, and #8 when you’re not sure if the other person has the information.
-# 5 Ways to Say “I don’t know”
+
+## 5 Ways to Say “I don’t know”
 1. I have no idea/clue.
 2. I can’t help you there.
 3. (informal) Beats me.
 4. I’m not really sure.
 5. I’ve been wondering that, too.
-# 10 Phrases for Asking for Someone’s Opinion
+
+## 10 Phrases for Asking for Someone’s Opinion
 & Giving Your Opinion
 1. What do you think about...?
 2. How do you feel about…?
@@ -253,13 +257,15 @@ Use #4, #5, #7, and #8 when you’re not sure if the other person has the inform
 8. If you ask me...
 9. The way I see it...
 10. From my point of view…
-# 5 Phrases for Not Having an Opinion
+
+## 5 Phrases for Not Having an Opinion
 1. I’ve never given it much thought.
 2. I don’t have strong feelings either way.
 3. It doesn’t make any difference to me.
 4. I have no opinion on the matter.
 5. (very informal) Whatever.
-# 10 Phrases for Agreeing
+
+## 10 Phrases for Agreeing
 1. Exactly.
 2. Absolutely.
 3. That’s so true.
@@ -273,7 +279,8 @@ Use #4, #5, #7, and #8 when you’re not sure if the other person has the inform
 (use this phrase for weak agreement – you agree, but reluctantly)
 Note: Avoid the common error of saying “I’m agree” – the correct phrase is “I agree” or
 “I’m in agreement” – the second one is more formal.
-# 10 Phrases for Disagreeing
+
+## 10 Phrases for Disagreeing
 1. I don’t think so.
 2. I beg to differ.
 3. I’m afraid I don’t agree.
@@ -284,13 +291,15 @@ Note: Avoid the common error of saying “I’m agree” – the correct phrase 
 8. On the contrary.
 9. (very informal) No way!
 10. (very strong) I totally disagree.
-# 5 Phrases for Responding to Good News
+
+## 5 Phrases for Responding to Good News
 1. Congratulations!
 2. That’s great!
 3. How wonderful!
 4. Awesome!
 5. I’m so happy for you!
-# 5 Phrases for Responding to Bad News
+
+## 5 Phrases for Responding to Bad News
 1. Oh no…
 2. That’s terrible.
 3. Poor you.
@@ -298,7 +307,8 @@ Note: Avoid the common error of saying “I’m agree” – the correct phrase 
 4. I’m so sorry to hear that.
 5. I’m sorry for your loss.
 (Use this only if someone has died)
-# 10 Phrases for Invitations
+
+## 10 Phrases for Invitations
 1. Are you free… [Saturday night?]
 2. Are you doing anything… [Saturday night?]
 3. Let me check my calendar.
@@ -309,7 +319,8 @@ Note: Avoid the common error of saying “I’m agree” – the correct phrase 
 8. I’d love to, but I have another commitment.
 9. I don’t think I can.
 10. Maybe another time.
-# 5 Ways to Make & Respond to an Offer
+
+## 5 Ways to Make & Respond to an Offer
 1. (more formal) Would you like a drink?
 2. (informal) Do you want some water?
 3. Can I get you something to eat?
@@ -317,7 +328,8 @@ Note: Avoid the common error of saying “I’m agree” – the correct phrase 
 (= yes)
 5. No, thanks. I’m OK.
 (= no)
-# 6 Phrases for Talking About Future Plans
+
+## 6 Phrases for Talking About Future Plans
 1. I’m going to…
 2. I’m planning to…
 3. I hope to…
@@ -326,7 +338,8 @@ Note: Avoid the common error of saying “I’m agree” – the correct phrase 
 Click here for the difference between may and might
 6. I’m thinking about…
 Click here for the different prepositions to use after “think”
-10 Ways to Talk about Likes & Dislikes
+
+## 10 Ways to Talk about Likes & Dislikes
 1. I love… [soccer]
 2. I’m really into… [soccer]
 3. I live for… [soccer]
@@ -338,16 +351,15 @@ Click here for the different prepositions to use after “think”
 9. I’m not into… [modern art]
 10. I can’t stand… [modern art]
 (this phrase expresses strong dislike)
-5 Ways to Make a Suggestion
+
+## 5 Ways to Make a Suggestion
 1. How about… [ex. trying something new]?
 2. Why don’t you… [ex. talk to your boss]?
 3. Maybe we should… [ex. do more research].
 4. I’d recommend… [ex. going to the doctor].
 5. Have you thought about… [ex. buying a new computer]?
-~ 18 ~
-© Shayna Oliveira
-www.EspressoEnglish.net
-10 Phrases for Asking/Talking about Jobs
+
+## 10 Phrases for Asking/Talking about Jobs
 1. Where do you work?
 2. What do you do? / What do you do for a living?
 3. I work at… [Microsoft].
@@ -358,9 +370,8 @@ www.EspressoEnglish.net
 8. I run my own business.
 9. I’m a freelance… [writer/designer/etc.]
 10. I’m retired.
-Learn Essential Job Vocabulary:
-www.espressoenglish.net/essential-job-vocabulary
-10 Phrases for Describing Relationships
+
+## 10 Phrases for Describing Relationships
 1. I’m single.
 2. I have a boyfriend/girlfriend.
 3. We’re engaged.
@@ -374,11 +385,9 @@ www.espressoenglish.net/essential-job-vocabulary
 9. I’m not looking for anything serious.
 10. I’m not quite over my ex.
 (= I still have feelings for my ex-boyfriend/girlfriend or ex-husband/wife)
-~ 19 ~
-© Shayna Oliveira
-www.EspressoEnglish.net
-Intermediate Phrases
-5 Ways to Ask for Clarification
+
+# Intermediate Phrases
+## 5 Ways to Ask for Clarification
 1. Pardon?
 (if you didn’t hear or understand what the person said)
 2. Would you mind repeating that?
@@ -387,7 +396,8 @@ Intermediate Phrases
 4. I’m not sure I follow you.
 (= I don’t understand)
 5. Could you explain… ?
-5 Ways to Check if the Other Person
+
+## 5 Ways to Check if the Other Person
 Understands You
 1. Do you understand what I’m saying?
 2. Does that make sense?
@@ -397,23 +407,23 @@ Understands You
 5. Is that clear?
 (often used after giving orders, or expressing disapproval or another negative
 attitude)
-~ 20 ~
-© Shayna Oliveira
-www.EspressoEnglish.net
-5 Ways to Ask for Help
+
+## 5 Ways to Ask for Help
 1. I need a little help.
 2. Could you help me out?
 3. Could you give me a hand?
 (usually used for physical tasks)
 4. Could you spare a couple minutes?
 5. Could you do me a favor?
-5 Ways to Ask Someone Else to Do Something
+
+## 5 Ways to Ask Someone Else to Do Something
 1. (more formal) Would you mind… [opening the window]?
 2. Could you please… [turn off the lights]?
 3. (informal) Can you… [pass me the chicken]?
 4. Please… [send me the information].
 5. I’d appreciate it if you could… [wash the dishes].
-5 Ways to Interrupt Someone
+
+## 5 Ways to Interrupt Someone
 1. Sorry to interrupt, but…
 2. Excuse me – could I talk to you for a minute? / do you have a minute?
 (when interrupting a conversation between two other people, to talk to one of them)
@@ -421,15 +431,13 @@ www.EspressoEnglish.net
 (use this when interrupting a discussion among many people)
 4. Sorry – I just want to say that…
 5. (formal) May I have a word?
-10 Ways to Encourage Someone
+
+## 10 Ways to Encourage Someone
 1. Keep up the good work!
 2. That was a nice try.
 (say this after someone made a good effort but failed)
 3. That’s a real improvement.
 4. You’re on the right track.
-~ 21 ~
-© Shayna Oliveira
-www.EspressoEnglish.net
 5. You’ve almost got it.
 6. You’re doing great.
 7. Don’t give up! / Hang in there!
@@ -439,13 +447,15 @@ www.EspressoEnglish.net
 (best shot = best try, best effort)
 10. Nice job! / You did great!
 (after the person has done something good)
-5 Phrases for Complaining
+
+## 5 Phrases for Complaining
 1. I’m not happy about this.
 2. I’m sorry, but this is unacceptable.
 3. I’m not very satisfied with... [ex. this product / this situation]
 4. (informal) I can’t stand it when… [ex. the internet is slow]
 5. (informal) This sucks.
-10 Phrases for Remembering, Reminding, &
+
+## 10 Phrases for Remembering, Reminding, &
 Forgetting
 1. I’ll always remember… / I’ll never forget…
 2. If I remember correctly… / As far as I can recall…
@@ -459,12 +469,10 @@ Forgetting
 7. Please remember to… / Please don’t forget to…
 8. I’d like to remind you about…
 9. You haven’t forgotten to/about… have you?
-~ 22 ~
-© Shayna Oliveira
-www.EspressoEnglish.net
 10. It completely slipped my mind!
 (= I completely forgot about it!)
-10 Phrases for Saying Something is Easy &
+
+## 10 Phrases for Saying Something is Easy &
 Difficult
 1. It’s a piece of cake.
 2. It’s a cinch.
@@ -477,7 +485,8 @@ Difficult
 9. It’s not a walk in the park.
 10. It’s very demanding.
 (= it takes a lot of time and energy)
-10 Expressions about Age
+
+## 10 Expressions about Age
 1. She’s in her early twenties.
 (=20-23 years old)
 2. He’s in his late thirties.
@@ -494,12 +503,10 @@ Difficult
 (she is young, but she has the wisdom of an older person)
 9. I’m having a senior moment.
 (= I’m being forgetful)
-~ 23 ~
-© Shayna Oliveira
-www.EspressoEnglish.net
 10. He lived to a ripe old age.
 (= a very old age)
-10 Phrases for Shopping
+
+## 10 Phrases for Shopping
 1. Do you have… ?
 2. Where can I find… ?
 3. I’m just browsing.
@@ -512,7 +519,8 @@ www.EspressoEnglish.net
 8. I’ll take it!
 9. Do you take credit cards?
 10. I’d like to return/exchange this.
-10 Phrases for Talking about Food
+
+## 10 Phrases for Talking about Food
 1. I’m starving!
 (= I’m very hungry)
 2. Let’s grab a bite to eat.
@@ -529,10 +537,8 @@ www.EspressoEnglish.net
 (= I’m satisfied)
 10. I’m stuffed.
 (= I ate a LOT, maybe too much!)
-~ 24 ~
-© Shayna Oliveira
-www.EspressoEnglish.net
-10 Phrases for Talking About TV
+
+## 10 Phrases for Talking About TV
 1. Where’s the remote?
 (remote = remote control)
 2. Is there anything good on?
@@ -548,7 +554,8 @@ www.EspressoEnglish.net
 (the TV guide has the information about the TV programming and schedule)
 10. It’s the season finale!
 (= the final episode of the season)
-10 Phrases You’ll Hear in the Airport
+
+## 10 Phrases You’ll Hear in the Airport
 1. Do you have any bags to check?
 2. Would you like a window seat or an aisle seat?
 (aisle = corridor)
@@ -562,12 +569,8 @@ www.EspressoEnglish.net
 8. Your flight has been canceled.
 9. This is the final call for flight 800.
 10. What is the purpose of your trip?
-~ 25 ~
-© Shayna Oliveira
-www.EspressoEnglish.net
-Learn Travel English:
-www.espressoenglish.net/travel-englishconversations-in-the-airport
-10 Ways to Talk About Price
+
+## 10 Ways to Talk About Price
 1. It cost a fortune.
 2. It cost an arm and a leg.
 3. That’s a rip-off.
@@ -584,7 +587,8 @@ www.espressoenglish.net/travel-englishconversations-in-the-airport
 9. It was a real bargain.
 10. It was dirt cheap.
 (= extremely inexpensive)
-5 Phrases for Hot Weather
+
+## 5 Phrases for Hot Weather
 1. It’s nice and warm today.
 2. It’s absolutely boiling!
 (boiling = extremely hot)
@@ -592,10 +596,8 @@ www.espressoenglish.net/travel-englishconversations-in-the-airport
 (heat wave = many consecutive days of hot weather)
 4. The sun’s really strong today.
 5. It’s hot and humid.
-~ 26 ~
-© Shayna Oliveira
-www.EspressoEnglish.net
-5 Phrases for Cold Weather
+
+## 5 Phrases for Cold Weather
 1. It’s a little chilly.
 2. It’s freezing.
 (= extremely cold)
@@ -604,7 +606,8 @@ www.EspressoEnglish.net
 (bundle up = put on warm clothes for protection against the cold)
 5. We’re expecting some winter weather.
 (winter weather = snow, hail, sleet, ice, etc.)
-5 Phrases for Talking about Rain
+
+## 5 Phrases for Talking about Rain
 1. It’s drizzling.
 (= raining lightly)
 2. It’s pouring.
@@ -614,7 +617,8 @@ www.EspressoEnglish.net
 4. I got caught in a downpour.
 5. I think the rain’s letting up.
 (letting up = getting lighter and stopping)
-10 Ways to Say You’re Tired
+
+## 10 Ways to Say You’re Tired
 1. I’m exhausted.
 2. I’m dead tired.
 3. I’m pooped.
@@ -626,10 +630,8 @@ www.EspressoEnglish.net
 9. I’m gonna hit the sack.
 (hit the sack = go to bed)
 10. It’s bedtime for me.
-~ 27 ~
-© Shayna Oliveira
-www.EspressoEnglish.net
-5 Phrases for Promises & Resolutions
+
+## 5 Phrases for Promises & Resolutions
 1. I really should…
 2. I promise that I’ll…
 3. I swear I’ll / I won’t…
@@ -637,7 +639,8 @@ www.EspressoEnglish.net
 4. No matter what happens, I’m going to…
 5. Come hell or high water, I’ll…
 #4 and #5 express your determination to do something, even if obstacles appear.
-10 Excuses for Being Late
+
+## 10 Excuses for Being Late
 1. Sorry I’m late.
 2. I overslept.
 (= I slept longer than I should have)
@@ -652,40 +655,39 @@ www.EspressoEnglish.net
 (tied up = occupied, impossible to escape)
 10. I just lost track of time.
 (= I didn’t notice what time it was)
-5 Ways to Say Someone is Correct
+
+## 5 Ways to Say Someone is Correct
 1. That’s right.
 2. That’s spot on.
 3. You’ve hit the nail on the head. / You’ve nailed it.
 4. I suppose so.
 (use this when you agree, but you are not completely convinced)
-~ 28 ~
-© Shayna Oliveira
-www.EspressoEnglish.net
 5. I’m afraid you’re right.
 (use this in response to bad news, to say the bad news is correct)
-5 Ways to Say Someone is Wrong
+
+## 5 Ways to Say Someone is Wrong
 1. I’m afraid that’s not quite right.
 2. I’m afraid you’re mistaken.
 3. No, you’ve got it wrong.
 4. No, that’s all wrong.
 5. (informal – rude) Baloney. / Bullshit.
-5 Ways to Say Someone is Smart
+
+## 5 Ways to Say Someone is Smart
 1. He’s really sharp.
 2. She’s brilliant.
 3. He’s very bright.
 4. She’s a genius.
 5. He’s a smart cookie.
-5 Ways to Say Someone is Stupid
+
+## 5 Ways to Say Someone is Stupid
 1. He’s not the sharpest tool in the shed.
 2. She’s a few cards short of a deck.
 3. He’s a bit slow.
 4. She’s a complete idiot.
 5. He’s really dumb.
-~ 29 ~
-© Shayna Oliveira
-www.EspressoEnglish.net
-Advanced Phrases
-10 Ways to Avoid Answering a Question
+
+# Advanced Phrases
+## 10 Ways to Avoid Answering a Question
 1. No comment.
 2. I’m not at liberty to say.
 (= I don’t have permission to give the information)
@@ -700,7 +702,8 @@ Advanced Phrases
 9. Mind your own business.
 10. Why do you want to know?
 #8 and #9 are rather rude – telling the other person to stop inquiring about your life
-15 Phrases for Being Rich & Poor
+
+## 15 Phrases for Being Rich & Poor
 1. He’s short on cash.
 2. He’s broke.
 (= he has no money)
@@ -713,9 +716,6 @@ Advanced Phrases
 7. He’s scrimping and saving.
 8. She’s very wealthy.
 9. She’s quite well-off.
-~ 30 ~
-© Shayna Oliveira
-www.EspressoEnglish.net
 10. She’s loaded.
 11. She’s filthy rich.
 12. She inherited a fortune.
@@ -724,7 +724,8 @@ www.EspressoEnglish.net
 15. She’s rolling in dough.
 #6 and #7 express the idea that the person is trying to conserve money, when they have
 very little money.
-10 Phrases for Talking about Statistics
+
+## 10 Phrases for Talking about Statistics
 1. The crime rate rose.
 2. The crime rate went up.
 3. There was a sharp increase in crime.
@@ -740,7 +741,8 @@ very little money.
 9. The crime rate dropped.
 10. The crime rate plummeted.
 (= decreased a lot, very quickly)
-10 Ways to Say Someone’s Talented
+
+## 10 Ways to Say Someone’s Talented
 1. She was born to… [dance].
 2. He’s a natural.
 3. She could do it in her sleep.
@@ -748,13 +750,11 @@ very little money.
 5. She knows [New York] like the back of her hand.
 6. She’s a walking encyclopedia of… [philosophy].
 7. He’s in a class of his own.
-~ 31 ~
-© Shayna Oliveira
-www.EspressoEnglish.net
 8. He’s the best in the business.
 9. She’s very gifted.
 10. He’s a [chemistry] whiz.
-10 Phrases for Telling Someone to Wait
+
+## 10 Phrases for Telling Someone to Wait
 1. Could you give me a minute?
 2. (informal) Hang on a sec / Just a sec.
 3. Hold on...
@@ -767,7 +767,8 @@ www.EspressoEnglish.net
 10. Hold your horses!
 #9 and #10 are used for cautioning someone to wait and not make a bad decision or
 take reckless action.
-10 Phrases for Estimating & Guessing
+
+## 10 Phrases for Estimating & Guessing
 1. If I had to take a guess, I’d say… [she’s about 35 years old].
 2. It’s difficult to say, but I think… [our customers are more satisfied].
 3. Off the top of my head, I’d say… [the company has 500 employees].
@@ -781,10 +782,8 @@ take reckless action.
 9. I bet… [he’ll be late].
 10. Your guess is as good as mine.
 (= I don’t know)
-~ 32 ~
-© Shayna Oliveira
-www.EspressoEnglish.net
-10 Phrases for Decisions
+
+## 10 Phrases for Decisions
 1. I’m debating between… [option A and option B]
 2. I can’t make up my mind.
 3. I’m on the fence.
@@ -798,7 +797,8 @@ www.EspressoEnglish.net
 9. Looking back, I know it was the right decision.
 10. It’s up to you.
 (= You can decide)
-10 Phrases for Good Luck & Bad Luck
+
+## 10 Phrases for Good Luck & Bad Luck
 1. Good luck!
 2. Better luck next time.
 (say this after someone fails, and you hope they do better next time)
@@ -816,10 +816,8 @@ www.EspressoEnglish.net
 9. No such luck.
 (= something good that could have happened, didn’t happen)
 10. What rotten luck!
-~ 33 ~
-© Shayna Oliveira
-www.EspressoEnglish.net
-10 Phrases for Worries & Relief
+
+## 10 Phrases for Worries & Relief
 1. I’m scared that…
 2. I can’t help thinking that…
 (use this for thoughts that you try to avoid, but they keep coming into your mind)
@@ -832,7 +830,8 @@ www.EspressoEnglish.net
 8. You had me worried for a moment.
 9. You have no idea what a relief it is.
 10. That’s a huge load off my mind.
-10 Phrases for Talking about the Future
+
+## 10 Phrases for Talking about the Future
 1. It’ll happen any day now.
 2. It’s right around the corner.
 3. …in the near future.
@@ -851,10 +850,8 @@ www.EspressoEnglish.net
 10. Time will tell.
 (in the future, we will know if something is true/false or good/bad)
 #1, #2, and #3 are used to say something will happen soon.
-~ 34 ~
-© Shayna Oliveira
-www.EspressoEnglish.net
-10 Phrases for Compliments
+
+## 10 Phrases for Compliments
 #1-3 are used for complimenting a person’s appearance
 #4-6 for complimenting a person’s cooking
 #7-8 for complimenting a person’s home
@@ -869,7 +866,8 @@ www.EspressoEnglish.net
 8. You have a beautiful home.
 9. He’s/She’s so cute!
 10. Your kids are a lot of fun.
-15 Phrases for Certainty & Probability
+
+## 15 Phrases for Certainty & Probability
 1. I’m absolutely sure.
 2. I’m positive that…
 3. I have no doubt that…
@@ -888,10 +886,8 @@ www.EspressoEnglish.net
 14. I wouldn’t bet on it.
 (= there’s a small chance it could happen… but it probably won’t happen)
 15. That’ll never happen.
-~ 35 ~
-© Shayna Oliveira
-www.EspressoEnglish.net
-10 Ways to Say Something is
+
+## 10 Ways to Say Something is
 Interesting/Boring
 1. It’s fascinating.
 2. It’s intriguing.
@@ -905,7 +901,8 @@ Interesting/Boring
 9. I was dying of boredom.
 10. It’s about as exciting as watching paint dry.
 (= it’s very boring)
-10 Phrases for Cheering Someone Up
+
+## 10 Phrases for Cheering Someone Up
 1. What’s the matter?
 2. What’s wrong?
 3. Are you all right?
@@ -919,10 +916,8 @@ Interesting/Boring
 (= consider the positive aspects)
 10. It’s not the end of the world.
 (this phrase is used when someone is upset about something small and trivial)
-~ 36 ~
-© Shayna Oliveira
-www.EspressoEnglish.net
-7 Phrases for Disappointment
+
+# 7 Phrases for Disappointment
 1. What a pity!
 2. What a shame.
 3. How disappointing.
@@ -930,7 +925,8 @@ www.EspressoEnglish.net
 5. Bummer.
 6. It was a real letdown.
 7. It didn’t live up to my expectations.
-10 Ways to Say You Don’t Believe Someone
+
+## 10 Ways to Say You Don’t Believe Someone
 1. Yeah, right.
 2. You're kidding.
 3. You're pulling my leg.
@@ -942,7 +938,8 @@ www.EspressoEnglish.net
 8. His story is fishy.
 9. That's an outright lie.
 10. That's a pack of lies.
-10 Expressions for Bad People
+
+## 10 Expressions for Bad People
 1. He’s a creep.
 (= unpleasant, suspicious, makes you afraid/uneasy)
 2. He’s a pervert.
@@ -952,16 +949,14 @@ www.EspressoEnglish.net
 5. He’s an asshole.
 6. He’s a jerk.
 7. He’s a bastard.
-~ 37 ~
-© Shayna Oliveira
-www.EspressoEnglish.net
 8. She’s a bitch.
 (= she’s irritating and unpleasant)
 9. She’s a psycho.
 (= crazy, irrational)
 10. She’s a slut.
 (= she has sex with a lot of people)
-10 Words for Describing Speaking
+
+## 10 Words for Describing Speaking
 1. He yelled.
 2. She screamed.
 3. I whispered.
@@ -979,7 +974,8 @@ www.EspressoEnglish.net
 (= said a quick and angry remark)
 10. He muttered.
 (= spoke in a low voice, usually making complaints or negative comments)
-10 Phrases for Facial Expressions
+
+## 10 Phrases for Facial Expressions
 1. She was beaming.
 (= she had a big, radiant smile)
 2. The kids were smiling from ear to ear.
@@ -987,9 +983,6 @@ www.EspressoEnglish.net
 (= confused)
 4. She grinned.
 (= had a small smile)
-~ 38 ~
-© Shayna Oliveira
-www.EspressoEnglish.net
 5. He winced when the doctor gave him an injection.
 (= had a quick expression of pain)
 6. She gave me a dirty look.
@@ -997,13 +990,13 @@ www.EspressoEnglish.net
 7. She blushed.
 (= her face turned red because she was embarrassed)
 8. His eyes were glazed over.
-(= he appeared
+(= he appeared)
 9. Why the long face?
 (an informal expression to ask why someone looks sad or upset)
 10. Her expression was unreadable.
 (= you can’t know what she is feeling)
-10 Phrases to Describe Offending or Upsetting
-People
+
+## 10 Phrases to Describe Offending or Upsetting People
 1. They got off on the wrong foot.
 (= when they first met, they didn’t get along)
 2. He got on the teacher’s bad side.
@@ -1019,12 +1012,10 @@ People
 (= she insulted/disrespected my mother)
 10. He got his nose out of joint.
 #5, #7, #10 all mean the person got irritated/annoyed
-10 Phrases for Bad Travel Experiences
+
+## 10 Phrases for Bad Travel Experiences
 1. My flight was overbooked.
 (overbooked = there were too many passengers and not enough seats)
-~ 39 ~
-© Shayna Oliveira
-www.EspressoEnglish.net
 2. My flight was delayed/canceled.
 3. My luggage was lost.
 4. I was jet-lagged.
@@ -1039,7 +1030,8 @@ www.EspressoEnglish.net
 9. The place was a tourist trap.
 (= made only for tourists; not authentic)
 10. I couldn’t wait to get back home.
-10 Phrases for Drinking (Alcohol)
+
+## 10 Phrases for Drinking (Alcohol)
 1. It’s on me.
 (= I’ll buy you a drink)
 2. I’d like to make a toast.
@@ -1058,10 +1050,8 @@ www.EspressoEnglish.net
 (= I’m not drinking alcohol because I will drive other people home later)
 10. I had a hangover. / I was hung over.
 (= the bad feeling you have the morning after drinking too much)
-~ 40 ~
-© Shayna Oliveira
-www.EspressoEnglish.net
-15 Comparative Idioms
+
+## 15 Comparative Idioms
 1. It’s as light as a feather.
 2. It’s as dry as a bone.
 3. It’s as flat as a pancake.
@@ -1080,11 +1070,3 @@ www.EspressoEnglish.net
 (used after something broken has been repaired)
 15. It’s as clear as mud.
 (= it’s not clear at all)
-Learn Advanced English Grammar:
-www.espressoenglish.net/advanced-englishgrammar-course
-~ 41 ~
-© Shayna Oliveira
-www.EspressoEnglish.net
-Thanks for reading!
-Continue learning by joining a course at
-www.EspressoEnglish.net
