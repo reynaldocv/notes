@@ -5,7 +5,9 @@ course: "Some Expressions"
 permalink: "interview-04/"
 ---
 
-Beginner Phrases
+# Phases for Everyday English Conversations
+
+Beginner Phrases:
 - [10 Ways to Say Hello and Goodbye](#10-ways-to-say-hello-and-goodbye)
 - [10 Informal Ways to Say Yes and No](#10-informal-ways-to-say-yes-and-no)
 - [10 Ways to Ask How Someone Is](#10-ways-to-ask-how-someone-is)
@@ -34,7 +36,7 @@ Beginner Phrases
 - [10 Phrases for Asking/Talking about Jobs](#10-phrases-for-asking/talking-about-jobs)
 - [10 Phrases for Describing Relationships](#10-phrases-for-describing-relationships)
 
-Intermediate Phrases
+Intermediate Phrases:
 - [5 Ways to Ask for Clarification](#5-ways-to-ask-for-clarification)
 - [5 Ways to Check if the Other Person Understands You](#5-ways-to-check-if-the-other-person-understands-you)
 - [5 Ways to Ask for Help](#5-ways-to-ask-for-help)
@@ -61,9 +63,8 @@ Intermediate Phrases
 - [5 Ways to Say Someone is Smart](#5-ways-to-say-someone-is-smart)
 - [5 Ways to Say Someone is Stupid](#5-ways-to-say-someone-is-stupid)
 
-Advanced Phrases
-
-- [10 Ways to Avoid Answering a Question](#10-ways-to-avoid-answering-a-question)
+Advanced Phrases:
+- [10 Ways to Avoid Answering a Question](##10-ways-to-avoid-answering-a-question)
 - [15 Phrases for Being Rich & Poor](#15-phrases-for-being-rich-&-poor)
 - [10 Phrases for Talking about Statistics](#10-phrases-for-talking-about-statistics)
 - [10 Ways to Say Someone’s Talented](#10-ways-to-say-someone’s-talented)
@@ -86,7 +87,7 @@ Advanced Phrases
 - [10 Phrases for Drinking (Alcohol)](#10-phrases-for-drinking-alcohol)
 - [15 Comparative Idioms](#15-comparative-idoms)
 
-# 10 Ways to Say Hello and Goodbye
+## 10 Ways to Say Hello and Goodbye
 1. Hello
 2. Hi
 3. (informal) Hey
@@ -97,7 +98,8 @@ Advanced Phrases
 8. (informal) See ya later
 9. Take care
 10. Have a good one
-# 10 Informal Ways to Say Yes and No
+
+## 10 Informal Ways to Say Yes and No
 1. Yeah
 2. Yup
 3. Mm-hmm!
@@ -108,7 +110,8 @@ Advanced Phrases
 8. Mm-mm
 9. Uh-uh
 10. No way!
-# 10 Ways to Ask How Someone Is
+
+## 10 Ways to Ask How Someone Is
 1. How are you?
 2. How’s it going?
 3. How ya doin’?
@@ -119,7 +122,8 @@ Advanced Phrases
 8. What’s up?
 9. What’s new?
 10. What have you been up to lately?
-# 10 Ways to Say How You Are
+
+## 10 Ways to Say How You Are
 1. I’m fine, thanks. How about you?
 2. Pretty good.
 3. Not bad.
@@ -131,7 +135,8 @@ Advanced Phrases
 9. Not so great.
 10. Could be better.
 Note: The way to respond to “What’s up?” and “What’s new?” is typically “Not much.”
-# 10 Ways to Say “Thank You”
+
+## 10 Ways to Say “Thank You”
 1. Thanks.
 2. Thanks a lot.
 3. Thank you so much.
@@ -144,7 +149,8 @@ Note: The way to respond to “What’s up?” and “What’s new?” is typica
 (for extremely important things)
 10. I owe you one.
 (this means you want/need to do a favor for the other person in the future)
-# 10 Ways to Respond to “Thank You”
+
+## 10 Ways to Respond to “Thank You”
 1. You’re welcome.
 2. No problem.
 3. No worries.
@@ -156,7 +162,8 @@ Note: The way to respond to “What’s up?” and “What’s new?” is typica
 9. Sure!
 10. Thank you.
 (use this when you ALSO have something to thank the other person for)
-# 5 Phrases for Apologizing
+
+## 5 Phrases for Apologizing
 1. I’m sorry that… [ex. I was so rude yesterday]
 2. It’s my fault.
 (= I am taking responsibility for the problem)
@@ -164,14 +171,16 @@ Note: The way to respond to “What’s up?” and “What’s new?” is typica
 (for very small problems)
 4. I should have… [ex. called you and told you I’d be late]
 5. (formal) I apologize for… [ex. the delay]
-# 5 Ways to Respond to an Apology
+
+## 5 Ways to Respond to an Apology
 1. That’s OK.
 2. It happens.
 3. No problem.
 4. Don’t worry about it.
 5. I forgive you.
 (for serious problems)
-# 10 Phrases for Introductions
+
+## 10 Phrases for Introductions
 1. I just wanted to introduce myself. I’m… [your name]
 2. I don’t think we’ve met before. My name’s… [your name]
 3. This is…
