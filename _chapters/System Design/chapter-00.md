@@ -523,107 +523,95 @@ While **this reduces redundancy**, it also **introduces joins**. When retrieving
 
 ![image]({{site.baseurl}}/assets/images/System Design/00. preconcpets/image 23.png)
 
-> [!INFO] 
-> Instead of keeping Users and Orders in separate tables, we create UserOrders table that stores user details along with their latest orders.
+Example: Instead of keeping Users and Orders in separate tables, we create UserOrders table that stores user details along with their latest orders.
 
-Now, when retrieving a user’s order history, we don’t need a JOIN operation—the data is already stored together leading to faster queries and better read performance.
+Now, when retrieving a user’s order history, **we don’t need a JOIN operation**—the data is already stored together leading to faster queries and better read performance.
 
-SELECT order_id, user_name AS name, user_email AS email, product, amount
-FROM orders;
-Denormalization is often used in read-heavy applications where speed is more critical but the downside is it leads to increases storage usage and more complex update requests.
+    SELECT order_id, user_name AS name, user_email AS email, product, amount
+    FROM orders;
+
+Denormalization is often used in read-heavy applications where **speed is more critical** but the downside is **it leads to increases storage usage** and more complex update requests.
 
 # 21. CAP Theorem
-As we scale our system across multiple servers, databases, and data centers, we enter the world of distributed systems.
+As we scale our system across **multiple servers, databases, and data centers**, we enter the world of distributed systems.
 
-One of the fundamental principles of distributed systems is the CAP Theorem, which states that: No distributed system can achieve all three of the following at the same time:
+One of the fundamental principles of distributed systems is the **CAP Theorem**, which states that: No distributed system can achieve all three of the following at the same time:
 
+![image]({{site.baseurl}}/assets/images/System Design/00. preconcpets/image 24.png)
 
+- **Consistency (C)** → Every node always returns the most recent data.
 
+- **Availability (A)** → The system always responds to requests, even if some nodes are down (but the data may not be the latest).
 
-Consistency (C) → Every node always returns the most recent data.
+- **Partition Tolerance (P)** → The system continues operating even if there’s a network failure between nodes.
 
-Availability (A) → The system always responds to requests, even if some nodes are down (but the data may not be the latest).
+Since **network failures (P) are inevitable**, we must choose between:
 
-Partition Tolerance (P) → The system continues operating even if there’s a network failure between nodes.
+- **Consistency + Partition Tolerance (CP)** → Ensures every request gets the latest data but may reject requests during failures. Example: **SQL databases like MySQL**.
 
-Since network failures (P) are inevitable, we must choose between:
+- **Availability + Partition Tolerance (AP)** → Ensures the system always responds, even if some data is stale. Example: **NoSQL databases like Cassandra and DynamoDB**.
 
-Consistency + Partition Tolerance (CP) → Ensures every request gets the latest data but may reject requests during failures. Example: SQL databases like MySQL.
+In distributed NoSQL databases, *achieving instant consistency across all servers is too slow*.
 
-Availability + Partition Tolerance (AP) → Ensures the system always responds, even if some data is stale. Example: NoSQL databases like Cassandra and DynamoDB.
+Instead, we use **Eventual Consistency—which** means:
 
-To learn more about CAP theorem, check out this article:
+- **Not all nodes are updated instantly**, but given enough time, they eventually sync and return the same data.
 
-CAP Theorem Explained
-CAP Theorem Explained
-Ashish Pratap Singh
-·
-July 31, 2024
-Read full story
-In distributed NoSQL databases, achieving instant consistency across all servers is too slow.
+- This allows the system to remain **highly available and fast**, even under extreme loads.
 
-Instead, we use Eventual Consistency—which means:
+How **Eventual Consistency** Works:
 
-Not all nodes are updated instantly, but given enough time, they eventually sync and return the same data.
+1. A user updates data in **one replica** of the database.
 
-This allows the system to remain highly available and fast, even under extreme loads.
+2. The system immediately acknowledges the update, **ensuring high availability**.
 
-How Eventual Consistency Works:
+3. The update is then **propagated asynchronously to other replicas**.
 
-A user updates data in one replica of the database.
-
-The system immediately acknowledges the update, ensuring high availability.
-
-The update is then propagated asynchronously to other replicas.
-
-After a short delay, all replicas have the latest data, ensuring consistency over time.
+4. After a short delay, all replicas have the latest data, ensuring **consistency over time**.
 
 # 22. Blob Storage
+
 Most modern applications don’t just store text records, they also need to handle images, videos, pdfs and other large files.
 
-But here’s the problem: Traditional databases are not designed to store large, unstructured files efficiently.
+But here’s the problem: **Traditional databases are not designed to store large, unstructured files efficiently**.
 
-So, what’s the solution?
+**So, what’s the solution?**
 
-We use Blob Storage like Amazon S3—a highly scalable and cost-effective way to store large, unstructured files in the cloud.
+We use **Blob Storage like Amazon S3—a highly scalable and cost-effective** way to store **large, unstructured files** in the cloud.
 
-
-
+![image]({{site.baseurl}}/assets/images/System Design/00. preconcpets/image 25.png)
 
 Blobs are the individual files like images, videos or documents.
 
-These blobs are stored inside logical containers or buckets in the cloud.
+These blobs are stored inside **logical containers or buckets** in the cloud.
 
 Each file gets a unique URL, making it easy to retrieve and serve over the web.
 
-Example: https://my-bucket-name.s3.amazonaws.com/videos/tutorial.mp4
-
 There are several advantages with using blob storage like:
 
-Scalability → It can store petabytes of data effortlessly.
+- **Scalability** → It can store petabytes of data effortlessly.
 
-Pay-as-you-go pricing → You only pay for storage and retrieval that you actually use.
+- **Pay-as-you-go pricing** → You only pay for storage and retrieval that you actually use.
 
-Automatic replication → Data is copied across multiple data centers and availability zones for durability.
+- **Automatic replication** → Data is copied across multiple data centers and availability zones for durability.
 
-Easy access → Files can be retrieved using REST APIs or direct URLs.
+- **Easy access** → Files can be retrieved using REST APIs or direct URLs.
 
 A common use case is to stream audio or video files to user application in real-time.
 
-But streaming directly from blob-storage can be slow, especially if the data is stored in a distant location.
+But streaming directly from blob-storage can be slow, especially if the data is stored in a **distant location**.
 
 # 23. CDN
+
 For example, imagine you’re in India trying to watch a YouTube video that’s hosted on a server in California.
 
 Since the video data has to travel across the world, this could lead to buffering and slow load times.
 
-A Content Delivery Network (or CDN) solves this problem by delivering content faster to users based on their location.
+A **Content Delivery Network (or CDN)** solves this problem by delivering content faster to users based on their location.
 
-Map of globally distributed servers serving content - What is a CDN
+![image]({{site.baseurl}}/assets/images/System Design/00. preconcpets/image 26.png)
 
-
-source: https://www.cloudflare.com/learning/cdn/what-is-a-cdn/
-A CDN is a global network of distributed servers that work together to deliver web content (like HTML pages, JavaScript files, stylesheets, images, and videos) to users based on their geographic location.
+A CDN is a global network of distributed servers that work together to **deliver web content** (like HTML pages, JavaScript files, stylesheets, images, and videos) **to users based on their geographic location**.
 
 Instead of serving content from a single data center, a CDN caches static contents on multiple edge servers located worldwide.
 
@@ -631,24 +619,15 @@ When a user requests content, the nearest CDN server delivers it instead of reac
 
 Since content is served from the closest CDN node, users experience faster load times with minimal buffering.
 
-To learn more about CDN, check out this article:
-
-What is a Content Delivery Network?
-What is a Content Delivery Network?
-Ashish Pratap Singh
-·
-March 4, 2025
-Read full story
-
 # 24. WebSockets
 
 Most web applications use HTTP, which follows a request-response model.
 
-The client sends a request.
+1. The client sends a request.
 
-The server processes the request and sends a response.
+2. The server processes the request and sends a response.
 
-If the client needs new data, it must send another request.
+3. If the client needs new data, it must send another request.
 
 This works fine for static web pages but it’s too slow and inefficient for real-time applications like: live chat apps, stock market dashboards and online multiplayer games.
 
@@ -656,89 +635,79 @@ With HTTP, the only way to get real-time updates is through polling—sending re
 
 But polling is inefficient because it increases server load and wastes bandwidth, as most responses are empty (when there’s no new data).
 
-WebSockets solve this problem by allowing continuous, two-way communication between the client and server over a single persistent connection.
+**WebSockets** solve this problem by **allowing continuous, two-way communication between the client and server over a single persistent connection**.
 
-
-
+![image]({{site.baseurl}}/assets/images/System Design/00. preconcpets/image 27.png)
 
 Here is how WebSockets work:
 
-The client initiates a WebSocket connection with the server.
+1. The **client initiates a WebSocket connection with the server**.
 
-Once established, the connection remains open.
+2. Once established, **the connection remains open**.
 
-The server can push updates to the client at any time, without waiting for a request.
+3. The server **can push updates to the client at any time, without waiting for a request**.
 
-The client can also send messages instantly to the server.
+4. The client **can also send messages instantly to the server**.
 
 This enables real-time interactions and eliminates the need for polling.
 
-To learn more about WebSockets, check out this article:
-
-What are WebSockets and Why are they Used?
-What are WebSockets and Why are they Used?
-Ashish Pratap Singh
-·
-August 28, 2024
-Read full story
-WebSockets enable real-time communication between a client and a server, but what if a server needs to notify another server when an event occurs?
+WebSockets enable real-time communication between a client and a server, **but what if a server needs to notify another server when an event occurs?**
 
 Example:
 
-When a user makes a payment, Stripe needs to notify your application instantly.
+- When a user makes a payment, Stripe needs to notify your application instantly.
 
-If someone pushes code to GitHub, a CI/CD system (e.g., Jenkins) should be triggered automatically.
+- If someone pushes code to GitHub, a CI/CD system (e.g., Jenkins) should be triggered automatically.
 
 Enter Webhooks.
 
 # 25. Webhooks
-Instead of constantly polling an API to check if an event has occured, Webhooks allow a server to send an HTTP request to another server as soon as the event occurs.
+Instead of constantly polling an API to check if an event has occured, **Webhooks allow a server to send an HTTP request to another server as soon as the event occurs**.
 
-
-
+![image]({{site.baseurl}}/assets/images/System Design/00. preconcpets/image 28.png)
 
 Here’s how it works:
 
-The receiver (your app) registers a webhook URL with the provider (e.g., Stripe, GitHub, Twilio).
+- The **receiver (your app)** registers a webhook URL with the provider (e.g., Stripe, GitHub, Twilio).
 
-When an event occurs (e.g., user makes a payment), the provider sends an HTTP POST request to the webhook URL with event details.
+- When an event occurs (e.g., user makes a payment), the **provider sends an HTTP POST request to the webhook URL** with event details.
 
-Your app processes the incoming request and updates data accordingly.
+- Your app **processes the incoming request** and updates data accordingly.
 
 This saves server resources and reduces unnecessary API calls.
 
 # 26. Microservices
 
-Traditionally, applications were built using a monolithic architecture, where:
+Traditionally, applications were built using a **monolithic architecture**, where:
 
-All features (e.g., authentication, payments, orders, shipping) are inside one large codebase.
+- All features (e.g., authentication, payments, orders, shipping) are inside one **large codebase**.
 
-If one part of the system fails or needs scaling, the entire system is affected.
+- If one part of the system **fails** or **needs scaling**, the **entire system is affected**.
 
-Deployment is risky—one bad update can take down the entire app.
+- **Deployment is risky**—one bad update can take down the entire app.
 
 Example: Imagine an e-commerce app where the order, payment, inventory, and shipping modules are all tightly connected in a single codebase.
 
 If the inventory system crashes, the entire app could go down.
 
-Monoliths work fine for small applications, but for large-scale systems, they become hard to manage, scale, and deploy.
+**Monoliths work fine for small applications, but for large-scale systems, they become hard to manage, scale, and deploy**.
 
-The solution is to break down your application into smaller, independent services called micro-services that work together.
+The solution is to break down your application into smaller, independent services called **micro-services** that work together.
 
-
-
+![image]({{site.baseurl}}/assets/images/System Design/00. preconcpets/image 29.png)
 
 Each microservice:
 
-Handles a single responsibility
+- Handles a **single responsibility**
 
-Has its own database and logic, so it can scale independently.
+- Has its **own database and logic**, so it can scale independently.
 
-Communicates with other microservices using APIs or message queues.
+- Communicates with other microservices using APIs or message queues.
 
 This way services can be scaled and deployed individually without affecting the entire system.
 
-However, when multiple microservices need to communicate, direct API calls aren’t always efficient—this is where Message Queues come in.
+However, when multiple microservices need to communicate, direct API calls aren’t always 
+efficient—this is where Message Queues come in.
 
 # 27. Message Queues
 
@@ -746,131 +715,105 @@ In a monolithic system, functions call each other directly and wait for a respon
 
 But in a microservices-based system, this approach is inefficient because:
 
-If one service is slow or down, everything waits.
+- If one service is slow or down, everything waits.
 
-High traffic can overload a single service.
+- High traffic can overload a single service.
 
-Synchronous communication (waiting for immediate responses) doesn’t scale well.
+- Synchronous communication (waiting for immediate responses) doesn’t scale well.
 
-A Message Queue enables services to communicate asynchronously, allowing requests to be processed without blocking other operations.
+A **Message Queue** enables services to **communicate asynchronously**, allowing requests to be **processed without blocking** other operations.
 
-
-
+![image]({{site.baseurl}}/assets/images/System Design/00. preconcpets/image 30.png)
 
 Here’s How It Works:
 
-A producer (e.g., checkout service) places a message in the queue (e.g., "Process Payment").
+1. A producer (e.g., checkout service) places a message in the queue (e.g., "Process Payment").
 
-The queue temporarily holds the message until a consumer (e.g., payment service) is ready to process it.
+2. The queue temporarily holds the message until a consumer (e.g., payment service) is ready to process it.
 
-The consumer retrieves the message and processes it.
+3. The consumer retrieves the message and processes it.
 
 Using message queues, we can decouple services and improve the scalability and fault tolerance.
 
-Common message queue systems include: Apache Kafka, Amazon SQS and RabbitMQ.
+*Common message queue systems include: Apache Kafka, Amazon SQS and RabbitMQ*.
 
-To learn more about Message Queues, check out this article:
-
-What are Message Queues and When to Use Them?
-What are Message Queues and When to Use Them?
-Ashish Pratap Singh
-·
-August 18, 2024
-Read full story
 Using message queues, we can prevent overload on internal services within our system.
 
-But, how do we prevent overload for the public APIs and services we deploy.
+**But, how do we prevent overload for the public APIs and services we deploy**.
 
 We use rate limiting.
 
 # 28. Rate Limiting
-Imagine a bot starts making thousands of requests per second to your website.
+Imagine a **bot starts making thousands of requests per second to your website**.
 
 Without restrictions, this could:
 
-Crash your servers by consuming all available resources.
+- Crash your servers by consuming all available resources.
 
-Increase cloud costs due to excessive API usage.
+- Increase cloud costs due to excessive API usage.
 
-and degrade performance for legitimate users.
+- and degrade performance for legitimate users.
 
-Rate Limiting restricts the number of requests a client can send within a specific time frame.
+**Rate Limiting restricts the number of requests** a client can send within a specific time frame.
 
-
-
+![image]({{site.baseurl}}/assets/images/System Design/00. preconcpets/image 31.png)
 
 Here’s How It Works:
 
-Every user or IP address is assigned a request quota (e.g., 100 requests per minute).
+1. Every user or IP address is assigned a request quota (e.g., 100 requests per minute).
 
-If they exceed this limit, the server blocks additional requests temporarily and returns an error (HTTP 429 – Too Many Requests).
+2. If they exceed this limit, the server blocks additional requests temporarily and returns an error (HTTP 429 – Too Many Requests).
 
 There are various rate limiting algorithms. Some of the popular ones are:
 
-Fixed Window → Limits requests based on a fixed time window (e.g., 100 requests per minute).
+- **Fixed Window** → Limits requests based on a fixed time window (e.g., 100 requests per minute).
 
-Sliding Window → More flexible version that dynamically adjusts limits to smooth out request bursts.
+- **Sliding Window** → More flexible version that dynamically adjusts limits to smooth out request bursts.
 
-Token Bucket → Users get tokens for requests, which replenish over time at a fixed rate.
+- **Token Bucket** → Users get **tokens for requests**, which replenish over time at a fixed rate.
 
-To learn more about rate limiting algorithms, checkout this article:
-
-Rate Limiting Algorithms Explained with Code
-Rate Limiting Algorithms Explained with Code
-Ashish Pratap Singh
-·
-July 17, 2024
-Read full story
-We don’t need to implement our own rate limiting system - this can be handled by something called an API gateway.
+We don’t need to implement our own rate limiting system - this can be handled by something called an **API gateway**.
 
 # 29. API Gateways
-An API Gateway is a centralized service that handles authentication, rate limiting, logging and monitoring, and request routing.
+
+An API Gateway is a centralized service that handles **authentication, rate limiting, logging and monitoring, and request routing**.
 
 Imagine a microservices-based application with multiple services.
 
-Instead of exposing each service directly, an API Gateway acts as a single entry point for all client requests.
+Instead of exposing each service directly, an **API Gateway acts as a single entry point for all client requests**.
 
-
-
+![image]({{site.baseurl}}/assets/images/System Design/00. preconcpets/image 32.png)
 
 How API Gateways Work:
 
-The client sends a request to the API Gateway.
+1. The **client sends a request** to the API Gateway.
 
-The Gateway validates the request (e.g., authentication, rate limits).
+2. The **Gateway validates the request** (e.g., authentication, rate limits).
 
-It routes the request to the appropriate micro-service.
+3. It **routes the request to the appropriate micro-service**.
 
-The response is sent back through the Gateway to the client.
+4. The **response is sent back through the Gateway to the client**.
 
 API gateway simplifies API management and improves scalability and security.
 
 Popular API Gateway solutions include NGINX, Kong and AWS API Gateway.
 
-If you want to learn more about API gateways, checkout this article:
-
-What is an API Gateway?
-What is an API Gateway?
-Ashish Pratap Singh
-·
-December 8, 2024
-Read full story
-
 # 30. Idempotency
 
-In distributed systems, network failures and service retries are common. If a user accidentally refreshes a payment page, the system might receive two payment requests instead of one.
+In distributed systems, **network failures and service retries are common**. If a user accidentally refreshes a payment page, the system might receive two payment requests instead of one.
 
+![image]({{site.baseurl}}/assets/images/System Design/00. preconcpets/image 32.png)
 
-Idempotency ensures that repeated requests produce the same result as if the request was made only once.
+**Idempotency ensures that repeated requests produce the same result as if the request was made only once**.
 
 Here’s how it works:
 
-Each request is assigned a unique ID (e.g., request_1234).
+1. **Each request is assigned a unique ID** (e.g., request_1234).
 
-Before processing, the system checks if the request has already been handled.
+2. Before processing, the **system checks if the request has already been handled**.
 
-If yes → It ignores the duplicate request.
+3. If **yes** → It ignores the duplicate request.
 
-If no → It processes the request normally.
+4. If **no** → It processes the request normally.
 
 Idempotency prevents duplicate transactions and ensures data consistency in distributed systems.
