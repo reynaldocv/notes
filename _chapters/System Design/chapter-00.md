@@ -12,22 +12,36 @@ But once you understand the core concepts and building blocks, it becomes much l
 In this article, I’ll walk you through the 30 most important System Design concepts every developer should know.
 
 - [CLient-Server Architecture](#1-client-server-architecture)
-- [Ip Address]
-- []
-- []
-- []
-- []
-- []
-- []
-- []
-- []
-- []
-- []
-- []
-- []
-- []
-- []
-- []
+- [Ip Address](#2-ip-address)
+- [DNS](#3-dns)
+- [Proxy / Reverse Proxy](#4-proxy--reverse-proxy)
+- [Latency](#5-latency)
+- [HTTP/HTTPS](#6-httphttps)
+- [APIs](#7-apis)
+- [Rest API](#8-rest-api)
+- [GraphQL](#9-graphql)
+- [Databases](#10-databases)
+- [SQL vs NoSQL](#11-sql-vs-nosql)
+- [Vertical Scaling](#12-vertical-scaling)
+- [Horizontal Scaling](#13-horizontal-scaling)
+- [Load Balancing](#14-load-balancing)
+- [Content Delivery Network (CDN)](#15-content-delivery-network-cdn)
+- [Database Indexing](#16-database-indexing)
+- [Replication](#17-replication)
+- [Sharding](#18-sharding)
+- [Caching](#19-caching)
+- [Denormalization](#20-denormalization)
+- [CAP Theorem](#21-cap-theorem)
+- [Blob Storage](#22-blob-storage)
+- [CDN](#23-cdn)
+- [WebSockets](#24-websockets)
+- [Webhooks](#25-webhooks)
+- [Microservices](#26-microservices)
+- [Message Queues](#27-message-queues)
+- [Rate Limiting](#28-rate-limiting)
+- [API Gateways](#29-api-gateways)
+- [Idempotency](#30-idempotency)
+
 # 1. Client-Server Architecture
 
 Almost every web application that you use is built on this simple yet powerful concept called client-server architecture.
@@ -85,15 +99,12 @@ Once the DNS server responds with the IP, your browser uses it to establish a co
 
 You can find the IP address of any domain using the ping command. Just open your terminal and type ping followed by the domain name. And it’ll return the IP address currently assigned to that domain.
 
-Share
-
 # 4. Proxy / Reverse Proxy
 When you visit a website, your request doesn’t always go directly to the server—sometimes, it passes through a proxy or reverse proxy first.
 
 A proxy server acts as a middleman between your device and the internet.
 
-
-
+![image]({{site.baseurl}}/assets/images/System Design/00. preconcpets/image 05.png)
 
 When you request a webpage, the proxy forwards your request to the target server, retrieves the response, and sends it back to you.
 
@@ -101,8 +112,7 @@ Proxy hides your IP address, keeping your location and identity private.
 
 A reverse proxy works the other way around. It intercepts client requests and forwards them to backend servers based on predefined rules.
 
-
-
+![image]({{site.baseurl}}/assets/images/System Design/00. preconcpets/image 06.png)
 
 Allowing direct access to servers can pose security risks, exposing them to threats like hackers and DDoS attacks.
 
@@ -110,132 +120,116 @@ A reverse proxy mitigates these risks by acting as a controlled entry point that
 
 It can also act as a load balancer, distributing traffic across multiple servers.
 
-If you want to learn about Proxy vs Reverse Proxy in more detail, checkout this article:
-
-Proxy vs Reverse Proxy (Explained with Examples)
-Proxy vs Reverse Proxy (Explained with Examples)
-Ashish Pratap Singh
-·
-October 30, 2024
-Read full story
-
 # 5. Latency
 
 Whenever a client communicates with a server, there’s always some delay. One of the biggest causes of this delay is physical distance.
 
+![image]({{site.baseurl}}/assets/images/System Design/00. preconcpets/image 07.png)
 
-
-
-For example, if our server is in New York, but a user in India sends a request, the data has to travel halfway across the world—and then the response has to make the same long trip back.
+For example, if our server is in **New York**, but a user in **India(()) sends a request, the data has to travel halfway across the world—and then the response has to make the same long trip back.
 
 This round-trip delay is called latency—the total time it takes for data to travel between the client and the server. High latency can make applications feel slow and unresponsive.
 
-One way to reduce latency is by deploying our service across multiple data centers worldwide.
+One way to reduce latency is by deploying our service across multiple **data centers worldwide**.
 
 This way, users can connect to the nearest server instead of waiting for data to travel across the globe.
 
-Once a connection is made, how do clients and servers actually communicate?
+**Once a connection is made, how do clients and servers actually communicate?**
 
 # 6. HTTP/HTTPS
 
-Every time you visit a website, your browser and the server communicate using a set of rules called HTTP (Hypertext Transfer Protocol).
+Every time you visit a website, your browser and the server communicate using a set of rules called **HTTP (Hypertext Transfer Protocol)**.
 
 That’s why most URLs start with http:// or its secure version, https://.
 
-
-
+![image]({{site.baseurl}}/assets/images/System Design/00. preconcpets/image 08.png)
 
 Here’s how it works:
 
-The client sends a request to the server. This request includes a header (containing details like the request type, browser type, and cookies) and sometimes a request body (which carries additional data, like form inputs).
+- The client sends a request to the server. This request includes a **header** (containing details like the request type, browser type, and cookies) and sometimes a request body (which carries additional data, like form inputs).
 
-The server processes the request and responds with an HTTP response—either returning the requested data or an error message if something goes wrong.
+- The server processes the request and responds with an **HTTP response**—either returning the requested data or an error message if something goes wrong.
 
-HTTP has a major security flaw, it sends data in plain text. This is a serious problem, especially for sensitive information like passwords, credit card details, and personal data.
+HTTP has a major security flaw, it **sends data in plain text**. This is a serious problem, especially for sensitive information like passwords, credit card details, and personal data.
 
-That’s why modern websites use HTTPS (Hypertext Transfer Protocol Secure) instead. HTTPS encrypts all data using SSL/TLS, ensuring that even if someone intercepts the request, they can’t read or alter it.
+That’s why modern websites use **HTTPS (Hypertext Transfer Protocol Secure)** instead. HTTPS encrypts all data using **SSL/TLS**, ensuring that even if someone intercepts the request, they can’t read or alter it.
 
 But clients and servers don’t directly exchange raw HTTP requests and response.
 
 HTTP is just a protocol for transferring data but it doesn’t define:
 
-How requests should be structured
+- How requests should be structured
 
-What format responses should be in
+-What format responses should be in
 
-or how different clients should interact with the server.
+- or how different clients should interact with the server.
 
-This is where APIs (or Application Programming Interfaces) come in.
+This is where **APIs (or Application Programming Interfaces)** come in.
 
 # 7. APIs
 Think of an API as a middleman that allows clients (like web and mobile apps) to communicate with servers without worrying about low-level details.
 
+![image]({{site.baseurl}}/assets/images/System Design/00. preconcpets/image 09.png)
 
 Almost every digital service you use—social media, e-commerce, online banking, ride-hailing apps—is built on APIs working together behind the scenes.
 
 Here’s how it typically works:
 
-A client sends a request to an API.
+1. A **client sends a request** to an API.
 
-The API, hosted on a server, processes the request, interacts with databases or other services, and prepares a response.
+3. The **API, hosted on a server, processes the request**, interacts with databases or other services, and prepares a response.
 
-The API sends back the response in a structured format, usually JSON or XML, which the client understands and can display.
+3. The **API sends back the response** in a structured format, usually JSON or XML, which the client understands and can display.
 
-APIs provide a layer of abstraction—the client doesn’t need to know how the server processes the request, only that it returns the expected data.
+APIs provide a **layer of abstraction**—the client doesn’t need to know how the server processes the request, only that **it returns the expected data**.
 
-If you want to learn more about APIs, checkout this article:
-
-What's an API?
-What's an API?
-Ashish Pratap Singh
-·
-January 21, 2025
-Read full story
 But, not all APIs are built the same. Different API styles exist to serve different needs. Two of the most popular ones are REST and GraphQL.
 
 # 8. Rest API
-Among the different API styles, REST (Representational State Transfer) is the most widely used.
 
-A REST API follows a set of rules that define how clients and servers communicate over HTTP in a structured way.
+Among the different API styles, **REST (Representational State Transfer)** is the most widely used.
 
+A **REST API** follows a set of rules that define how clients and servers communicate over HTTP in a structured way.
 
-
+![image]({{site.baseurl}}/assets/images/System Design/00. preconcpets/image 10.png)
 
 Rest is:
 
-Stateless: Every request is independent; the server doesn’t store client state.
+- **Stateless**: Every request is independent; the server doesn’t store client state.
+    
+- **Resource-Based**: Everything is treated as a resource (e.g., /users, /orders, /products).
 
-Resource-Based: Everything is treated as a resource (e.g., /users, /orders, /products).
+- **Uses Standard HTTP Methods**: Clients interact with resources using **HTTP methods** like:
 
-Uses Standard HTTP Methods: Clients interact with resources using HTTP methods like:
+    - **GET**: Retrieves data (e.g., fetching a user profile).
 
-GET → Retrieves data (e.g., fetching a user profile).
+    - **POST**: Creates new data (e.g., adding a new user).
 
-POST → Creates new data (e.g., adding a new user).
+    - **PUT/PATCH**:  Updates existing data (e.g., changing user settings).
 
-PUT/PATCH → Updates existing data (e.g., changing user settings).
+    - **DELETE**: Removes data (e.g., deleting an account).
 
-DELETE → Removes data (e.g., deleting an account).
+REST APIs are great because **they’re simple, scalable, and easy to cache, but they have limitations**, especially when dealing with complex data retrieval.
 
-REST APIs are great because they’re simple, scalable, and easy to cache, but they have limitations, especially when dealing with complex data retrieval.
-
-REST endpoints often return more data than needed, leading to inefficient network usage. If an API doesn’t return related data, the client may need to make multiple requests to retrieve all required information.
+REST endpoints often return **more data than needed**, leading to inefficient network usage. If an API doesn’t return related data, the client may need to make multiple requests to retrieve all required information.
 
 To address these challenges, GraphQL was introduced in 2015 by Facebook.
 
 # 9. GraphQL
-Unlike REST, which forces clients to retrieve fixed sets of data, GraphQL lets clients ask for exactly what they need—nothing more, nothing less.
 
-With a REST API, if you need a user details, user profile details along with their recent posts, you might have to make multiple requests to different endpoints:
+Unlike REST, which forces clients to retrieve **fixed sets of data**, GraphQL lets clients **ask for exactly what they need—nothing more**, nothing less.
 
-GET /api/users/123 → fetch user details
+With a REST API, if you need a user details, user profile details along with their recent posts, you might have to **make multiple requests** to different endpoints:
 
-GET /api/users/123/profile → fetch user profile
+1. **GET** /api/users/123 → fetch user details
 
-GET /api/users/123/posts → fetch user’s posts
+2. **GET** /api/users/123/profile → fetch user profile
+
+3. **GET** /api/users/123/posts → fetch user’s posts
 
 With GraphQL, you can combine those requests into one and fetch exactly the data you need in a single query:
 
+![image]({{site.baseurl}}/assets/images/System Design/00. preconcpets/image 11.png)
 
 
 
