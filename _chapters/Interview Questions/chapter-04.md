@@ -88,54 +88,53 @@ Advanced Phrases:
 - [15 Comparative Idioms](#15-comparative-idoms)
 
 ## 10 Ways to Say Hello and Goodbye
-1. Hello
-2. Hi
-3. (informal) Hey
-4. Hi there
-5. (informal) Howdy
-6. Bye
-7. Bye-bye
-8. (informal) See ya later
-9. Take care
-10. Have a good one
+1. **Hello**
+2. **Hi**
+3. **(informal) Hey**
+4. **Hi there**
+5. **(informal) Howdy**
+6. **Bye**
+7. **Bye-bye**
+8. **(informal) See ya later**
+9. **Take care**
+10. **Have a good one**
 
 ## 10 Informal Ways to Say Yes and No
-1. Yeah
-2. Yup
-3. Mm-hmm!
-4. Uh-huh!
-5. Sure!
-6. Nope
-7. Nah
-8. Mm-mm
-9. Uh-uh
-10. No way!
+1. **Yeah**
+2. **Yup**
+3. **Mm-hmm!**
+4. **Uh-huh!**
+5. **Sure!**
+6. **Nope**
+7. **Nah**
+8. **Mm-mm**
+9. **Uh-uh**
+10. **No way!**
 
 ## 10 Ways to Ask How Someone Is
-1. How are you?
-2. How’s it going?
-3. How ya doin’?
-4. How are things?
-5. How’s life?
-6. How have you been?
-7. How’s your family?
-8. What’s up?
-9. What’s new?
-10. What have you been up to lately?
+1. **How are you?**
+2. **How’s it going?**
+3. **How ya doin’?**
+4. **How are things?**
+5. **How’s life?**
+6. **How have you been?**
+7. **How’s your family?**
+8. **What’s up?**
+9. **What’s new?**
+10. **What have you been up to lately?**
 
 ## 10 Ways to Say How You Are
-1. I’m fine, thanks. How about you?
-2. Pretty good.
-3. Not bad.
-4. Great!
-5. Couldn’t be better!
-6. Can’t complain.
-7. I’ve been busy.
-8. Same as always.
-9. Not so great.
-10. Could be better.
-
-Note: The way to respond to “What’s up?” and “What’s new?” is typically “Not much.”
+1. **I’m fine, thanks. How about you?**
+2. **Pretty good.**
+3. **Not bad.**
+4. **Great!**
+5. **Couldn’t be better!**
+6. **Can’t complain.**
+7. **I’ve been busy.**
+8. **Same as always.**
+9. **Not so great.**
+10. **Could be better.**
+> Note: The way to respond to “What’s up?” and “What’s new?” is typically “Not much.”
 
 ## 10 Ways to Say “Thank You”
 1. Thanks.
@@ -147,12 +146,9 @@ Note: The way to respond to “What’s up?” and “What’s new?” is typica
 7. I’m really grateful.
 8. That’s so kind of you.
 9. I can’t thank you enough.
-
-    (for extremely important things)
-
-10. I owe you one.
-    
-    (this means you want/need to do a favor for the other person in the future)
+    > (for extremely important things)
+10. I owe you one.    
+    > (this means you want/need to do a favor for the other person in the future)
 
 ## 10 Ways to Respond to “Thank You”
 1. You’re welcome.
@@ -165,14 +161,14 @@ Note: The way to respond to “What’s up?” and “What’s new?” is typica
 8. Glad to help.
 9. Sure!
 10. Thank you.
-(use this when you ALSO have something to thank the other person for)
+    > (use this when you ALSO have something to thank the other person for)
 
 ## 5 Phrases for Apologizing
 1. I’m sorry that… [ex. I was so rude yesterday]
 2. It’s my fault.
-(= I am taking responsibility for the problem)
+    > (= I am taking responsibility for the problem)
 3. Oops, sorry.
-(for very small problems)
+    > (for very small problems)
 4. I should have… [ex. called you and told you I’d be late]
 5. (formal) I apologize for… [ex. the delay]
 
@@ -182,7 +178,7 @@ Note: The way to respond to “What’s up?” and “What’s new?” is typica
 3. No problem.
 4. Don’t worry about it.
 5. I forgive you.
-(for serious problems)
+    > (for serious problems)
 
 ## 10 Phrases for Introductions
 1. I just wanted to introduce myself. I’m… [your name]
@@ -215,7 +211,7 @@ You can use these phrases to show the other person that you are listening.
 3. Anyway, I should get going.
 4. (formal) Sorry, but I’m afraid I need to… 
 5. I’m sorry to cut you off, but I actually gotta run.
-(cut you off = interrupt you)
+    > (cut you off = interrupt you)
 
 ## 10 Phrases for Telephone Calls
 1. Hi, this is Jane.
@@ -236,14 +232,14 @@ You can use these phrases to show the other person that you are listening.
 4. Do you know...
 5. Do you have any idea...?
 6. Could anyone tell me...?
-(use this phrase when asking a group of people)
+    > (use this phrase when asking a group of people)
 7. Would you happen to know...?
 8. I don't suppose you (would) know...?
 9. I was wondering…
 10. I’m calling to find out…
-(use this phrase on the telephone)
+    > (use this phrase on the telephone)
 
-Use #4, #5, #7, and #8 when you’re not sure if the other person has the information.
+> Use #4, #5, #7, and #8 when you’re not sure if the other person has the information.
 
 ## 5 Ways to Say “I don’t know”
 1. I have no idea/clue.
