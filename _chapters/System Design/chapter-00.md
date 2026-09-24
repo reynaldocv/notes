@@ -401,14 +401,6 @@ But be careful—while indexes speed up reads, they slow down writes (INSERT, UP
 
 That’s why we should only index the most frequently accessed columns.
 
-Learn more about Database Indexes here:
-
-Database Indexes: A detailed guide
-Database Indexes: A detailed guide
-Ashish Pratap Singh
-·
-May 5, 2024
-Read full story
 Indexing significantly improves read performance, but what if even indexing isn’t enough, and our database can’t handle the growing number of read requests?
 
 That’s where our next database scaling technique Replication comes in.
