@@ -231,103 +231,79 @@ With GraphQL, you can combine those requests into one and fetch exactly the data
 
 ![image]({{site.baseurl}}/assets/images/System Design/00. preconcpets/image 11.png)
 
+The server **responds with only the requested fields**, reducing unnecessary data transfer and improving efficiency.
 
+However, GraphQL also comes with trade-offs—it **requires more processing on the server side** and isn’t as easy to cache as REST.
 
-The server responds with only the requested fields, reducing unnecessary data transfer and improving efficiency.
+When a client makes a request, they usually want to **store or retrieve data**.
 
-However, GraphQL also comes with trade-offs—it requires more processing on the server side and isn’t as easy to cache as REST.
-
-Learn more about REST vs GraphQL here:
-
-REST vs GraphQL
-REST vs GraphQL
-Ashish Pratap Singh
-·
-March 11, 2025
-Read full story
-When a client makes a request, they usually want to store or retrieve data.
-
-But this brings up another question—where is the actual data stored?
+But this brings up another question—**where is the actual data stored**?
 
 # 10. Databases
 If our application deals with small amounts of data, we could store it in memory.
 
-But modern applications handle massive volumes of data—far more than what memory can efficiently handle.
+But **modern applications handle massive volumes of data**—far more than what memory can efficiently handle.
 
-That’s why we need a dedicated server for storing and managing data—a database.
+That’s why **we need a dedicated server for storing and managing data—a database**.
 
 A database is the backbone of any application. It ensures that data is stored, retrieved, and managed efficiently while keeping it secure, consistent, and durable.
 
-When a client requests to store or retrieve data, the server communicates with the database, fetches the required information, and returns it to the client.
+**When a client requests to store or retrieve data, the server communicates with the database, fetches the required information, and returns it to the client**.
 
+![image]({{site.baseurl}}/assets/images/System Design/00. preconcpets/image 11.png)
 
+But not all databases are the same. **Different applications have different scalability, performance, and consistency requirements**, which is choosing **the right type of database is important**.
 
-
-But not all databases are the same. Different applications have different scalability, performance, and consistency requirements, which is choosing the right type of database is important.
-
-If you want to learn about different types of databases, checkout this article:
-
-15 Types of Databases and When to Use Them
-15 Types of Databases and When to Use Them
-Ashish Pratap Singh
-·
-March 24, 2024
-Read full story
-In system design, we typically choose between SQL and NoSQL databases.
+In system design, we typically choose *between SQL and NoSQL databases*.
 
 # 11. SQL vs NoSQL
 
-
+![image]({{site.baseurl}}/assets/images/System Design/00. preconcpets/image 12.png)
 
 SQL databases store data in tables with a strict predefined schema and follow the ACID properties.
 
-Atomicity - A transaction is all-or-nothing (it either completes fully or not at all).
+- **Atomicity** - A transaction is all-or-nothing (it either completes fully or not at all).
 
-Consistency – Data always remains valid and follows defined rules.
+- **Consistency** – Data always remains valid and follows defined rules.
 
-Isolation – Transactions don’t interfere with each other.
+- **Isolation** – Transactions don’t interfere with each other.
 
-Durability – Once data is saved, it won’t be lost, even if the system crashes.
+- **Durability** – Once data is saved, it won’t be lost, even if the system crashes.
 
-Because of these guarantees, SQL databases are ideal for applications that require strong consistency and structured relationships, such as banking systems.
+Because of these guarantees, SQL databases are ideal for applications that 
+require **strong consistency and structured relationships**, such as banking systems.
 
-Examples of popular SQL databases include: MySQL and PostgreSQL
+> [!NOTE]
+> Examples of popular SQL databases include: MySQL and PostgreSQL
 
-NoSQL databases on the other hand are designed for high scalability and performance.
+**NoSQL databases** on the other hand are designed for **high scalability and performance**.
 
-They don’t require a fixed schema and use different data models, including:
+*They don’t require a fixed schema and use different data models*, including:
 
-Key-Value Stores – Fast lookups for simple key-value pairs (e.g., Redis).
+- **Key-Value Stores** – Fast lookups for simple key-value pairs (e.g., Redis).
 
-Document Stores – Store flexible, JSON-like documents (e.g., MongoDB).
+- **Document Stores** – Store flexible, JSON-like documents (e.g., MongoDB).
 
-Graph Databases – Best for highly connected data (e.g., Neo4j).
+- **Graph Databases** – Best for highly connected data (e.g., Neo4j).
 
-Wide-Column Stores – Optimized for large-scale, distributed data (e.g., Cassandra).
+- **Wide-Column Stores** – Optimized for large-scale, distributed data (e.g., Cassandra).
 
-So, which one should you use? It depends on the system requirements.
+So, **which one should you use?** It depends on the system requirements.
 
-If you need structured, relational data with strong consistency → SQL is a better choice.
+- If you need structured, relational data with strong consistency → SQL is a better choice.
 
-If you need high scalability, flexible schemas, or fast reads/writes at scale → NoSQL is a better choice.
+- If you need high scalability, flexible schemas, or fast reads/writes at scale → NoSQL is a better choice.
 
-Many modern applications use both SQL and NoSQL together.
+## Many modern applications use both SQL and NoSQL together.
 
 For example, an e-commerce platform might:
 
-Store customer orders in SQL (because they require strict consistency).
+- Store customer orders in SQL (because they require strict consistency).
 
-and store Product recommendations in NoSQL (because they need flexible and fast lookups).
+- and store Product recommendations in NoSQL (because they need flexible and fast lookups).
 
-If you want to learn more about SQL vs NoSQL, checkout this article:
-
-SQL vs NoSQL - 7 Key Differences You Must Know
-SQL vs NoSQL - 7 Key Differences You Must Know
-Ashish Pratap Singh
-·
-September 20, 2024
-Read full story
 # 12. Vertical Scaling
+
 As our user base grows, so does the number of requests hitting our application servers.
 
 Initially, a single server might be enough to handle the load. But, as traffic increases, that single server can become a bottleneck, slowing everything down.
