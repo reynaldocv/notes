@@ -250,7 +250,7 @@ A database is the backbone of any application. It ensures that data is stored, r
 
 **When a client requests to store or retrieve data, the server communicates with the database, fetches the required information, and returns it to the client**.
 
-![image]({{site.baseurl}}/assets/images/System Design/00. preconcpets/image 11.png)
+![image]({{site.baseurl}}/assets/images/System Design/00. preconcpets/image 12.png)
 
 But not all databases are the same. **Different applications have different scalability, performance, and consistency requirements**, which is choosing **the right type of database is important**.
 
@@ -258,7 +258,7 @@ In system design, we typically choose *between SQL and NoSQL databases*.
 
 # 11. SQL vs NoSQL
 
-![image]({{site.baseurl}}/assets/images/System Design/00. preconcpets/image 12.png)
+![image]({{site.baseurl}}/assets/images/System Design/00. preconcpets/image 14.png)
 
 SQL databases store data in tables with a strict predefined schema and follow the ACID properties.
 
@@ -310,7 +310,7 @@ Initially, a single server might be enough to handle the load. But, as traffic i
 
 One of the quickest solutions is to upgrade the existing server by adding more CPU, RAM or storage.
 
-![image]({{site.baseurl}}/assets/images/System Design/00. preconcpets/image 13.png)
+![image]({{site.baseurl}}/assets/images/System Design/00. preconcpets/image 15.png)
 
 This approach is called **Vertical Scaling (Scaling Up)**—making a single machine more powerful.
 
@@ -329,7 +329,7 @@ Lets look at a better approach—one that makes our system more scalable and fau
 # 13. Horizontal Scaling
 Instead of upgrading a single server, what if we add more servers to share the load?
 
-![image]({{site.baseurl}}/assets/images/System Design/00. preconcpets/image 15.png)
+![image]({{site.baseurl}}/assets/images/System Design/00. preconcpets/image 16.png)
 
 This approach is called **Horizontal Scaling (Scaling Out)**—where we **distribute the workload across multiple machines**.
 
