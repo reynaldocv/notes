@@ -147,8 +147,11 @@ Note: The way to respond to “What’s up?” and “What’s new?” is typica
 7. I’m really grateful.
 8. That’s so kind of you.
 9. I can’t thank you enough.
+
     (for extremely important things)
+
 10. I owe you one.
+    
     (this means you want/need to do a favor for the other person in the future)
 
 ## 10 Ways to Respond to “Thank You”
