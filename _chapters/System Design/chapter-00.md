@@ -61,11 +61,11 @@ Every publicly deployed server has a unique IP address. When a client wants to i
 
 But there’s a problem:
 
-When we visit a website, we don’t type its IP address—we just enter the website name.
+- When we visit a website, we don’t type its IP address—we just enter the website name.
 
-We can’t expect users (or even systems) to memorize a string of random numbers for every service they connect to.
+- We can’t expect users (or even systems) to memorize a string of random numbers for every service they connect to.
 
-And if we migrate our service to another server, its IP address may change—breaking all direct connections.
+- And if we migrate our service to another server, its IP address may change—breaking all direct connections.
 
 3. DNS
 Instead of relying on hard-to-remember IP addresses, we use something much more human-friendly: domain names.
