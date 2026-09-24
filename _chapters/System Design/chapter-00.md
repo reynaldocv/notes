@@ -347,185 +347,159 @@ This is where a **Load Balancer** comes in.
 
 # 14. Load Balancers
 
-![image]({{site.baseurl}}/assets/images/System Design/00. preconcpets/image 16.png)
+![image]({{site.baseurl}}/assets/images/System Design/00. preconcpets/image 17.png)
 
 **A Load Balancer sits between clients and backend servers, acting as a traffic manager** that distributes requests across multiple servers.
 
 If one server crashes, the Load Balancer automatically redirects traffic to another healthy server.
 
-*** But how does a Load Balancer decide which server should handle the next request? ***
+**But how does a Load Balancer decide which server should handle the next request?**
 
 It uses Load Balancing algorithms, such as:
 
-Round Robin → Requests are sent to servers sequentially, one after another in a loop.
+1. **Round Robin** → Requests are sent to servers sequentially, one after another in a loop.
 
-Least Connections → Requests are sent to the server with the fewest active connections.
+2. **Least Connections** → Requests are sent to the server with the fewest active connections.
 
-and IP Hashing → Requests from the same IP address always go to the same server, which helps with session consistency.
+3. **IP Hashing** → Requests from the same IP address always go to the same server, which helps with session consistency.
 
-Learn more about load balancing algorithms here:
-
-Load Balancing Algorithms Explained with Code
-Load Balancing Algorithms Explained with Code
-Ashish Pratap Singh
-·
-June 2, 2024
-Read full story
 So far, we’ve talked about scaling our application servers, but as traffic grows, the volume of data also increases.
 
 At first, we can scale a database vertically by adding more CPU, RAM, and storage, but there’s a limit to how much a single machine can handle.
 
-So, let’s explore other database scaling techniques that help manage large volumes of data efficiently.
+So, let’s explore other **database scaling techniques** that help manage large volumes of data efficiently.
 
 # 15. Database Indexing
-One of the quickest and most effective ways to speed up database read queries is indexing.
+One of the quickest and most effective ways to speed up database **read queries is indexing**.
 
 Think of it like the index page at the back of a book—instead of flipping through every page, you jump directly to the relevant section.
 
 A database index works the same way. It’s is a super-efficient lookup table that helps the database quickly locate the required data without scanning the entire table.
 
-
-
+![image]({{site.baseurl}}/assets/images/System Design/00. preconcpets/image 18.png)
 
 An index stores column values along with pointers to the actual data rows in the table.
 
-Indexes are typically created on columns that are frequently queried, such as:
+Indexes are typically created on **columns that are frequently queried**, such as:
 
-Primary keys
+- **Primary keys**
 
-Foreign keys
+- **Foreign keys**
 
-Columns used in WHERE conditions
+- **Columns used in WHERE conditions**
 
-But be careful—while indexes speed up reads, they slow down writes (INSERT, UPDATE, DELETE) since the index needs to be updated whenever data changes.
+But be careful—while indexes **speed up reads, they slow down writes (INSERT, UPDATE, DELETE)** since the index needs to be updated whenever data changes.
 
 That’s why we should only index the most frequently accessed columns.
 
-Indexing significantly improves read performance, but what if even indexing isn’t enough, and our database can’t handle the growing number of read requests?
+Indexing significantly improves read performance, but **what if even indexing isn’t enough, and our database can’t handle the growing number of read requests?**
 
-That’s where our next database scaling technique Replication comes in.
+That’s where our next database scaling technique **Replication** comes in.
 
 # 16. Replication
-Just like we added more application servers to handle traffic, we can scale our database by creating copies of it across multiple servers.
 
+Just like we added more application servers to handle traffic, we can scale our database by 
+**creating copies of it across multiple servers**.
 
-
+![image]({{site.baseurl}}/assets/images/System Design/00. preconcpets/image 19.png)
 
 Here’s how it works:
 
-We have one primary database (also called the Primary Replica) that handles all write operations (INSERT, UPDATE, DELETE).
+- We have **one primary database** (also called the **Primary Replica**) that handles all **write operations (INSERT, UPDATE, DELETE)**.
 
-We have multiple read replicas that handle read queries (SELECT).
+- We have **multiple read replicas** that handle **read queries (SELECT)**.
 
-Whenever data is written to the primary database, it gets copied to the read replicas so that they stay in sync.
+- **Whenever data is written to the primary database, it gets copied to the read replicas so that they stay in sync.**
 
 Replication improves the read performance since read requests are spread across multiple replicas, reducing the load on each one.
 
 This also improves availability since if the primary replica fails, a read replica can take over as the new primary.
 
-Replication is great for scaling read heavy applications, but what if we need to scale writes or store huge amounts of data?
+Replication is great for scaling read heavy applications, but **what if we need to scale writes or store huge amounts of data?**
 
 # 17. Sharding
 
 Let’s say our service now has millions of users, and our database has grown to terabytes of data.
 
-A single database server will eventually struggle to handle all this data efficiently.
+A **single database server will eventually struggle to handle all this data efficiently**.
 
-Instead of keeping everything in one place, we split the database into smaller, more manageable pieces and distribute them across multiple servers.
+Instead of keeping everything in one place, we **split the database into smaller, more manageable pieces** and distribute them **across multiple servers**.
 
+![image]({{site.baseurl}}/assets/images/System Design/00. preconcpets/image 20.png)
 
+This technique is called **Sharding**.
 
+- We divide the database into smaller parts called **shards**.
 
-This technique is called Sharding.
+- Each shard contains a subset of the total data.
 
-We divide the database into smaller parts called shards.
-
-Each shard contains a subset of the total data.
-
-Data is distributed based on a sharding key (e.g., user ID).
+- **Data is distributed based on a sharding key (e.g., user ID)**.
 
 By distributing data this way, we:
 
-Reduce database load → Each shard handles only a portion of queries.
+- **Reduce database load** → Each shard handles only a portion of queries.
 
-Speed up read and write performance → Queries are distributed across multiple shards instead of hitting a single database.
+- **Speed up read and write performance** → Queries are distributed across multiple shards instead of hitting a single database.
 
 Sharding is also referred to as horizontal partitioning since it splits data by rows.
 
-If you want to learn more about Sharding, checkout this article:
-
-What is Database Sharding?
-What is Database Sharding?
-Ashish Pratap Singh
-·
-May 12, 2024
-Read full story
-But what if the issue isn’t the number of rows, but rather the number of columns?
+**But what if the issue isn’t the number of rows, but rather the number of columns?**
 
 In such cases, we use Vertical Partitioning, where we split the database by columns. Let’s explore that next.
 
 # 18. Vertical Partitioning
+
 Imagine we have a User table that stores:
 
-profile details (name, email, profile picture)
+- profile details (name, email, profile picture)
 
-login history (last_login, IP addresses)
+- login history (last_login, IP addresses)
 
-and billing information (billing address, payment details)
+- and billing information (billing address, payment details)
 
-As this table grows, queries become slower because the database must scan many columns even when a request only needs a few specific fields.
+As this table **grows**, queries become **slower** because the database must scan many columns even when a request only needs a few specific fields.
 
-To optimize this, we use Vertical Partitioning where we split user table into smaller, more focused tables based on usage patterns.
+To optimize this, we use **Vertical Partitioning where we split user table into smaller, more focused tables** based on usage patterns.
 
+![image]({{site.baseurl}}/assets/images/System Design/00. preconcpets/image 21.png)
 
+- **User_Profile** → Stores name, email, profile picture.
 
+- **User_Login** → Stores login timestamps.
 
-User_Profile → Stores name, email, profile picture.
+- **User_Billing** → Stores billing address, payment details.
 
-User_Login → Stores login timestamps.
-
-User_Billing → Stores billing address, payment details.
-
-This improves query performance since each request only scans relevant columns instead of the entire table.
+This improves **query performance** since each request only scans **relevant columns** instead of the entire table.
 
 It reduces unnecessary disk I/O, making data retrieval quicker.
 
 However, no matter how much we optimize the database, retrieving data from disk is always slower than retrieving from memory.
 
-What if we could store frequently accessed data in memory for lightning-fast access?
+**What if we could store frequently accessed data in memory for lightning-fast access?**
 
 This is called caching.
 
 # 19. Caching
-Caching is used to optimize the performance of a system by storing frequently accessed data in memory instead of repeatedly fetching it from the database.
+**Caching** is used to optimize the performance of a system by **storing frequently accessed data in memory** instead of repeatedly fetching it from the database.
 
-One of the most common caching strategies is the Cache Aside Pattern.
+One of the most common caching strategies is the **Cache Aside Pattern**.
 
-
-
+![image]({{site.baseurl}}/assets/images/System Design/00. preconcpets/image 22.png)
 
 Here’s how it works:
 
-When a user requests a data, the application first check the cache.
+1. When a user requests a data, the application first check the cache.
 
-If the data is in the cache, it’s returned instantly, avoiding a database call.
+2. If the data is in the cache, it’s returned instantly, avoiding a database call.
 
-If the data is not in the cache, the application retrieves it from the database, stores it in the cache for future requests, and returns it to the user.
+3. If the data is not in the cache, the application retrieves it from the database, stores it in the cache for future requests, and returns it to the user.
 
-Next time, the same data is requested, it’s served directly from cache, making the request much faster.
+4. Next time, the same data is requested, it’s served directly from cache, making the request much faster.
 
-To prevent outdated data from being served, we use Time-to-Live (TTL)—an expiration time set on cached data so it gets automatically refreshed after a certain period.
+To prevent outdated data from being served, we use **Time-to-Live (TTL)**—an expiration time set on cached data so **it gets automatically refreshed** after a certain period.
 
-Popular caching tools include Redis and Memcached.
+Popular caching tools include **Redis and Memcached**.
 
-If you want to learn more about caching strategies, check out this article:
-
-Top 5 Caching Strategies Explained
-Top 5 Caching Strategies Explained
-Ashish Pratap Singh
-·
-October 24, 2024
-Read full story
 Lets look at the next database scaling technique.
 
 # 20. Denormalization
@@ -533,23 +507,24 @@ Most relational databases use Normalization to store data efficiently by breakin
 
 For example, in an e-commerce system:
 
-The Users table stores user details.
+- The Users table stores user details.
 
-The Orders table stores their orders.
+- The Orders table stores their orders.
 
-The Products table stores product details.
+- The Products table stores product details.
 
-While this reduces redundancy, it also introduces joins. When retrieving data from multiple tables, the database must combine them using JOIN operations, which can slow down queries as the dataset grows.
+While **this reduces redundancy**, it also **introduces joins**. When retrieving data from multiple tables, **the database must combine them using JOIN operations, which can slow down queries as the dataset grows.**
 
     SELECT o.order_id, u.name, u.email, o.product, o.amount
     FROM orders o
     JOIN users u ON o.user_id = u.user_id;
-    Denormalization reduces the number of joins by combining related data into a single table, even if it means some data gets duplicated.
 
+**Denormalization** reduces the number of joins by combining related data into a single table, even if it means some data gets duplicated.
 
+![image]({{site.baseurl}}/assets/images/System Design/00. preconcpets/image 23.png)
 
-
-Example: Instead of keeping Users and Orders in separate tables, we create UserOrders table that stores user details along with their latest orders.
+> [!INFO] 
+> Instead of keeping Users and Orders in separate tables, we create UserOrders table that stores user details along with their latest orders.
 
 Now, when retrieving a user’s order history, we don’t need a JOIN operation—the data is already stored together leading to faster queries and better read performance.
 
