@@ -87,7 +87,7 @@ You can find the IP address of any domain using the ping command. Just open your
 
 Share
 
-4. Proxy / Reverse Proxy
+# 4. Proxy / Reverse Proxy
 When you visit a website, your request doesn’t always go directly to the server—sometimes, it passes through a proxy or reverse proxy first.
 
 A proxy server acts as a middleman between your device and the internet.
@@ -118,7 +118,9 @@ Ashish Pratap Singh
 ·
 October 30, 2024
 Read full story
-5. Latency
+
+# 5. Latency
+
 Whenever a client communicates with a server, there’s always some delay. One of the biggest causes of this delay is physical distance.
 
 
@@ -134,7 +136,8 @@ This way, users can connect to the nearest server instead of waiting for data to
 
 Once a connection is made, how do clients and servers actually communicate?
 
-6. HTTP/HTTPS
+# 6. HTTP/HTTPS
+
 Every time you visit a website, your browser and the server communicate using a set of rules called HTTP (Hypertext Transfer Protocol).
 
 That’s why most URLs start with http:// or its secure version, https://.
