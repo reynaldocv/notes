@@ -310,18 +310,17 @@ Initially, a single server might be enough to handle the load. But, as traffic i
 
 One of the quickest solutions is to upgrade the existing server by adding more CPU, RAM or storage.
 
+![image]({{site.baseurl}}/assets/images/System Design/00. preconcpets/image 13.png)
 
-
-
-This approach is called Vertical Scaling (Scaling Up)—making a single machine more powerful.
+This approach is called **Vertical Scaling (Scaling Up)**—making a single machine more powerful.
 
 But there are some major limitations with this approach:
 
-Hardware limits → You can’t keep upgrading a server forever. Every machine has a maximum capacity.
+- **Hardware limits** → You can’t keep upgrading a server forever. Every machine has a maximum capacity.
 
-Cost → More powerful servers become exponentially more expensive.
+- **Cost** → More powerful servers become exponentially more expensive.
 
-Single Point of Failure (SPOF) → if this one server crashes, the entire system goes down.
+- **Single Point of Failure (SPOF)** → *if this one server crashes, the entire system goes down*.
 
 So, while vertical scaling is a quick fix, it’s not a long-term solution for handling high traffic and ensuring system reliability.
 
@@ -330,23 +329,23 @@ Lets look at a better approach—one that makes our system more scalable and fau
 # 13. Horizontal Scaling
 Instead of upgrading a single server, what if we add more servers to share the load?
 
+![image]({{site.baseurl}}/assets/images/System Design/00. preconcpets/image 14.png)
 
-This approach is called Horizontal Scaling (Scaling Out)—where we distribute the workload across multiple machines.
+This approach is called **Horizontal Scaling (Scaling Out)**—where we **distribute the workload across multiple machines**.
 
 This approach is better because:
 
-More servers = More capacity → The system can handle increasing traffic more effectively.
+- **More servers = More capacity** → The system can handle increasing traffic more effectively.
 
-No Single Point of Failure → If one server goes down, others can take over, improving reliability.
+- **No Single Point of Failure** → If one server goes down, others can take over, improving reliability.
 
-Cost-effective → Instead of investing in a single, super-expensive machine, we can use multiple affordable ones.
+- **Cost-effective** → Instead of investing in a single, super-expensive machine, we can use multiple affordable ones.
 
-But horizontal scaling introduces a new challenge: how do clients know which server to connect to?
+But horizontal scaling introduces a new challenge: ** *how do clients know which server to connect to?* **
 
-This is where a Load Balancer comes in.
+This is where a **Load Balancer** comes in.
 
 # 14. Load Balancers
-
 
 
 A Load Balancer sits between clients and backend servers, acting as a traffic manager that distributes requests across multiple servers.
