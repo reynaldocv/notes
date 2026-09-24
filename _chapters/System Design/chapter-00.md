@@ -167,7 +167,7 @@ or how different clients should interact with the server.
 
 This is where APIs (or Application Programming Interfaces) come in.
 
-7. APIs
+# 7. APIs
 Think of an API as a middleman that allows clients (like web and mobile apps) to communicate with servers without worrying about low-level details.
 
 
@@ -193,7 +193,7 @@ January 21, 2025
 Read full story
 But, not all APIs are built the same. Different API styles exist to serve different needs. Two of the most popular ones are REST and GraphQL.
 
-8. Rest API
+# 8. Rest API
 Among the different API styles, REST (Representational State Transfer) is the most widely used.
 
 A REST API follows a set of rules that define how clients and servers communicate over HTTP in a structured way.
@@ -223,7 +223,7 @@ REST endpoints often return more data than needed, leading to inefficient networ
 
 To address these challenges, GraphQL was introduced in 2015 by Facebook.
 
-9. GraphQL
+# 9. GraphQL
 Unlike REST, which forces clients to retrieve fixed sets of data, GraphQL lets clients ask for exactly what they need—nothing more, nothing less.
 
 With a REST API, if you need a user details, user profile details along with their recent posts, you might have to make multiple requests to different endpoints:
@@ -255,7 +255,7 @@ When a client makes a request, they usually want to store or retrieve data.
 
 But this brings up another question—where is the actual data stored?
 
-10. Databases
+# 10. Databases
 If our application deals with small amounts of data, we could store it in memory.
 
 But modern applications handle massive volumes of data—far more than what memory can efficiently handle.
@@ -281,7 +281,7 @@ March 24, 2024
 Read full story
 In system design, we typically choose between SQL and NoSQL databases.
 
-11. SQL vs NoSQL
+# 11. SQL vs NoSQL
 
 
 
@@ -333,7 +333,7 @@ Ashish Pratap Singh
 ·
 September 20, 2024
 Read full story
-12. Vertical Scaling
+# 12. Vertical Scaling
 As our user base grows, so does the number of requests hitting our application servers.
 
 Initially, a single server might be enough to handle the load. But, as traffic increases, that single server can become a bottleneck, slowing everything down.
@@ -357,7 +357,7 @@ So, while vertical scaling is a quick fix, it’s not a long-term solution for h
 
 Lets look at a better approach—one that makes our system more scalable and fault tolerant.
 
-13. Horizontal Scaling
+# 13. Horizontal Scaling
 Instead of upgrading a single server, what if we add more servers to share the load?
 
 
@@ -375,7 +375,7 @@ But horizontal scaling introduces a new challenge: how do clients know which ser
 
 This is where a Load Balancer comes in.
 
-14. Load Balancers
+# 14. Load Balancers
 
 
 
@@ -407,7 +407,7 @@ At first, we can scale a database vertically by adding more CPU, RAM, and storag
 
 So, let’s explore other database scaling techniques that help manage large volumes of data efficiently.
 
-15. Database Indexing
+# 15. Database Indexing
 One of the quickest and most effective ways to speed up database read queries is indexing.
 
 Think of it like the index page at the back of a book—instead of flipping through every page, you jump directly to the relevant section.
@@ -443,7 +443,7 @@ Indexing significantly improves read performance, but what if even indexing isn�
 
 That’s where our next database scaling technique Replication comes in.
 
-16. Replication
+# 16. Replication
 Just like we added more application servers to handle traffic, we can scale our database by creating copies of it across multiple servers.
 
 
@@ -463,7 +463,8 @@ This also improves availability since if the primary replica fails, a read repli
 
 Replication is great for scaling read heavy applications, but what if we need to scale writes or store huge amounts of data?
 
-17. Sharding
+# 17. Sharding
+
 Let’s say our service now has millions of users, and our database has grown to terabytes of data.
 
 A single database server will eventually struggle to handle all this data efficiently.
@@ -501,7 +502,7 @@ But what if the issue isn’t the number of rows, but rather the number of colum
 
 In such cases, we use Vertical Partitioning, where we split the database by columns. Let’s explore that next.
 
-18. Vertical Partitioning
+# 18. Vertical Partitioning
 Imagine we have a User table that stores:
 
 profile details (name, email, profile picture)
@@ -533,7 +534,7 @@ What if we could store frequently accessed data in memory for lightning-fast acc
 
 This is called caching.
 
-19. Caching
+# 19. Caching
 Caching is used to optimize the performance of a system by storing frequently accessed data in memory instead of repeatedly fetching it from the database.
 
 One of the most common caching strategies is the Cache Aside Pattern.
@@ -565,7 +566,7 @@ October 24, 2024
 Read full story
 Lets look at the next database scaling technique.
 
-20. Denormalization
+# 20. Denormalization
 Most relational databases use Normalization to store data efficiently by breaking it into separate tables.
 
 For example, in an e-commerce system:
@@ -578,10 +579,10 @@ The Products table stores product details.
 
 While this reduces redundancy, it also introduces joins. When retrieving data from multiple tables, the database must combine them using JOIN operations, which can slow down queries as the dataset grows.
 
-SELECT o.order_id, u.name, u.email, o.product, o.amount
-FROM orders o
-JOIN users u ON o.user_id = u.user_id;
-Denormalization reduces the number of joins by combining related data into a single table, even if it means some data gets duplicated.
+    SELECT o.order_id, u.name, u.email, o.product, o.amount
+    FROM orders o
+    JOIN users u ON o.user_id = u.user_id;
+    Denormalization reduces the number of joins by combining related data into a single table, even if it means some data gets duplicated.
 
 
 
@@ -594,7 +595,7 @@ SELECT order_id, user_name AS name, user_email AS email, product, amount
 FROM orders;
 Denormalization is often used in read-heavy applications where speed is more critical but the downside is it leads to increases storage usage and more complex update requests.
 
-21. CAP Theorem
+# 21. CAP Theorem
 As we scale our system across multiple servers, databases, and data centers, we enter the world of distributed systems.
 
 One of the fundamental principles of distributed systems is the CAP Theorem, which states that: No distributed system can achieve all three of the following at the same time:
@@ -640,7 +641,7 @@ The update is then propagated asynchronously to other replicas.
 
 After a short delay, all replicas have the latest data, ensuring consistency over time.
 
-22. Blob Storage
+# 22. Blob Storage
 Most modern applications don’t just store text records, they also need to handle images, videos, pdfs and other large files.
 
 But here’s the problem: Traditional databases are not designed to store large, unstructured files efficiently.
@@ -674,7 +675,7 @@ A common use case is to stream audio or video files to user application in real-
 
 But streaming directly from blob-storage can be slow, especially if the data is stored in a distant location.
 
-23. CDN
+# 23. CDN
 For example, imagine you’re in India trying to watch a YouTube video that’s hosted on a server in California.
 
 Since the video data has to travel across the world, this could lead to buffering and slow load times.
@@ -701,7 +702,9 @@ Ashish Pratap Singh
 ·
 March 4, 2025
 Read full story
-24. WebSockets
+
+# 24. WebSockets
+
 Most web applications use HTTP, which follows a request-response model.
 
 The client sends a request.
@@ -751,7 +754,7 @@ If someone pushes code to GitHub, a CI/CD system (e.g., Jenkins) should be trigg
 
 Enter Webhooks.
 
-25. Webhooks
+# 25. Webhooks
 Instead of constantly polling an API to check if an event has occured, Webhooks allow a server to send an HTTP request to another server as soon as the event occurs.
 
 
@@ -767,7 +770,8 @@ Your app processes the incoming request and updates data accordingly.
 
 This saves server resources and reduces unnecessary API calls.
 
-26. Microservices
+# 26. Microservices
+
 Traditionally, applications were built using a monolithic architecture, where:
 
 All features (e.g., authentication, payments, orders, shipping) are inside one large codebase.
@@ -799,7 +803,8 @@ This way services can be scaled and deployed individually without affecting the 
 
 However, when multiple microservices need to communicate, direct API calls aren’t always efficient—this is where Message Queues come in.
 
-27. Message Queues
+# 27. Message Queues
+
 In a monolithic system, functions call each other directly and wait for a response.
 
 But in a microservices-based system, this approach is inefficient because:
@@ -841,7 +846,7 @@ But, how do we prevent overload for the public APIs and services we deploy.
 
 We use rate limiting.
 
-28. Rate Limiting
+# 28. Rate Limiting
 Imagine a bot starts making thousands of requests per second to your website.
 
 Without restrictions, this could:
@@ -881,7 +886,7 @@ July 17, 2024
 Read full story
 We don’t need to implement our own rate limiting system - this can be handled by something called an API gateway.
 
-29. API Gateways
+# 29. API Gateways
 An API Gateway is a centralized service that handles authentication, rate limiting, logging and monitoring, and request routing.
 
 Imagine a microservices-based application with multiple services.
@@ -913,7 +918,9 @@ Ashish Pratap Singh
 ·
 December 8, 2024
 Read full story
-30. Idempotency
+
+# 30. Idempotency
+
 In distributed systems, network failures and service retries are common. If a user accidentally refreshes a payment page, the system might receive two payment requests instead of one.
 
 
