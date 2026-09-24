@@ -192,8 +192,8 @@ Advanced Phrases:
 9. Likewise.
 10. And you.
 
-#1 and #2 are used to introduce yourself; #3-#6 are used to introduce someone else.
-#9 and #10 can be used as a response to #7 and #8.
+> #1 and #2 are used to introduce yourself; #3-#6 are used to introduce someone else.
+> #9 and #10 can be used as a response to #7 and #8.
 
 ## 6 Ways to Show Interest
 1. Really?
@@ -203,7 +203,7 @@ Advanced Phrases:
 5. Gotcha.
 6. Sure.
 
-You can use these phrases to show the other person that you are listening.
+> You can use these phrases to show the other person that you are listening.
 
 ## 5 Ways to End a Conversation Politely
 1. It was nice chatting with you.
@@ -279,10 +279,10 @@ You can use these phrases to show the other person that you are listening.
 8. (informal) Tell me about it! / You’re telling me!
 9. (informal) I’ll say!
 10. I suppose so.
-(use this phrase for weak agreement – you agree, but reluctantly)
+    > (use this phrase for weak agreement – you agree, but reluctantly)
 
-Note: Avoid the common error of saying “I’m agree” – the correct phrase is “I agree” or
-“I’m in agreement” – the second one is more formal.
+> Note: Avoid the common error of saying “I’m agree” – the correct phrase is “I agree” or
+> “I’m in agreement” – the second one is more formal.
 
 ## 10 Phrases for Disagreeing
 1. I don’t think so.
@@ -307,10 +307,10 @@ Note: Avoid the common error of saying “I’m agree” – the correct phrase 
 1. Oh no…
 2. That’s terrible.
 3. Poor you.
-(Use this to respond to bad situations that are not too serious)
+    > (Use this to respond to bad situations that are not too serious)
 4. I’m so sorry to hear that.
 5. I’m sorry for your loss.
-(Use this only if someone has died)
+    > (Use this only if someone has died)
 
 ## 10 Phrases for Invitations
 1. Are you free… [Saturday night?]
@@ -329,9 +329,9 @@ Note: Avoid the common error of saying “I’m agree” – the correct phrase 
 2. (informal) Do you want some water?
 3. Can I get you something to eat?
 4. That’d be great, thanks.
-(= yes)
+    > (= yes)
 5. No, thanks. I’m OK.
-(= no)
+    > (= no)
 
 ## 6 Phrases for Talking About Future Plans
 1. I’m going to…
@@ -339,9 +339,9 @@ Note: Avoid the common error of saying “I’m agree” – the correct phrase 
 3. I hope to…
 4. I’d like to…
 5. I might… / I may…
-Click here for the difference between may and might
+    > Click here for the difference between may and might
 6. I’m thinking about…
-Click here for the different prepositions to use after “think”
+    > Click here for the different prepositions to use after “think”
 
 ## 10 Ways to Talk about Likes & Dislikes
 1. I love… [soccer]
@@ -354,7 +354,7 @@ Click here for the different prepositions to use after “think”
 8. I don’t really care for… [modern art]
 9. I’m not into… [modern art]
 10. I can’t stand… [modern art]
-(this phrase expresses strong dislike)
+    > (this phrase expresses strong dislike)
 
 ## 5 Ways to Make a Suggestion
 1. How about… [ex. trying something new]?
@@ -379,44 +379,42 @@ Click here for the different prepositions to use after “think”
 1. I’m single.
 2. I have a boyfriend/girlfriend.
 3. We’re engaged.
-(= going to get married)
+    > (= going to get married)
 4. We’re getting married in June.
 5. I’m married.
 6. I’ve been married for… [10 years].
 7. I’m divorced.
 8. I’m widowed.
-(= my husband/wife has died)
+    > (= my husband/wife has died)
 9. I’m not looking for anything serious.
 10. I’m not quite over my ex.
-(= I still have feelings for my ex-boyfriend/girlfriend or ex-husband/wife)
+    > (= I still have feelings for my ex-boyfriend/girlfriend or ex-husband/wife)
 
 # Intermediate Phrases
 ## 5 Ways to Ask for Clarification
 1. Pardon?
-(if you didn’t hear or understand what the person said)
+    > (if you didn’t hear or understand what the person said)
 2. Would you mind repeating that?
 3. What do you mean?
-(asking for more information)
+    > (asking for more information)
 4. I’m not sure I follow you.
-(= I don’t understand)
+    > (= I don’t understand)
 5. Could you explain… ?
 
-## 5 Ways to Check if the Other Person
-Understands You
+## 5 Ways to Check if the Other Person Understands You
 1. Do you understand what I’m saying?
 2. Does that make sense?
 3. Do you know what I mean?
 4. Are you with me so far?
-(often used in the middle of a long explanation or instructions)
+    > (often used in the middle of a long explanation or instructions)
 5. Is that clear?
-(often used after giving orders, or expressing disapproval or another negative
-attitude)
+    > (often used after giving orders, or expressing disapproval or another negative attitude)
 
 ## 5 Ways to Ask for Help
 1. I need a little help.
 2. Could you help me out?
 3. Could you give me a hand?
-(usually used for physical tasks)
+    > (usually used for physical tasks)
 4. Could you spare a couple minutes?
 5. Could you do me a favor?
 
@@ -430,27 +428,27 @@ attitude)
 ## 5 Ways to Interrupt Someone
 1. Sorry to interrupt, but…
 2. Excuse me – could I talk to you for a minute? / do you have a minute?
-(when interrupting a conversation between two other people, to talk to one of them)
+    > (when interrupting a conversation between two other people, to talk to one of them)
 3. Could I jump in here?
-(use this when interrupting a discussion among many people)
+    > (use this when interrupting a discussion among many people)
 4. Sorry – I just want to say that…
 5. (formal) May I have a word?
 
 ## 10 Ways to Encourage Someone
 1. Keep up the good work!
 2. That was a nice try.
-(say this after someone made a good effort but failed)
+    > (say this after someone made a good effort but failed)
 3. That’s a real improvement.
 4. You’re on the right track.
 5. You’ve almost got it.
 6. You’re doing great.
 7. Don’t give up! / Hang in there!
-(when someone is currently having difficulties)
+    > (when someone is currently having difficulties)
 8. You can do it!
 9. Give it your best shot.
-(best shot = best try, best effort)
+    > (best shot = best try, best effort)
 10. Nice job! / You did great!
-(after the person has done something good)
+    > (after the person has done something good)
 
 ## 5 Phrases for Complaining
 1. I’m not happy about this.
@@ -459,25 +457,23 @@ attitude)
 4. (informal) I can’t stand it when… [ex. the internet is slow]
 5. (informal) This sucks.
 
-## 10 Phrases for Remembering, Reminding, &
-Forgetting
+## 10 Phrases for Remembering, Reminding, & Forgetting
 1. I’ll always remember… / I’ll never forget…
 2. If I remember correctly… / As far as I can recall…
 3. I have a vague recollection of…
 4. It’s on the tip of my tongue.
-(=I’m trying to remember, but I can’t quite remember)
+    > (=I’m trying to remember, but I can’t quite remember)
 5. My mind went blank.
-(= I couldn’t remember/think of anything)
+    > (= I couldn’t remember/think of anything)
 6. It doesn’t ring a bell.
-(=it doesn’t sound familiar)
+    > (=it doesn’t sound familiar)
 7. Please remember to… / Please don’t forget to…
 8. I’d like to remind you about…
 9. You haven’t forgotten to/about… have you?
 10. It completely slipped my mind!
-(= I completely forgot about it!)
+    > (= I completely forgot about it!)
 
-## 10 Phrases for Saying Something is Easy &
-Difficult
+## 10 Phrases for Saying Something is Easy & Difficult
 1. It’s a piece of cake.
 2. It’s a cinch.
 3. It’s a breeze.
@@ -488,87 +484,87 @@ Difficult
 8. It’s really tough.
 9. It’s not a walk in the park.
 10. It’s very demanding.
-(= it takes a lot of time and energy)
+    > (= it takes a lot of time and energy)
 
 ## 10 Expressions about Age
 1. She’s in her early twenties.
-(=20-23 years old)
+    > (=20-23 years old)
 2. He’s in his late thirties.
-(=37-39 years old)
+    > (=37-39 years old)
 3. She just turned six.
 4. Act your age!
-(use this when an adult is being immature, acting like a child)
+    > (use this when an adult is being immature, acting like a child)
 5. I’m not as young as I used to be.
 6. I’m not over the hill yet!
-(over the hill = an informal expression to say “old”)
+    > (over the hill = an informal expression to say “old”)
 7. He’s no spring chicken.
-(= he’s not young)
+    > (= he’s not young)
 8. She’s wise beyond her years.
-(she is young, but she has the wisdom of an older person)
+    > (she is young, but she has the wisdom of an older person)
 9. I’m having a senior moment.
-(= I’m being forgetful)
+    > (= I’m being forgetful)
 10. He lived to a ripe old age.
-(= a very old age)
+    > (= a very old age)
 
 ## 10 Phrases for Shopping
 1. Do you have… ?
 2. Where can I find… ?
 3. I’m just browsing.
-(browsing = looking casually)
+    > (browsing = looking casually)
 4. I’m looking for…
 5. How much is this?
 6. Is this on sale?
 7. Can I try it on?
-(use this to ask if you can put on clothing to see if it’s the right size)
+    > (use this to ask if you can put on clothing to see if it’s the right size)
 8. I’ll take it!
 9. Do you take credit cards?
 10. I’d like to return/exchange this.
 
 ## 10 Phrases for Talking about Food
 1. I’m starving!
-(= I’m very hungry)
+    >  (= I’m very hungry)
 2. Let’s grab a bite to eat.
 3. How about eating out tonight?
-(eat out = eat at a restaurant)
+    > (eat out = eat at a restaurant)
 4. I brought some snacks.
 5. This soup is delicious!
 6. Could I have another helping of… [potatoes]?
-(another helping = another portion)
+    > (another helping = another portion)
 7. I’ll have…
-(use this phrase for ordering in a restaurant)
+    > (use this phrase for ordering in a restaurant)
 8. Could we get the check, please?
 9. I’m full.
-(= I’m satisfied)
+    > (= I’m satisfied)
 10. I’m stuffed.
-(= I ate a LOT, maybe too much!)
+    > (= I ate a LOT, maybe too much!)
 
 ## 10 Phrases for Talking About TV
 1. Where’s the remote?
-(remote = remote control)
+    > (remote = remote control)
 2. Is there anything good on?
 3. Can I change the channel?
 4. I’ve already seen this episode.
 5. This is a rerun.
-(rerun = an old episode that was already shown on TV previously)
+    > (rerun = an old episode that was already shown on TV previously)
 6. I love this show!
 7. There are too many commercials.
 8. Stop channel-surfing.
-(channel-surfing = changing the channel quickly)
+    > (channel-surfing = changing the channel quickly)
 9. Check the TV guide.
-(the TV guide has the information about the TV programming and schedule)
+    > (the TV guide has the information about the TV programming and schedule)
 10. It’s the season finale!
-(= the final episode of the season)
+    > (= the final episode of the season)
 
 ## 10 Phrases You’ll Hear in the Airport
 1. Do you have any bags to check?
 2. Would you like a window seat or an aisle seat?
-(aisle = corridor)
+    > (aisle = corridor)
 3. Here’s your boarding pass.
-(boarding pass = the paper that permits you to enter the plane)
+    > (boarding pass = the paper that permits you to enter the plane)
 4. Your flight leaves from gate 15.
 5. Your seat number is 8F.
 6. Flight 800 is now boarding.
-(boarding = passengers can enter the plane)
+    > (boarding = passengers can enter the plane)
 7. Your flight has been delayed.
 8. Your flight has been canceled.
 9. This is the final call for flight 800.
@@ -578,49 +574,49 @@ Difficult
 1. It cost a fortune.
 2. It cost an arm and a leg.
 3. That’s a rip-off.
-(= overpriced; far more expensive than it should be)
+    > (= overpriced; far more expensive than it should be)
 4. I can’t afford it.
-(= I don’t have enough money to buy it)
+    > (= I don’t have enough money to buy it)
 5. That’s a bit pricey.
 6. That’s quite reasonable.
-(= it’s a good price)
+    > (= it’s a good price)
 7. It’s 20% off.
-(= there’s a 20% discount)
+    > (= there’s a 20% discount)
 8. That’s a good deal.
-(= a good value for the amount of money)
+    > (= a good value for the amount of money)
 9. It was a real bargain.
 10. It was dirt cheap.
-(= extremely inexpensive)
+    > (= extremely inexpensive)
 
 ## 5 Phrases for Hot Weather
 1. It’s nice and warm today.
 2. It’s absolutely boiling!
-(boiling = extremely hot)
+    > (boiling = extremely hot)
 3. We’re having a real heat wave.
-(heat wave = many consecutive days of hot weather)
+    > (heat wave = many consecutive days of hot weather)
 4. The sun’s really strong today.
 5. It’s hot and humid.
 
 ## 5 Phrases for Cold Weather
 1. It’s a little chilly.
 2. It’s freezing.
-(= extremely cold)
+    > (= extremely cold)
 3. The temperature’s dropping.
 4. Make sure to bundle up.
-(bundle up = put on warm clothes for protection against the cold)
+    > (bundle up = put on warm clothes for protection against the cold)
 5. We’re expecting some winter weather.
-(winter weather = snow, hail, sleet, ice, etc.)
+    > (winter weather = snow, hail, sleet, ice, etc.)
 
 ## 5 Phrases for Talking about Rain
 1. It’s drizzling.
-(= raining lightly)
+    > (= raining lightly)
 2. It’s pouring.
-(= raining heavily)
+    > (= raining heavily)
 3. It’s raining cats and dogs.
-(= raining heavily)
+    > (= raining heavily)
 4. I got caught in a downpour.
 5. I think the rain’s letting up.
-(letting up = getting lighter and stopping)
+    > (letting up = getting lighter and stopping)
 
 ## 10 Ways to Say You’re Tired
 1. I’m exhausted.
@@ -632,42 +628,42 @@ Difficult
 7. I can hardly keep my eyes open.
 8. I’m off to bed.
 9. I’m gonna hit the sack.
-(hit the sack = go to bed)
+    > (hit the sack = go to bed)
 10. It’s bedtime for me.
 
 ## 5 Phrases for Promises & Resolutions
 1. I really should…
 2. I promise that I’ll…
 3. I swear I’ll / I won’t…
-(a very strong promise)
+    > (a very strong promise)
 4. No matter what happens, I’m going to…
 5. Come hell or high water, I’ll…
-#4 and #5 express your determination to do something, even if obstacles appear.
+> (#4 and #5 express your determination to do something, even if obstacles appear.) 
 
 ## 10 Excuses for Being Late
 1. Sorry I’m late.
 2. I overslept.
-(= I slept longer than I should have)
+    > (= I slept longer than I should have)
 3. My alarm didn’t go off.
 4. I had to wait ages for a bus.
-(ages = a very long time)
+    > (ages = a very long time)
 5. The bus was late.
 6. The traffic was terrible.
 7. I couldn’t find a parking spot.
 8. I got lost coming here.
 9. I was tied up in a meeting.
-(tied up = occupied, impossible to escape)
+    > (tied up = occupied, impossible to escape)
 10. I just lost track of time.
-(= I didn’t notice what time it was)
+    > (= I didn’t notice what time it was)
 
 ## 5 Ways to Say Someone is Correct
 1. That’s right.
 2. That’s spot on.
 3. You’ve hit the nail on the head. / You’ve nailed it.
 4. I suppose so.
-(use this when you agree, but you are not completely convinced)
+    > (use this when you agree, but you are not completely convinced)
 5. I’m afraid you’re right.
-(use this in response to bad news, to say the bad news is correct)
+    > (use this in response to bad news, to say the bad news is correct)
 
 ## 5 Ways to Say Someone is Wrong
 1. I’m afraid that’s not quite right.
@@ -694,28 +690,28 @@ Difficult
 ## 10 Ways to Avoid Answering a Question
 1. No comment.
 2. I’m not at liberty to say.
-(= I don’t have permission to give the information)
+    > (= I don’t have permission to give the information)
 3. Wait and see.
-(= you will discover the answer later)
+    > (= you will discover the answer later)
 4. Let me get back to you.
-(= I will give you the answer later)
+    > (= I will give you the answer later)
 5. I’m sorry, that’s confidential.
 6. I’m sorry, that’s personal.
 7. I’d rather not talk about it.
 8. It’s none of your business.
 9. Mind your own business.
 10. Why do you want to know?
-#8 and #9 are rather rude – telling the other person to stop inquiring about your life
+> #8 and #9 are rather rude – telling the other person to stop inquiring about your life
 
 ## 15 Phrases for Being Rich & Poor
 1. He’s short on cash.
 2. He’s broke.
-(= he has no money)
+    > (= he has no money)
 3. His bank account is overdrawn.
 4. He’s just scraping by.
-(= he is just barely surviving on little money)
+    > (= he is just barely surviving on little money)
 5. He makes minimum wage.
-(= he earns the minimum salary)
+    > (= he earns the minimum salary)
 6. He’s pinching pennies.
 7. He’s scrimping and saving.
 8. She’s very wealthy.
@@ -726,25 +722,25 @@ Difficult
 13. She’s making a killing.
 14. She’s raking in the cash.
 15. She’s rolling in dough.
-#6 and #7 express the idea that the person is trying to conserve money, when they have
+> #6 and #7 express the idea that the person is trying to conserve money, when they have
 very little money.
 
 ## 10 Phrases for Talking about Statistics
 1. The crime rate rose.
 2. The crime rate went up.
 3. There was a sharp increase in crime.
-(sharp = sudden and large)
+    > (sharp = sudden and large)
 4. There was a gradual rise in crime.
 5. There was a spike in crime.
-(spike = a sudden increase and then decrease)
+    > (spike = a sudden increase and then decrease)
 6. The crime rate reached its peak.
-(peak = the highest point)
+    > (peak = the highest point)
 7. The crime rate plateaued.
-(plateaued = stayed at the same level)
+    > (plateaued = stayed at the same level)
 8. There was a slight decrease in crime.
 9. The crime rate dropped.
 10. The crime rate plummeted.
-(= decreased a lot, very quickly)
+    > (= decreased a lot, very quickly)
 
 ## 10 Ways to Say Someone’s Talented
 1. She was born to… [dance].
@@ -769,64 +765,64 @@ very little money.
 8. Be patient.
 9. Not so fast!
 10. Hold your horses!
-#9 and #10 are used for cautioning someone to wait and not make a bad decision or
+> #9 and #10 are used for cautioning someone to wait and not make a bad decision or
 take reckless action.
 
 ## 10 Phrases for Estimating & Guessing
 1. If I had to take a guess, I’d say… [she’s about 35 years old].
 2. It’s difficult to say, but I think… [our customers are more satisfied].
 3. Off the top of my head, I’d say… [the company has 500 employees].
-(= what I remember/estimate, without checking the actual statistics)
+    >  (= what I remember/estimate, without checking the actual statistics)
 4. It’s about… [10 miles away].
 5. It’s around… [three hours long].
 6. I wouldn’t be surprised if… [Peter asks Jill to marry him].
 7. There’s a good chance… [it’ll rain tomorrow].
 8. I have a feeling/hunch… [the boss won’t be happy about this].
-(hunch = an instinctive feeling)
+    > (hunch = an instinctive feeling)
 9. I bet… [he’ll be late].
 10. Your guess is as good as mine.
-(= I don’t know)
+    > (= I don’t know)
 
 ## 10 Phrases for Decisions
 1. I’m debating between… [option A and option B]
 2. I can’t make up my mind.
 3. I’m on the fence.
-(= I’m in the middle, I don’t know what to decide)
+    > (= I’m in the middle, I don’t know what to decide)
 4. I’ll take that into consideration.
 5. On the other hand…
 6. I’m having second thoughts.
-(= I’m reconsidering my decision)
+    > (= I’m reconsidering my decision)
 7. I changed my mind.
 8. He convinced/persuaded me to…
 9. Looking back, I know it was the right decision.
 10. It’s up to you.
-(= You can decide)
+    > (= You can decide)
 
 ## 10 Phrases for Good Luck & Bad Luck
 1. Good luck!
 2. Better luck next time.
-(say this after someone fails, and you hope they do better next time)
+    > (say this after someone fails, and you hope they do better next time)
 3. Just my luck!
-(this is a sarcastic phrase meaning that something UNLUCKY happened)
+    > (this is a sarcastic phrase meaning that something UNLUCKY happened)
 4. Lucky you!
 5. That was a stroke of luck.
-(= a sudden event of good luck)
+    > (= a sudden event of good luck)
 6. Some people have all the luck.
-(say this when someone else is constantly lucky, and you feel like you’re not lucky)
+    > (say this when someone else is constantly lucky, and you feel like you’re not lucky)
 7. As luck would have it…
-(= by chance)
+    > (= by chance)
 8. He’s down on his luck.
-(= he’s having a long period of bad luck or difficulty)
+    > (= he’s having a long period of bad luck or difficulty)
 9. No such luck.
-(= something good that could have happened, didn’t happen)
+    > (= something good that could have happened, didn’t happen)
 10. What rotten luck!
 
 ## 10 Phrases for Worries & Relief
 1. I’m scared that…
 2. I can’t help thinking that…
-(use this for thoughts that you try to avoid, but they keep coming into your mind)
+    > (use this for thoughts that you try to avoid, but they keep coming into your mind)
 3. It’s been keeping me up at night.
-(use this when you’re so worried about something that you can’t sleep)
+    > (use this when you’re so worried about something that you can’t sleep)
 4. What if… ?
 5. Whew!
 6. Thank goodness!
@@ -840,26 +836,26 @@ take reckless action.
 2. It’s right around the corner.
 3. …in the near future.
 4. It will/won’t happen in our lifetime.
-(= in the next 40-50 years)
+    > (= in the next 40-50 years)
 5. It’s a sign/taste of things to come.
-(= it indicates how things will be in the future)
+    > (= it indicates how things will be in the future)
 6. I’m counting down the days until…
-(= I’m excited about the future event, I can’t wait for it to happen)
+    > (= I’m excited about the future event, I can’t wait for it to happen)
 7. Sooner or later… / It’s bound to happen eventually.
-(= it will definitely happen sometime in the future)
+    > (= it will definitely happen sometime in the future)
 8. I’ll get around to it.
-(= I’ll do it sometime in the future, but I don’t know exactly when)
+    > (= I’ll do it sometime in the future, but I don’t know exactly when)
 9. I’ll do it right away. / I’ll get right on it.
-(= I’ll do it immediately)
+    > (= I’ll do it immediately)
 10. Time will tell.
-(in the future, we will know if something is true/false or good/bad)
-#1, #2, and #3 are used to say something will happen soon.
+    > (in the future, we will know if something is true/false or good/bad)
+> #1, #2, and #3 are used to say something will happen soon.
 
 ## 10 Phrases for Compliments
-#1-3 are used for complimenting a person’s appearance
-#4-6 for complimenting a person’s cooking
-#7-8 for complimenting a person’s home
-#9-10 for complimenting a person’s children.
+> #1-3 are used for complimenting a person’s appearance
+> #4-6 for complimenting a person’s cooking
+> #7-8 for complimenting a person’s home
+> #9-10 for complimenting a person’s children.
 1. You look nice. / You look amazing!
 2. What a beautiful [necklace/dress/etc.]!
 3. I like your [shirt/shoes/haircut/etc.]
@@ -878,9 +874,9 @@ take reckless action.
 4. I’m a hundred percent certain.
 5. I’m convinced that…
 6. Chances are that…
-(= this will probably happen)
+    > (= this will probably happen)
 7. Odds are that…
-(= this will probably happen)
+    > (= this will probably happen)
 8. I seriously doubt it.
 9. I don’t think so.
 10. Probably not.
@@ -888,7 +884,7 @@ take reckless action.
 12. There’s not much chance of that.
 13. I’d be very surprised if that happened.
 14. I wouldn’t bet on it.
-(= there’s a small chance it could happen… but it probably won’t happen)
+    > (= there’s a small chance it could happen… but it probably won’t happen)
 15. That’ll never happen.
 
 ## 10 Ways to Say Something is
@@ -897,29 +893,29 @@ Interesting/Boring
 2. It’s intriguing.
 3. I couldn’t tear myself away.
 4. I couldn’t put it down.
-(this phrase is used for en extremely interesting book)
+    > (= this phrase is used for an extremely interesting book)
 5. I was so into it, I lost track of time.
 6. It does nothing for me.
 7. I was bored to tears.
 8. I was bored to death.
 9. I was dying of boredom.
 10. It’s about as exciting as watching paint dry.
-(= it’s very boring)
+    > (= it’s very boring)
 
 ## 10 Phrases for Cheering Someone Up
 1. What’s the matter?
 2. What’s wrong?
 3. Are you all right?
 4. You look a bit down.
-(= a little sad)
+    > (= a little sad)
 5. Is there anything I can do to help?
 6. Cheer up! / Chin up!
 7. It’s not so bad.
 8. Everything will be OK.
 9. Look on the bright side.
-(= consider the positive aspects)
+    > (= consider the positive aspects)
 10. It’s not the end of the world.
-(this phrase is used when someone is upset about something small and trivial)
+    > (= this phrase is used when someone is upset about something small and trivial)
 
 # 7 Phrases for Disappointment
 1. What a pity!
@@ -938,122 +934,123 @@ Interesting/Boring
 5. He’s stretching the truth.
 6. He’s not telling the whole truth.
 7. She’s being economical with the truth.
-(= she’s lying or not telling the entire truth)
+    > (= she’s lying or not telling the entire truth)
 8. His story is fishy.
 9. That's an outright lie.
 10. That's a pack of lies.
 
 ## 10 Expressions for Bad People
 1. He’s a creep.
-(= unpleasant, suspicious, makes you afraid/uneasy)
+    > (= unpleasant, suspicious, makes you afraid/uneasy)
 2. He’s a pervert.
-(= someone with disgusting sexual tendencies)
+    > (= someone with disgusting sexual tendencies)
 3. He’s a sicko.
 4. He’s a scumbag.
 5. He’s an asshole.
 6. He’s a jerk.
 7. He’s a bastard.
 8. She’s a bitch.
-(= she’s irritating and unpleasant)
+    > (= she’s irritating and unpleasant)
 9. She’s a psycho.
-(= crazy, irrational)
+    > (= crazy, irrational)
 10. She’s a slut.
-(= she has sex with a lot of people)
+    > (= she has sex with a lot of people)
 
 ## 10 Words for Describing Speaking
 1. He yelled.
 2. She screamed.
 3. I whispered.
-(= spoke in an extremely quiet voice)
+    > (= spoke in an extremely quiet voice)
 4. We chatted.
-(= had an informal conversation)
+    > (= had an informal conversation)
 5. He mumbled.
-(= spoke in a low voice, not clearly, without opening his mouth much)
+    > (= spoke in a low voice, not clearly, without opening his mouth much)
 6. My kids whined.
-(= complained)
+    > (= complained)
 7. He rambled. / He went on and on.
-(= talked too much without stopping)
+    > (= talked too much without stopping)
 8. She stammered.
 9. I snapped at my husband.
-(= said a quick and angry remark)
+    > (= said a quick and angry remark)
 10. He muttered.
-(= spoke in a low voice, usually making complaints or negative comments)
+    > (= spoke in a low voice, usually making complaints or negative comments)
 
 ## 10 Phrases for Facial Expressions
 1. She was beaming.
-(= she had a big, radiant smile)
+    > (= she had a big, radiant smile)
 2. The kids were smiling from ear to ear.
 3. He looked puzzled.
-(= confused)
+    > (= confused)
 4. She grinned.
-(= had a small smile)
+    > (= had a small smile)
 5. He winced when the doctor gave him an injection.
-(= had a quick expression of pain)
+    > (= had a quick expression of pain)
 6. She gave me a dirty look.
-(= looked at me angrily)
+    > (= looked at me angrily)
 7. She blushed.
-(= her face turned red because she was embarrassed)
+    > (= her face turned red because she was embarrassed)
 8. His eyes were glazed over.
-(= he appeared)
+    > (= he appeared)
 9. Why the long face?
-(an informal expression to ask why someone looks sad or upset)
+    > (= an informal expression to ask why someone looks sad or upset)
 10. Her expression was unreadable.
-(= you can’t know what she is feeling)
+    > (= you can’t know what she is feeling)
 
 ## 10 Phrases to Describe Offending or Upsetting People
 1. They got off on the wrong foot.
-(= when they first met, they didn’t get along)
+    > (= when they first met, they didn’t get along)
 2. He got on the teacher’s bad side.
 3. She took offense at his comment.
 4. He has a chip on his shoulder.
-(= he is easily offended)
+    > (= he is easily offended)
 5. She got bent out of shape.
 6. He left in a huff.
 7. She got her panties in a wad.
 8. He has a short fuse.
-(= he gets angry easily)
+    > (= he gets angry easily)
 9. She dissed my mother.
-(= she insulted/disrespected my mother)
+    > (= she insulted/disrespected my mother)
 10. He got his nose out of joint.
-#5, #7, #10 all mean the person got irritated/annoyed
+    > (= he got irritated/annoyed)
+> #5, #7, #10 all mean the person got irritated/annoyed
 
 ## 10 Phrases for Bad Travel Experiences
 1. My flight was overbooked.
-(overbooked = there were too many passengers and not enough seats)
+    > (overbooked = there were too many passengers and not enough seats)
 2. My flight was delayed/canceled.
 3. My luggage was lost.
 4. I was jet-lagged.
-(= I felt tired because of the time zone difference between my origin and destination)
+    > (= I felt tired because of the time zone difference between my origin and destination)
 5. My hotel was in a seedy area.
-(seedy = possibly unsafe)
+    > (seedy = possibly unsafe)
 6. I was mugged.
-(= I was robbed on the street)
+    > (= I was robbed on the street)
 7. The weather was miserable.
 8. I got the runs.
-(= diarrhea)
+    > (= diarrhea)
 9. The place was a tourist trap.
-(= made only for tourists; not authentic)
+    > (= made only for tourists; not authentic)
 10. I couldn’t wait to get back home.
 
 ## 10 Phrases for Drinking (Alcohol)
 1. It’s on me.
-(= I’ll buy you a drink)
+    > (= I’ll buy you a drink)
 2. I’d like to make a toast.
-(= I’d like to honor a person/event/idea)
+    > (= I’d like to honor a person/event/idea)
 3. Here’s to… (your health / the New Year / our success)!
 4. Another round of drinks, please.
 5. Put it on my tab.
-(tab = bill to pay later, before you leave)
+    > (tab = bill to pay later, before you leave)
 6. He’s a bit tipsy.
-(= a little bit drunk)
+    > (= a little bit drunk)
 7. He’s completely sloshed/wasted/plastered.
-(= completely drunk)
+    > (= completely drunk)
 8. She’s trying to drown her sorrows.
-(= drinking alcohol for relief from pain/sadness)
+    > (= drinking alcohol for relief from pain/sadness)
 9. I’m the designated driver.
-(= I’m not drinking alcohol because I will drive other people home later)
+    > (= I’m not drinking alcohol because I will drive other people home later)
 10. I had a hangover. / I was hung over.
-(= the bad feeling you have the morning after drinking too much)
+    > (= the bad feeling you have the morning after drinking too much)
 
 ## 15 Comparative Idioms
 1. It’s as light as a feather.
@@ -1068,9 +1065,9 @@ Interesting/Boring
 10. She’s as stubborn as a mule.
 11. He’s as proud as a peacock.
 12. She’s as white as a sheet.
-(usually used when someone is very afraid or very sick)
+    > (usually used when someone is very afraid or very sick)
 13. It’s as solid as a rock.
 14. It’s as good as new.
-(used after something broken has been repaired)
+    > (used after something broken has been repaired)
 15. It’s as clear as mud.
-(= it’s not clear at all)
+    > (= it’s not clear at all)
