@@ -54,7 +54,7 @@ A client doesn’t magically know where a server is, it needs an address to loca
 
 On the internet, computers identify each other using IP addresses, which work like phone numbers for servers.
 
-![image]({{site.baseurl}}/assets/images/System Design/00. preconcpets/image 02.png)
+![image]({{site.baseurl}}/assets/images/System Design/00. preconcpets/image 03.png)
 
 
 Every publicly deployed server has a unique IP address. When a client wants to interact with a service, it must send requests to the correct IP address.
@@ -74,7 +74,7 @@ But, we need a way to map a domain name to it’s corresponding IP address.
 
 This is where DNS (or Domain Name System) comes in. It maps easy to remember domain names (like algomaster.io) to their corresponding IP addresses.
 
-![image]({{site.baseurl}}/assets/images/System Design/00. preconcpets/image 03.png)
+![image]({{site.baseurl}}/assets/images/System Design/00. preconcpets/image 04.png)
 
 
 Here’s what happens behind the scenes:
