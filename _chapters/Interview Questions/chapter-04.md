@@ -134,6 +134,7 @@ Advanced Phrases:
 8. Same as always.
 9. Not so great.
 10. Could be better.
+
 Note: The way to respond to “What’s up?” and “What’s new?” is typically “Not much.”
 
 ## 10 Ways to Say “Thank You”
@@ -146,9 +147,9 @@ Note: The way to respond to “What’s up?” and “What’s new?” is typica
 7. I’m really grateful.
 8. That’s so kind of you.
 9. I can’t thank you enough.
-(for extremely important things)
+    (for extremely important things)
 10. I owe you one.
-(this means you want/need to do a favor for the other person in the future)
+    (this means you want/need to do a favor for the other person in the future)
 
 ## 10 Ways to Respond to “Thank You”
 1. You’re welcome.
@@ -191,6 +192,7 @@ Note: The way to respond to “What’s up?” and “What’s new?” is typica
 8. It’s a pleasure to meet you.
 9. Likewise.
 10. And you.
+
 #1 and #2 are used to introduce yourself; #3-#6 are used to introduce someone else.
 #9 and #10 can be used as a response to #7 and #8.
 
@@ -201,6 +203,7 @@ Note: The way to respond to “What’s up?” and “What’s new?” is typica
 4. Right.
 5. Gotcha.
 6. Sure.
+
 You can use these phrases to show the other person that you are listening.
 
 ## 5 Ways to End a Conversation Politely
@@ -211,7 +214,7 @@ You can use these phrases to show the other person that you are listening.
 5. I’m sorry to cut you off, but I actually gotta run.
 (cut you off = interrupt you)
 
-10 Phrases for Telephone Calls
+## 10 Phrases for Telephone Calls
 1. Hi, this is Jane.
 2. (formal) May I speak with John Smith?
 3. (informal) Is John there?
@@ -236,6 +239,7 @@ You can use these phrases to show the other person that you are listening.
 9. I was wondering…
 10. I’m calling to find out…
 (use this phrase on the telephone)
+
 Use #4, #5, #7, and #8 when you’re not sure if the other person has the information.
 
 ## 5 Ways to Say “I don’t know”
@@ -277,6 +281,7 @@ Use #4, #5, #7, and #8 when you’re not sure if the other person has the inform
 9. (informal) I’ll say!
 10. I suppose so.
 (use this phrase for weak agreement – you agree, but reluctantly)
+
 Note: Avoid the common error of saying “I’m agree” – the correct phrase is “I agree” or
 “I’m in agreement” – the second one is more formal.
 
