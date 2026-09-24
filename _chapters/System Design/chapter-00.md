@@ -32,7 +32,7 @@ In this article, I’ll walk you through the 30 most important System Design con
 
 Almost every web application that you use is built on this simple yet powerful concept called client-server architecture.
 
-[image]({{site.baseurl}}/assets/images/System Design/00. preconcpets/image 01.png)
+![image]({{site.baseurl}}/assets/images/System Design/00. preconcpets/image 01.png)
 
 On one side, you have a client—this could be a web browser, a mobile app, or any other frontend application.
 
@@ -54,7 +54,7 @@ A client doesn’t magically know where a server is, it needs an address to loca
 
 On the internet, computers identify each other using IP addresses, which work like phone numbers for servers.
 
-[image]({{site.baseurl}}/assets/images/System Design/00. preconcpets/image 02.png)
+![image]({{site.baseurl}}/assets/images/System Design/00. preconcpets/image 02.png)
 
 
 Every publicly deployed server has a unique IP address. When a client wants to interact with a service, it must send requests to the correct IP address.
@@ -67,14 +67,14 @@ But there’s a problem:
 
 - And if we migrate our service to another server, its IP address may change—breaking all direct connections.
 
-3. DNS
+# 3. DNS
 Instead of relying on hard-to-remember IP addresses, we use something much more human-friendly: domain names.
 
 But, we need a way to map a domain name to it’s corresponding IP address.
 
 This is where DNS (or Domain Name System) comes in. It maps easy to remember domain names (like algomaster.io) to their corresponding IP addresses.
 
-
+![image]({{site.baseurl}}/assets/images/System Design/00. preconcpets/image 03.png)
 
 
 Here’s what happens behind the scenes:
