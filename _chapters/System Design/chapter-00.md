@@ -329,7 +329,7 @@ Lets look at a better approach—one that makes our system more scalable and fau
 # 13. Horizontal Scaling
 Instead of upgrading a single server, what if we add more servers to share the load?
 
-![image]({{site.baseurl}}/assets/images/System Design/00. preconcpets/image 14.png)
+![image]({{site.baseurl}}/assets/images/System Design/00. preconcpets/image 15.png)
 
 This approach is called **Horizontal Scaling (Scaling Out)**—where we **distribute the workload across multiple machines**.
 
@@ -347,13 +347,13 @@ This is where a **Load Balancer** comes in.
 
 # 14. Load Balancers
 
-![image]({{site.baseurl}}/assets/images/System Design/00. preconcpets/image 15.png)
+![image]({{site.baseurl}}/assets/images/System Design/00. preconcpets/image 16.png)
 
 **A Load Balancer sits between clients and backend servers, acting as a traffic manager** that distributes requests across multiple servers.
 
 If one server crashes, the Load Balancer automatically redirects traffic to another healthy server.
 
-***But how does a Load Balancer decide which server should handle the next request?***
+*** But how does a Load Balancer decide which server should handle the next request? ***
 
 It uses Load Balancing algorithms, such as:
 
