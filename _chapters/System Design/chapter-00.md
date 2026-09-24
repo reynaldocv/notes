@@ -347,12 +347,13 @@ This is where a **Load Balancer** comes in.
 
 # 14. Load Balancers
 
+![image]({{site.baseurl}}/assets/images/System Design/00. preconcpets/image 15.png)
 
-A Load Balancer sits between clients and backend servers, acting as a traffic manager that distributes requests across multiple servers.
+**A Load Balancer sits between clients and backend servers, acting as a traffic manager** that distributes requests across multiple servers.
 
 If one server crashes, the Load Balancer automatically redirects traffic to another healthy server.
 
-But how does a Load Balancer decide which server should handle the next request?
+***But how does a Load Balancer decide which server should handle the next request?***
 
 It uses Load Balancing algorithms, such as:
 
