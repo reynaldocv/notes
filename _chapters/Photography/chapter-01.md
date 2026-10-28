@@ -24,7 +24,7 @@ First, I will cover all mode in the camera Canon R7.
    <img src="{{site.baseurl}}/assets/images/Photography/aperture-02.jpg" width="400" />
 </div>
 <div style="margin-left:3rem">
-   <img src="{{site.baseurl}}/assets/images/Photography/aperture-03.jpg" width="400" />
+   <img src="{{site.baseurl}}/assets/images/Photography/aperture-03.jpeg" width="400" />
 </div>
 <div style="margin-left:3rem">
    <img src="{{site.baseurl}}/assets/images/Photography/aperture-04.jpg" width="400" />
