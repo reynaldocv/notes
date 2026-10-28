@@ -1,6 +1,6 @@
 ---
 layout: home
 chapter: "CKKS"
-course: "Cryptogrphy"
-permalink: "crypto-04/"
+course: "Photography"
+permalink: "Photo-04/"
 ---
