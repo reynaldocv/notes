@@ -251,6 +251,49 @@ Standard dictionaries crash with a KeyError if you look up a key that isn't ther
 
 Using defaultdict(lambda) removes the need to constantly use if key not in dict: or dict.setdefault(key, default). This makes your loop bodies cleaner, faster, and highly readable.
 
+# Heaps 
+A heap in Python is a specialized tree-based data structure that satisfies the heap property: in a min-heap, the parent node is always less than or equal to its children, meaning **the smallest element is always at the root (index 0)**.
+
+## Importing and Core Operations
+
+To use heaps, you must import the heapq module. All operations modify a standard Python list in-place.
+
+    import heapq
+
+    # Create a regular list
+    numbers = [5, 1, 3, 9, 2]
+
+    # Turn the list into a heap in-place -> O(N) time
+    heapq.heapify(numbers)
+    print(numbers)  # Output: [1, 2, 3, 9, 5] (Index 0 is always the smallest)
+
+    # Push a new element -> O(log N) time
+    heapq.heappush(numbers, 0)
+
+    # Pop and return the smallest element -> O(log N) time
+    smallest = heapq.heappop(numbers)
+    print(smallest)  # Output: 0
+    print(numbers[0]) # Output: 1 (The new smallest element)
+
+## Common heapq Methods
+- heapify(list): Transforms a list into a heap in-place.
+    - O(n) time complexity. The heapify() function uses an optimized bottom-up algorithm known as Floyd's Backshift (or Sift-Down) algorithm.
+- heappush(heap, item): Pushes a value onto the heap while maintaining the heap property.
+    - O(log n) time complexity.  
+- heappop(heap): Pops and returns the smallest item from the heap.
+    - O(log n) time complexity.  
+- heappushpop(heap, item): Pushes a new item, then pops and returns the smallest item. More efficient than calling them separately.
+    - O(log n) time complexity.  
+- nlargest(n, iterable): Returns a list with the n largest elements from the dataset.
+    - O(n log n) time complexity.  
+- nsmallest(n, iterable): Returns a list with the n smallest elements from the dataset.
+    - O(n log n) time complexity.  
+
+## How to implement a Max-Heap
+
+Because heapq only provides a min-heap, if you need a max-heap (where index 0 is always the largest element), the standard Python convention is to invert the signs of the numbers when pushing and popping.
+
+
 
 
 
