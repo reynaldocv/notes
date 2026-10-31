@@ -277,21 +277,64 @@ To use heaps, you must import the heapq module. All operations modify a standard
 
 ## Common heapq Methods
 - heapify(list): Transforms a list into a heap in-place.
-    - O(n) time complexity. The heapify() function uses an optimized bottom-up algorithm known as Floyd's Backshift (or Sift-Down) algorithm.
+    - **O(n) time complexity**. The heapify() function uses an optimized bottom-up algorithm known as Floyd's Backshift (or Sift-Down) algorithm.
 - heappush(heap, item): Pushes a value onto the heap while maintaining the heap property.
-    - O(log n) time complexity.  
+    - **O(log n) time complexity**.  
 - heappop(heap): Pops and returns the smallest item from the heap.
-    - O(log n) time complexity.  
+    - **O(log n) time complexity**.  
 - heappushpop(heap, item): Pushes a new item, then pops and returns the smallest item. More efficient than calling them separately.
-    - O(log n) time complexity.  
+    - **O(log n) time complexity**.  
 - nlargest(n, iterable): Returns a list with the n largest elements from the dataset.
-    - O(n log n) time complexity.  
+    - **O(n log n) time complexity**.  
 - nsmallest(n, iterable): Returns a list with the n smallest elements from the dataset.
-    - O(n log n) time complexity.  
+    - **O(n log n) time complexity**.  
 
 ## How to implement a Max-Heap
 
 Because heapq only provides a min-heap, if you need a max-heap (where index 0 is always the largest element), the standard Python convention is to invert the signs of the numbers when pushing and popping.
+
+# Tuples 
+
+A tuple is an ordered, immutable collection of elements. Unlike lists (which use square brackets []), tuples are defined using parentheses ().
+The definitive feature of a tuple is its immutability—once created, you cannot add, remove, or modify its values.
+
+## Creating a Tuple
+
+You can create a tuple with multiple elements, an empty tuple, or even omit parentheses entirely (known as tuple packing).
+
+    # Creating a standard tuple
+    coordinates = (40.7128, -74.0060)
+
+    # The single-element trap (You MUST include a trailing comma!)
+    # If you write just (5), Python treats it as the integer 5 inside math parentheses.
+    single_element = (5,) 
+
+    # Creating a tuple without parentheses (Tuple Packing)
+    my_tuple = 1, 2, 3  # Python automatically packages this into (1, 2, 3)
+
+## Core Characteristics
+
+• **Immutable**: Attempting to assign a new value to an index (e.g., coordinates[0] = 50) will throw a TypeError. This prevents accidental data corruption.
+• **Ordered & Indexed**: Elements maintain a fixed position. You can read them using integer indices (coordinates[0]) and perform standard slicing operations.
+• **Hashable Keys**: Because tuples are immutable, they can be used as keys in a dictionary or as elements within a set (set)—something that is completely impossible with lists.
+
+## Built-in Methods
+
+Because tuples cannot be altered, they only possess two native methods:
+
+Method	Example	Description
+- count(value)
+    - my_tuple.count(5):Returns the total number of times a value appears.
+- index(value) 
+    - my_tuple.index("A"): Returns the first index position of the value (raises ValueError if missing).
+
+## Why Use a Tuple Instead of a List?
+
+- **Performance**: Tuples are faster and allocation-optimized under the hood. Python allocates a single memory block for them, whereas lists require extra dynamic overallocation space.
+- **Data Integrity**: Perfect for guarding structural constants (e.g., configurations, days of the week, geolocation data).
+- **Function Returns**: When a function returns multiple values separated by commas (return x, y), Python is secretly packaging and returning them as a single tuple.
+
+
 
 
 
