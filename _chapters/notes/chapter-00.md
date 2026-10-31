@@ -53,15 +53,15 @@ Other important functions are: sort, reverse, and len.
 We can use the sort function with a key parameter to sort the array based on a specific condition using a lambda function. 
 - For example, we can sort an array of tuples based on the second element of each tuple.
 
-        arr = [(1, 2), (3, 1), (2, 3)]
-        arr.sort(key=lambda x: x[1]) 
-        # arr = [(3, 1), (1, 2), (2, 3)]
+    arr = [(1, 2), (3, 1), (2, 3)]
+    arr.sort(key=lambda x: x[1]) 
+    # arr = [(3, 1), (1, 2), (2, 3)]
 
 - For example, we can sort an array of tuples based on the second element of each tuple, then sort in descending order based on the first element of each tuple.
 
-        arr = [(1, 2), (3, 3), (1, 3), (2, 1)]
-        arr.sort(key=lambda x: (x[1], -x[0])) 
-        # arr = [(3, 3), (1, 3), (1, 2), (2, 1)]
+    arr = [(1, 2), (3, 3), (1, 3), (2, 1)]
+    arr.sort(key=lambda x: (x[1], -x[0])) 
+    # arr = [(3, 3), (1, 3), (1, 2), (2, 1)]
 
 ## Sorted function
     
