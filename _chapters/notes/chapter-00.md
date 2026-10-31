@@ -1,6 +1,6 @@
 ---
 layout: home
-chapter: "Pre-concepts"
+chapter: "Python Programming Tips"
 course: "Python Programming Tips"
 permalink: "notes-00/"
 ---
