@@ -27,11 +27,10 @@ In array, we have two important functions: insert, append and pop.
 - pop: Removes and returns the last element of the array.
     - **O(1)** time complexity.
 
-
-        arr = [2, 3, 4]
-        arr.append(5) # arr = [2, 3, 4, 5]
-        arr.insert(1, 6) # arr = [2, 6, 3, 4, 5]
-        arr.pop() # arr = [2, 6, 3, 4]
+    arr = [2, 3, 4]
+    arr.append(5) # arr = [2, 3, 4, 5]
+    arr.insert(1, 6) # arr = [2, 6, 3, 4, 5]
+    arr.pop() # arr = [2, 6, 3, 4]
 
 ## Sort, reverse and len functions in an array
 Other important functions are: sort, reverse, and len.
@@ -44,10 +43,10 @@ Other important functions are: sort, reverse, and len.
 - len: Returns the length of the array.
     - **O(1)** time complexity.
 
-        arr = [2, 3, 4]
-        arr.sort() # arr = [2, 3, 4]
-        arr.reverse() # arr = [4, 3, 2]
-        len(arr) # returns 3
+    arr = [2, 3, 4]
+    arr.sort() # arr = [2, 3, 4]
+    arr.reverse() # arr = [4, 3, 2]
+    len(arr) # returns 3
 
 ## Sorting an array based on a specific condition
 
