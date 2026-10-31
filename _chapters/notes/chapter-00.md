@@ -18,13 +18,13 @@ All tips and tricks mentioned in this note are based on the following libraries.
 # Arrays 
 ## Insert, append and pop elements in an array
 In array, we have two important functions: insert, append and pop. 
-- insert: Inserts an element at a given index.
+- insert(index, element): Inserts an element at a given index.
     - **O(1)** time complexity.
 
-- append: Adds an element at the end of the array.
+- append(element): Adds an element at the end of the array.
     - **O(1)** time complexity.
 
-- pop: Removes and returns the last element of the array.
+- pop(): Removes and returns the last element of the array.
     - **O(1)** time complexity.
 
             arr = [2, 3, 4]
@@ -34,13 +34,13 @@ In array, we have two important functions: insert, append and pop.
 
 ## Sort, reverse and len functions in an array
 Other important functions are: sort, reverse, and len.
-- sort: Sorts the array in ascending order.
+- sort(): Sorts the array in ascending order.
     - **O(n log n)** time complexity.
 
-- reverse: Reverses the array.
+- reverse(): Reverses the array.
     - **O(n log n)** time complexity.
 
-- len: Returns the length of the array.
+- : Returns the length of the array.
     - **O(1)** time complexity.
 
             arr = [2, 3, 4]
@@ -122,19 +122,19 @@ You can create a set using curly braces {} or the built-in set() function.
 ## Add, update, remove, discard and clear
 
 In sets, we have the following important functions:  
-- add: Adds a single element to the set.
+- add(item): Adds a single element to the set.
     - **O(1)** time complexity.
 
-- update: Merges items from a list, tuple, or another set.
+- update(anotherSet): Merges items from a list, tuple, or another set.
     - **O(m)** time complexity where m is the quantity of elements to iterate.
 
-- remove: Removes the item. Raises a KeyError if it doesn't exist.
+- remove(item): Removes the item. Raises a KeyError if it doesn't exist.
     - **O(1)** time complexity.
 
-- discard: Removes the item. Does nothing if the item is missing..
+- discard(item): Removes the item. Does nothing if the item is missing..
     - **O(1)** time complexity.
 
-- clear: Removes all elements, leaving the set empty.
+- clear(): Removes all elements, leaving the set empty.
     - **O(n)** time complexity.
 
 ## Mathematical Set Operations
@@ -167,6 +167,92 @@ Checking if an item exists inside a set using the in operator is highly optimize
     allowed_users = {"alice", "bob", "charlie"}
     if "alice" in allowed_users:
         print("Access granted")
+
+# Dictionaries (dict)
+
+It allows you to store data as mapped associations, making it incredibly easy and fast to look up 
+values using a specific key rather than an index number.
+
+**Some properties**:
+
+- **Ordered**: Starting in Python 3.7, dictionaries maintain the insertion order of their keys.
+- **Unique Keys**: Keys must be unique. If you assign a value to an existing key, it overwrites the old value.
+- **Hashable Keys Only**: Dictionary keys must be of an immutable data type (like strings, numbers, or tuples). Values, however, can be absolutely anything (lists, sets, or even other dictionaries).
+
+## Creating a dictionary
+You can create a dictionary using curly braces {} with key: value pairs, or by using the built-in dict() constructor.
+
+    # Creating a dictionary with elements
+    user = {
+        "name": "Alice",
+        "age": 28,
+        "city": "New York"
+    }
+    print(user)  # Output: {'name': 'Alice', 'age': 28, 'city': 'New York'}
+
+    # Creating an empty dictionary
+    empty_dict = {} 
+    another_empty = dict()
+
+## Accessing and Modifying Data
+
+You can read, add, or change data using square brackets [] or the .get() method.
+
+    user = {"name": "Alice", "age": 28}
+
+    # Accessing values
+    print(user["name"])       # Output: Alice
+    # print(user["email"])    # Throws a KeyError because 'email' doesn't exist
+
+    # Safe accessing with .get() (Returns None or a default value instead of crashing)
+    print(user.get("email"))         # Output: None
+    print(user.get("email", "N/A"))  # Output: N/A
+
+    # Adding or Updating a value
+    user["age"] = 29          # Updates existing key 'age'
+    user["email"] = "alice@example.com"  # Adds a new key-value pair
+
+## Common Methods
+
+Python dictionaries come with built-in methods to extract data or clean up the structure:
+
+- keys(): Returns a view object of all keys in the dictionary.
+- values():	Returns a view object of all values.
+- items(): Returns a view object of tuples containing (key, value).
+- pop(key): Removes the specified key and returns its value.
+- update(other_dict): Updates the dictionary with pairs from another dictionary.
+- .clear(): Deletes all items from the dictionary.
+
+## Dictionaries using defaultdict
+
+A defaultdict is a subclass of Python's built-in dictionary found in the collections module.
+It overrides one method and adds a writable instance variable to automatically provide a default value for a missing key, preventing KeyError exceptions.
+When you pass a lambda function to defaultdict, you can customize exactly what that default value should be.
+
+    from collections import defaultdict
+
+    # The lambda defines the default value when a key doesn't exist yet
+    my_dict = defaultdict(lambda: "Default Value")
+
+### Basic Example: Custom Default Values
+
+Standard dictionaries crash with a KeyError if you look up a key that isn't there. defaultdict automatically creates the key and assigns the value returned by your lambda.
+
+    from collections import defaultdict
+
+    # Create a dictionary where any missing key defaults to 0
+    score_board = defaultdict(lambda: 0)
+
+    # We can immediately manipulate keys that haven't been defined yet
+    score_board["player_one"] += 10 
+
+    print(score_board["player_one"])  # Output: 10
+    print(score_board["new_player"])  # Output: 0 (Automatically created!)
+
+Using defaultdict(lambda) removes the need to constantly use if key not in dict: or dict.setdefault(key, default). This makes your loop bodies cleaner, faster, and highly readable.
+
+
+
 
 
 
