@@ -88,12 +88,12 @@ To list the index and value of each element in an array, we can use the enumerat
 To list all elements in an array since respetive start 
 
     arr = [2, 3, 4]
-    for (ith, value) in enumerate(arr, 1):
+    for (ith, value) in enumerate(arr, 2):
         print(ith, value)
     # Output:
-    # 0 2
-    # 1 3
-    # 2 4
+    # 2 2
+    # 3 3
+    # 4 4
 
 
 
