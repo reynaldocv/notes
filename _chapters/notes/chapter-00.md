@@ -95,8 +95,78 @@ To list all elements in an array since respetive start
     # 3 3
     # 4 4
 
+# Sets 
 
+A set is an unordered, mutable collection of unique elements. It is the ideal data structure when you need to avoid duplicate items or perform mathematical set operations like unions and intersections.
 
+**Some properties**:
+
+- **No Duplicates**: If you add a duplicate item, Python silently ignores it.
+- **Unordered & Unindexed**: Elements have no fixed position. You cannot access items using an index (e.g., fruits[0] raises a TypeError).
+- **Hashable Elements Only**: While the set itself is mutable (you can add/remove items), the elements inside it must be immutable/hashable (like strings, numbers, or tuples). You cannot put a list or a dict inside a set.
+
+## Creating a Set
+
+You can create a set using curly braces {} or the built-in set() function.
+
+    # Creating a set with elements
+    fruits = {"apple", "banana", "orange", "apple"}
+    print(fruits)  
+    # Output: {'orange', 'apple', 'banana'} 
+    (Duplicates are removed, order changes)
+
+    # Creating an empty set (You MUST use set())
+    # Using empty curly braces {} creates an empty dictionary, not a set!
+    empty_set = set() 
+
+## Add, update, remove, discard and clear
+
+In sets, we have the following important functions:  
+- add: Adds a single element to the set.
+    - **O(1)** time complexity.
+
+- update: Merges items from a list, tuple, or another set.
+    - **O(m)** time complexity where m is the quantity of elements to iterate.
+
+- remove: Removes the item. Raises a KeyError if it doesn't exist.
+    - **O(1)** time complexity.
+
+- discard: Removes the item. Does nothing if the item is missing..
+    - **O(1)** time complexity.
+
+- clear: Removes all elements, leaving the set empty.
+    - **O(n)** time complexity.
+
+## Mathematical Set Operations
+
+Sets make crossing data incredibly easy using either operators or equivalent methods:
+
+    A = {1, 2, 3, 4}
+    B = {3, 4, 5, 6}
+
+    # Union: All unique elements from both sets
+    print(A | B)          # {1, 2, 3, 4, 5, 6}
+    print(A.union(B))
+
+    # Intersection: Only elements present in both sets
+    print(A & B)          # {3, 4}
+    print(A.intersection(B))
+
+    # Difference: Elements in A that are NOT in B
+    print(A - B)          # {1, 2}
+    print(A.difference(B))
+
+    # Symmetric Difference: Elements in either set, but NOT in both
+    print(A ^ B)          # {1, 2, 5, 6}
+    print(A.symmetric_difference(B))
+
+## Performance Tip: Fast Lookups
+
+Checking if an item exists inside a set using the in operator is highly optimized. Because sets use a hash table under the hood, lookups take O(1) constant time on average. This is significantly faster than searching through a large list (O(n) time).
+
+    allowed_users = {"alice", "bob", "charlie"}
+    if "alice" in allowed_users:
+        print("Access granted")
 
 
 
