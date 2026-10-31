@@ -19,8 +19,14 @@ All tips and tricks mentioned in this note are based on the following libraries.
 ## Insert, append and pop elements in an array
 In array, we have two important functions: insert, append and pop. 
 - insert: Inserts an element at a given index.
+    - **O(1)** time complexity.
+
 - append: Adds an element at the end of the array.
+    - **O(1)** time complexity.
+
 - pop: Removes and returns the last element of the array.
+    - **O(1)** time complexity.
+
 
     arr = [2, 3, 4]
     arr.append(5) # arr = [2, 3, 4, 5]
@@ -30,8 +36,13 @@ In array, we have two important functions: insert, append and pop.
 ## Sort, reverse and len functions in an array
 Other important functions are: sort, reverse, and len.
 - sort: Sorts the array in ascending order.
+    - **O(n log n)** time complexity.
+
 - reverse: Reverses the array.
+    - **O(n log n)** time complexity.
+
 - len: Returns the length of the array.
+    - **O(1)** time complexity.
 
     arr = [2, 3, 4]
     arr.sort() # arr = [2, 3, 4]
@@ -60,6 +71,8 @@ Doing sort without altering the array can be done using the sorted function.
     arr = [2, 3, 4]
     sorted_arr = sorted(arr) 
     # sorted_arr = [2, 3, 4], arr = [2, 3, 4].
+
+Both sort function and sorted function can be used to sort an array based on a specific condition using a lambda function. Both have **O(n log n)** time complexity.
 
 
 
