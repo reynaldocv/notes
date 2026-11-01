@@ -2,7 +2,7 @@
 layout: home
 chapter: "Concepts"
 course: "Photography"
-permalink: "Photography-00/"
+permalink: "Photography-01/"
 ---
 
 # What is the shutter speed?
